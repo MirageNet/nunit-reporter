@@ -50,7 +50,7 @@ export function testCaseAnnotation(testcase: any): Annotation | null {
       0,
       0,
       'failure',
-      `Failed test ${methodname} in ${classname}\n${message}`
+      `* Failed test ${methodname} in ${classname}\n    \`\`\`${message}\`\`\`\n    \`\`\`${testcase.failure['stack-trace']}\`\`\``
     )
   }
   return null
