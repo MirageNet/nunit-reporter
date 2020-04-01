@@ -33,7 +33,7 @@ ${failDetails(results.annotations)}
 
     await octokit.checks.create({
       head_sha: context.sha,
-      name: 'Tests',
+      name: 'Tests Results',
       owner: context.repo.owner,
       repo: context.repo.repo,
       status: 'completed',
