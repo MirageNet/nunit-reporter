@@ -29,7 +29,7 @@ test('parse TestCase', async () => {
     expect(annotation?.path).toBe("Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs");
     expect(annotation?.start_line).toBe(895);
     expect(annotation?.end_line).toBe(895);
-    expect(annotation?.message).toBe("Expected: 1\n  But was:  0")
+    expect(annotation?.message).toBe("Failed test ServerUpdate in Mirror.Tests.NetworkIdentityTests\nExpected: 1\n  But was:  0")
     expect(annotation?.annotation_level).toBe('failure');
 
 })
@@ -69,7 +69,7 @@ test('parse Results', async () => {
     expect(results.failed).toBe(1);
 
     expect(results.annotations).toEqual(
-        [ new Annotation("Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs", 895, 895, 0,0,'failure', "Expected: 1\n  But was:  0" )]
+        [ new Annotation("Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs", 895, 895, 0,0,'failure', "Failed test ServerUpdate in Mirror.Tests.NetworkIdentityTests\nExpected: 1\n  But was:  0" )]
     )
 });
 
@@ -79,8 +79,37 @@ test('parse all Results', async () => {
 
     expect(results.annotations).toEqual(
         [ 
-            new Annotation("Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs", 895, 895, 0,0,'failure', "Expected: 1\n  But was:  0" ),
-            new Annotation("Assets/Mirror/Runtime/NetworkServer.cs", 448, 448, 0,0,'failure', "Unhandled log message: '[Exception] Exception: Already listening'. Use UnityEngine.TestTools.LogAssert.Expect" ),
+            new Annotation(
+                "Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs", 
+                895, 
+                895, 
+                0,
+                0,
+                'failure', 
+                "Failed test ServerUpdate in Mirror.Tests.NetworkIdentityTests\nExpected: 1\n  But was:  0" ),
+            new Annotation(
+                "Assets/Mirror/Runtime/NetworkServer.cs", 
+                448, 
+                448, 
+                0,
+                0,
+                'failure', 
+                "Failed test ConnectedClientTest in Mirror.Tests.NetworkManagerTest\nUnhandled log message: '[Exception] Exception: Already listening'. Use UnityEngine.TestTools.LogAssert.Expect" ),
+            new Annotation(
+                "Assets/Mirror/Runtime/Transport/Tcp/Server.cs", 
+                88, 
+                88, 
+                0,
+                0,
+                'failure', "Failed test ConnectedClientUriTest in Mirror.Tests.NetworkManagerTest\nUnhandled log message: '[Exception] SocketException: Address already in use'. Use UnityEngine.TestTools.LogAssert.Expect" ),
+            new Annotation(
+                "Assets/Mirror/Runtime/Transport/Tcp/Server.cs", 
+                88, 
+                88, 
+                0,
+                0,
+                'failure', 
+                "Failed test ConnectedHostTest in Mirror.Tests.NetworkManagerTest\nUnhandled log message: '[Exception] SocketException: Address already in use'. Use UnityEngine.TestTools.LogAssert.Expect" ),
         ]
     )
 });

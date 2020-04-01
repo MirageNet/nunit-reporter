@@ -1,6 +1,8 @@
 import parser from 'xml2json'
-import glob from '@actions/glob'
+import {create} from '@actions/glob'
 import {promises as fs} from 'fs'
+import github from '@actions/github';
+
 
 export class Annotation {
   public constructor(
@@ -9,26 +11,49 @@ export class Annotation {
     public readonly end_line: number,
     public readonly start_column: number,
     public readonly end_column: number,
-    public readonly annotation_level: string,
+    public readonly annotation_level: "failure" | "notice" | "warning",
     public readonly message: string
   ) {}
 }
 
 function getLocation(stacktrace: string): [string, number] {
-  const pattern = /in \/github\/workspace\/(.*):(\d+)/
+  // assertions stack traces
+  const matches = stacktrace.matchAll(/in (.*):(\d+)/g)
 
-  const match = stacktrace.match(pattern)
+  for (const match of matches) {
+    const lineNo = parseInt(match[2])
+    if (lineNo !== 0) return [match[1], lineNo]
+  }
 
-  if (match) return [match[1], parseInt(match[2])]
-  else return ['', 0]
+  // exceptions stack traces
+  const matches2 = stacktrace.matchAll(/\(at (.*):(\d+)\)/g)
+
+  for (const match of matches2) {
+    const lineNo = parseInt(match[2])
+    if (lineNo !== 0) return [match[1], lineNo]
+  }
+
+  return ['', 0]
 }
 
 export function testCaseAnnotation(testcase: any): Annotation | null {
   if (testcase.result === 'Failed') {
     const [filename, lineno] = getLocation(testcase.failure['stack-trace'])
-    const message = testcase.failure.message
 
-    return new Annotation(filename, lineno, lineno, 0, 0, 'failure', message)
+    const sanitizedFilename = filename.replace(/^\/github\/workspace\//, '')
+    const message = testcase.failure.message
+    const classname = testcase.classname
+    const methodname = testcase.methodname
+
+    return new Annotation(
+      sanitizedFilename,
+      lineno,
+      lineno,
+      0,
+      0,
+      "failure",
+      `Failed test ${methodname} in ${classname}\n${message}`
+    )
   }
   return null
 }
@@ -99,7 +124,7 @@ function combine(result1: TestResult, result2: TestResult): TestResult {
 }
 
 async function* resultGenerator(path: string): AsyncGenerator<TestResult> {
-  const globber = await glob.create(path, {followSymbolicLinks: false})
+  const globber = await create(path, {followSymbolicLinks: false})
 
   for await (const file of globber.globGenerator()) {
     const data = await fs.readFile(file, 'utf8')
