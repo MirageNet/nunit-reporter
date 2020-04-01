@@ -1,8 +1,6 @@
-import parser from 'xml2json'
+import {parseStringPromise } from 'xml2js'
 import {create} from '@actions/glob'
 import {promises as fs} from 'fs'
-import github from '@actions/github';
-
 
 export class Annotation {
   public constructor(
@@ -102,17 +100,18 @@ function getAnnotations(testsuite: any): Annotation[] {
   return result
 }
 
-export function parseNunit(nunitReport: string): TestResult {
-  const nunitResults: any = parser.toJson(nunitReport, {
-    object: true,
-    coerce: true
+export async function parseNunit(nunitReport: string): Promise<TestResult> {
+  const nunitResults: any = await parseStringPromise(nunitReport, {
+    trim: true,
+    mergeAttrs: true,
+    explicitArray: false,
   })
 
   const testRun = nunitResults['test-run']
 
   const annotations = getAnnotations(testRun)
 
-  return new TestResult(testRun.passed, testRun.failed, annotations)
+  return new TestResult(parseInt(testRun.passed), parseInt(testRun.failed), annotations)
 }
 
 function combine(result1: TestResult, result2: TestResult): TestResult {
@@ -133,8 +132,10 @@ async function* resultGenerator(path: string): AsyncGenerator<TestResult> {
 }
 
 export async function readResults(path: string): Promise<TestResult> {
-  const results: TestResult[] = []
-  for await (const result of resultGenerator(path)) results.push(result)
+  let results = new TestResult(0,0,[]);
 
-  return results.reduce(combine)
+  for await (const result of resultGenerator(path)) 
+    results = combine(results, result);
+
+  return results;
 }

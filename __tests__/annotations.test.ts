@@ -1,5 +1,5 @@
 import { testCaseAnnotation, parseNunit, Annotation, TestResult, readResults } from '../src/nunit'
-import parser from 'xml2json';
+import {parseStringPromise } from 'xml2js'
 import { promises as fs } from "fs";
 
 test('parse TestCase', async () => {
@@ -20,8 +20,12 @@ test('parse TestCase', async () => {
   ]]></output>
   </test-case>
   `
-    const testCase: any = parser.toJson(data, { object: true });
-
+    const testCase: any = await parseStringPromise(data, {
+        trim: true,
+        mergeAttrs: true,
+        explicitArray: false,
+      })
+    
     const annotation = testCaseAnnotation(testCase['test-case']);
 
     expect(annotation).toBeTruthy();
@@ -52,7 +56,11 @@ test('parse Passed', async () => {
   ]]></output>
   </test-case>
   `
-    const testCase: any = parser.toJson(data, { object: true });
+  const testCase: any = await parseStringPromise(data, {
+    trim: true,
+    mergeAttrs: true,
+    explicitArray: false,
+})
 
     const annotation = testCaseAnnotation(testCase['test-case']);
 
@@ -64,7 +72,7 @@ test('parse Results', async () => {
 
     const data = await fs.readFile("__tests__/editmode-results.xml", 'utf8')
 
-    const results = parseNunit(data);
+    const results = await parseNunit(data);
     expect(results.passed).toBe(332);
     expect(results.failed).toBe(1);
 

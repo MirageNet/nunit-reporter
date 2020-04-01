@@ -1,20 +1,20 @@
 
-import core from '@actions/core';
-import github from '@actions/github';
+import {setFailed, getInput} from '@actions/core';
+import {GitHub, context} from '@actions/github';
 import { readResults, Annotation } from './nunit';
 
 async function run(): Promise<void> {
   try {
-    const path = core.getInput('path');
-    const numFailures = parseInt(core.getInput('numFailures'));
-    const accessToken = core.getInput('access-token');
+    const path = getInput('path');
+    const numFailures = parseInt(getInput('numFailures'));
+    const accessToken = getInput('access-token');
 
     const results = await readResults(path);
 
-    const octokit = new github.GitHub(accessToken);
+    const octokit = new GitHub(accessToken);
     const req = {
-      ...github.context.repo,
-      ref: github.context.sha
+      ...context.repo,
+      ref: context.sha
     }
     const res = await octokit.checks.listForRef(req);
 
@@ -31,7 +31,7 @@ async function run(): Promise<void> {
       `Passed tests ${results.passed}\nFailed tests ${results.failed}`);
 
     await octokit.checks.update({
-      ...github.context.repo,
+      ...context.repo,
       check_run_id,
       output: {
         title: "Test Results",
@@ -41,7 +41,7 @@ async function run(): Promise<void> {
     });
 
   } catch (error) {
-    core.setFailed(error.message);
+    setFailed(error.message);
   }
 }
 
