@@ -5049,21 +5049,20 @@ async function run() {
         const accessToken = core_1.getInput('access-token');
         const results = await nunit_1.readResults(path);
         const octokit = new github_1.GitHub(accessToken);
-        const req = {
-            ...github_1.context.repo,
-            ref: github_1.context.sha
-        };
-        const res = await octokit.checks.listForRef(req);
-        const checkRunId = res.data.check_runs.filter(check => check.name === 'build')[0].id;
-        const annotationLevel = results.failed > 0 ? 'failure' : 'notice';
-        const annotation = new nunit_1.Annotation('test', 0, 0, 0, 0, annotationLevel, `Passed tests ${results.passed}\nFailed tests ${results.failed}`);
-        await octokit.checks.update({
-            ...github_1.context.repo,
-            check_run_id: checkRunId,
+        const summary = results.failed > 0
+            ? `${results.failed} tests failed`
+            : `${results.passed} tests passed`;
+        await octokit.checks.create({
+            head_sha: github_1.context.sha,
+            name: 'Tests',
+            owner: github_1.context.repo.owner,
+            repo: github_1.context.repo.repo,
+            status: 'completed',
+            conclusion: results.failed > 0 ? 'failure' : 'success',
             output: {
                 title: 'Test Results',
-                summary: `Num passed etc`,
-                annotations: [annotation, ...results.annotations].slice(0, numFailures)
+                summary,
+                annotations: results.annotations.slice(0, numFailures)
             }
         });
     }
