@@ -1,49 +1,49 @@
-
-import {setFailed, getInput} from '@actions/core';
-import {GitHub, context} from '@actions/github';
-import { readResults, Annotation } from './nunit';
+import {setFailed, getInput} from '@actions/core'
+import {GitHub, context} from '@actions/github'
+import {readResults, Annotation} from './nunit'
 
 async function run(): Promise<void> {
   try {
-    const path = getInput('path');
-    const numFailures = parseInt(getInput('numFailures'));
-    const accessToken = getInput('access-token');
+    const path = getInput('path')
+    const numFailures = parseInt(getInput('numFailures'))
+    const accessToken = getInput('access-token')
 
-    const results = await readResults(path);
+    const results = await readResults(path)
 
-    const octokit = new GitHub(accessToken);
+    const octokit = new GitHub(accessToken)
     const req = {
       ...context.repo,
       ref: context.sha
     }
-    const res = await octokit.checks.listForRef(req);
+    const res = await octokit.checks.listForRef(req)
 
-    const check_run_id = res.data.check_runs.filter(check => check.name === 'build')[0].id
-    
-    const annotation_level = results.failed > 0 ? 'failure' : 'notice';
+    const checkRunId = res.data.check_runs.filter(
+      check => check.name === 'build'
+    )[0].id
+
+    const annotationLevel = results.failed > 0 ? 'failure' : 'notice'
     const annotation = new Annotation(
       'test',
       0,
       0,
       0,
       0,
-      annotation_level,
-      `Passed tests ${results.passed}\nFailed tests ${results.failed}`);
+      annotationLevel,
+      `Passed tests ${results.passed}\nFailed tests ${results.failed}`
+    )
 
     await octokit.checks.update({
       ...context.repo,
-      check_run_id,
+      check_run_id: checkRunId,
       output: {
-        title: "Test Results",
+        title: 'Test Results',
         summary: `Num passed etc`,
         annotations: [annotation, ...results.annotations].slice(0, numFailures)
       }
-    });
-
+    })
   } catch (error) {
-    setFailed(error.message);
+    setFailed(error.message)
   }
 }
 
-run();
-
+run()

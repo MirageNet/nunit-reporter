@@ -1,4 +1,4 @@
-import {parseStringPromise } from 'xml2js'
+import {parseStringPromise} from 'xml2js'
 import {create} from '@actions/glob'
 import {promises as fs} from 'fs'
 
@@ -9,7 +9,7 @@ export class Annotation {
     public readonly end_line: number,
     public readonly start_column: number,
     public readonly end_column: number,
-    public readonly annotation_level: "failure" | "notice" | "warning",
+    public readonly annotation_level: 'failure' | 'notice' | 'warning',
     public readonly message: string
   ) {}
 }
@@ -49,7 +49,7 @@ export function testCaseAnnotation(testcase: any): Annotation | null {
       lineno,
       0,
       0,
-      "failure",
+      'failure',
       `Failed test ${methodname} in ${classname}\n${message}`
     )
   }
@@ -104,14 +104,18 @@ export async function parseNunit(nunitReport: string): Promise<TestResult> {
   const nunitResults: any = await parseStringPromise(nunitReport, {
     trim: true,
     mergeAttrs: true,
-    explicitArray: false,
+    explicitArray: false
   })
 
   const testRun = nunitResults['test-run']
 
   const annotations = getAnnotations(testRun)
 
-  return new TestResult(parseInt(testRun.passed), parseInt(testRun.failed), annotations)
+  return new TestResult(
+    parseInt(testRun.passed),
+    parseInt(testRun.failed),
+    annotations
+  )
 }
 
 function combine(result1: TestResult, result2: TestResult): TestResult {
@@ -132,10 +136,10 @@ async function* resultGenerator(path: string): AsyncGenerator<TestResult> {
 }
 
 export async function readResults(path: string): Promise<TestResult> {
-  let results = new TestResult(0,0,[]);
+  let results = new TestResult(0, 0, [])
 
-  for await (const result of resultGenerator(path)) 
-    results = combine(results, result);
+  for await (const result of resultGenerator(path))
+    results = combine(results, result)
 
-  return results;
+  return results
 }
