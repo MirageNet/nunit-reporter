@@ -11,7 +11,7 @@ export class Annotation {
     public readonly end_column: number,
     public readonly annotation_level: 'failure' | 'notice' | 'warning',
     public readonly message: string,
-    public readonly messageformatted: string,
+    public readonly messageformatted: string
   ) {}
 }
 

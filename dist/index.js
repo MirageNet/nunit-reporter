@@ -5044,7 +5044,7 @@ const core_1 = __webpack_require__(470);
 const github_1 = __webpack_require__(469);
 const nunit_1 = __webpack_require__(81);
 function failDetails(annotations) {
-    return annotations.map(n => `${n.messageformatted}`).join("\n\n");
+    return annotations.map(n => `${n.messageformatted}`).join('\n\n');
 }
 async function run() {
     try {
@@ -5056,8 +5056,8 @@ async function run() {
         const summary = results.failed > 0
             ? `${results.failed} tests failed`
             : `${results.passed} tests passed`;
-        const details = results.failed == 0 ?
-            `** ${results.passed} tests passed**`
+        const details = results.failed === 0
+            ? `** ${results.passed} tests passed**`
             : `
 **${results.passed} tests passed**
 **${results.failed} tests failed**
@@ -5066,7 +5066,7 @@ ${failDetails(results.annotations)}
 `;
         await octokit.checks.create({
             head_sha: github_1.context.sha,
-            name: 'Tests',
+            name: 'Tests Results',
             owner: github_1.context.repo.owner,
             repo: github_1.context.repo.repo,
             status: 'completed',
