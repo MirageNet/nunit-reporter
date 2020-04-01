@@ -1,126 +1,115 @@
-import parser from 'xml2json';
-import glob from '@actions/glob';
-import { promises as fs } from "fs";
+import parser from 'xml2json'
+import glob from '@actions/glob'
+import {promises as fs} from 'fs'
 
-export class Annotation
-{
-    public constructor (
-        public readonly path : string,
-        public readonly start_line : number,
-        public readonly end_line: number,
-        public readonly start_column: number,
-        public readonly end_column: number,
-        public readonly annotation_level: string,
-        public readonly message: string) {}
+export class Annotation {
+  public constructor(
+    public readonly path: string,
+    public readonly start_line: number,
+    public readonly end_line: number,
+    public readonly start_column: number,
+    public readonly end_column: number,
+    public readonly annotation_level: string,
+    public readonly message: string
+  ) {}
 }
 
-function getLocation(stacktrace : string) : [string, number]
-{
-    const pattern = /in \/github\/workspace\/(.*):(\d+)/;
+function getLocation(stacktrace: string): [string, number] {
+  const pattern = /in \/github\/workspace\/(.*):(\d+)/
 
-    const match = stacktrace.match(pattern);
+  const match = stacktrace.match(pattern)
 
-    if (match)
-        return [match[1], parseInt(match[2])]
-    else
-        return ['', 0]
+  if (match) return [match[1], parseInt(match[2])]
+  else return ['', 0]
 }
 
-export function testCaseAnnotation(testcase: any): Annotation | null
-{
-    if (testcase.result === "Failed") {
-        const [filename, lineno] = getLocation(testcase.failure['stack-trace']);
-        const message = testcase.failure.message;
+export function testCaseAnnotation(testcase: any): Annotation | null {
+  if (testcase.result === 'Failed') {
+    const [filename, lineno] = getLocation(testcase.failure['stack-trace'])
+    const message = testcase.failure.message
 
-        return new Annotation(filename, lineno, lineno ,0,0,'failure', message);
-    }
-    return null;
+    return new Annotation(filename, lineno, lineno, 0, 0, 'failure', message)
+  }
+  return null
 }
 
 export class TestResult {
-    public constructor(
-        public readonly passed : number,
-        public readonly failed: number,
-        public readonly annotations : Annotation[]
-    ) {}
+  public constructor(
+    public readonly passed: number,
+    public readonly failed: number,
+    public readonly annotations: Annotation[]
+  ) {}
 }
 
-function getTestCasesAnnotations (testsuite : any) : Annotation[]
-{
-    if ('test-case' in testsuite)
-    {
-        const testCases = testsuite['test-case'];
+function getTestCasesAnnotations(testsuite: any): Annotation[] {
+  if ('test-case' in testsuite) {
+    const testCases = testsuite['test-case']
 
-        const annotations = Array.isArray(testCases)
-            ? testCases.map(testCaseAnnotation)
-            : [testCaseAnnotation(testCases)];
-        
-        return annotations.filter((x): x is Annotation => x !== null);
-    }
-    return [];
+    const annotations = Array.isArray(testCases)
+      ? testCases.map(testCaseAnnotation)
+      : [testCaseAnnotation(testCases)]
+
+    return annotations.filter((x): x is Annotation => x !== null)
+  }
+  return []
 }
 
-function getTestSuiteAnnotations(testsuite : any) : Annotation []
-{
-    if ('test-suite' in testsuite)
-    {
-        const childsuits = testsuite['test-suite'];
+function getTestSuiteAnnotations(testsuite: any): Annotation[] {
+  if ('test-suite' in testsuite) {
+    const childsuits = testsuite['test-suite']
 
-        const annotations = Array.isArray(childsuits)
-            ? childsuits.map(getAnnotations)
-            : [getAnnotations(childsuits)];
+    const annotations = Array.isArray(childsuits)
+      ? childsuits.map(getAnnotations)
+      : [getAnnotations(childsuits)]
 
-        return annotations.flat();
-    }
-    return [];
+    return annotations.flat()
+  }
+  return []
 }
 
-function getAnnotations(testsuite : any) : Annotation[]
-{
-    const testCasesAnnotations = getTestCasesAnnotations(testsuite);
+function getAnnotations(testsuite: any): Annotation[] {
+  const testCasesAnnotations = getTestCasesAnnotations(testsuite)
 
-    const testSuiteAnnotations = getTestSuiteAnnotations(testsuite);
+  const testSuiteAnnotations = getTestSuiteAnnotations(testsuite)
 
-    const result = testCasesAnnotations.concat(testSuiteAnnotations);
+  const result = testCasesAnnotations.concat(testSuiteAnnotations)
 
-    return result
+  return result
 }
 
 export function parseNunit(nunitReport: string): TestResult {
+  const nunitResults: any = parser.toJson(nunitReport, {
+    object: true,
+    coerce: true
+  })
 
-    const nunitResults : any = parser.toJson(nunitReport, { object: true, coerce: true });
+  const testRun = nunitResults['test-run']
 
-    const testRun = nunitResults['test-run'];
+  const annotations = getAnnotations(testRun)
 
-    const annotations = getAnnotations(testRun);
-    
-    return new TestResult(testRun.passed, testRun.failed, annotations);
+  return new TestResult(testRun.passed, testRun.failed, annotations)
 }
 
-function combine(result1 : TestResult, result2: TestResult)
-{
-    const passed = result1.passed + result2.passed;
-    const failed = result1.failed + result2.failed;
-    const annotations = result1.annotations.concat(result2.annotations);
+function combine(result1: TestResult, result2: TestResult): TestResult {
+  const passed = result1.passed + result2.passed
+  const failed = result1.failed + result2.failed
+  const annotations = result1.annotations.concat(result2.annotations)
 
-    return new TestResult(passed, failed, annotations);
+  return new TestResult(passed, failed, annotations)
 }
 
-async function* resultGenerator(path : string) {
-    
-    const globber = await glob.create(path, { followSymbolicLinks: false });
+async function* resultGenerator(path: string): AsyncGenerator<TestResult> {
+  const globber = await glob.create(path, {followSymbolicLinks: false})
 
-    for await (const file of globber.globGenerator()) {
-        const data = await fs.readFile(file, "utf8");
-        yield parseNunit(data);
-    }
+  for await (const file of globber.globGenerator()) {
+    const data = await fs.readFile(file, 'utf8')
+    yield parseNunit(data)
+  }
 }
 
-export async function readResults(path : string) : Promise<TestResult>
-{
-    var results : TestResult [] = [];
-    for await (const result of resultGenerator(path))
-        results.push(result);
+export async function readResults(path: string): Promise<TestResult> {
+  const results: TestResult[] = []
+  for await (const result of resultGenerator(path)) results.push(result)
 
-    return results.reduce(combine);
+  return results.reduce(combine)
 }

@@ -1,3 +1,4 @@
+/*
 import core from '@actions/core';
 import github from '@actions/github';
 import glob from '@actions/glob';
@@ -5,7 +6,7 @@ import parser from 'xml2json';
 import fs from 'fs';
 import { TestResult } from './nunit';
 
-/*
+
 async function run(): Promise<void> {
   try {
     const path = core.getInput('path');
