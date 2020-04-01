@@ -4,7 +4,7 @@ import {readResults, Annotation} from './nunit'
 
 function failDetails(annotations: Annotation[]) : string
 {
-  return annotations.map(n => `${n.message}`).join("\n\n");
+  return annotations.map(n => `${n.messageformatted}`).join("\n\n");
 }
 
 async function run(): Promise<void> {

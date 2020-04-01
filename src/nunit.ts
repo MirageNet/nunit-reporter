@@ -10,7 +10,8 @@ export class Annotation {
     public readonly start_column: number,
     public readonly end_column: number,
     public readonly annotation_level: 'failure' | 'notice' | 'warning',
-    public readonly message: string
+    public readonly message: string,
+    public readonly messageformatted: string,
   ) {}
 }
 
@@ -50,7 +51,8 @@ export function testCaseAnnotation(testcase: any): Annotation | null {
       0,
       0,
       'failure',
-      `* Failed test ${methodname} in ${classname}\n    \`\`\`${message}\`\`\`\n    \`\`\`${testcase.failure['stack-trace']}\`\`\``
+      `Failed test ${methodname} in ${classname}\n${message}\n\n${testcase.failure['stack-trace']}`,
+      `* Failed test ${methodname} in ${classname}\n${message}\n\`\`\`${testcase.failure['stack-trace']}\`\`\``
     )
   }
   return null

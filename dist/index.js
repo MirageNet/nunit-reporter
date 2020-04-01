@@ -2223,7 +2223,7 @@ const xml2js_1 = __webpack_require__(992);
 const glob_1 = __webpack_require__(281);
 const fs_1 = __webpack_require__(747);
 class Annotation {
-    constructor(path, start_line, end_line, start_column, end_column, annotation_level, message) {
+    constructor(path, start_line, end_line, start_column, end_column, annotation_level, message, messageformatted) {
         this.path = path;
         this.start_line = start_line;
         this.end_line = end_line;
@@ -2231,6 +2231,7 @@ class Annotation {
         this.end_column = end_column;
         this.annotation_level = annotation_level;
         this.message = message;
+        this.messageformatted = messageformatted;
     }
 }
 exports.Annotation = Annotation;
@@ -2258,7 +2259,7 @@ function testCaseAnnotation(testcase) {
         const message = testcase.failure.message;
         const classname = testcase.classname;
         const methodname = testcase.methodname;
-        return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `* Failed test ${methodname} in ${classname}\n    \`\`\`${message}\`\`\`\n    \`\`\`${testcase.failure['stack-trace']}\`\`\``);
+        return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `Failed test ${methodname} in ${classname}\n${message}\n\n${testcase.failure['stack-trace']}`, `* Failed test ${methodname} in ${classname}\n${message}\n\`\`\`${testcase.failure['stack-trace']}\`\`\``);
     }
     return null;
 }
@@ -5043,7 +5044,7 @@ const core_1 = __webpack_require__(470);
 const github_1 = __webpack_require__(469);
 const nunit_1 = __webpack_require__(81);
 function failDetails(annotations) {
-    return annotations.map(n => `${n.message}`).join("\n\n");
+    return annotations.map(n => `${n.messageformatted}`).join("\n\n");
 }
 async function run() {
     try {
