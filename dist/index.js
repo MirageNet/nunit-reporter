@@ -5042,6 +5042,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = __webpack_require__(470);
 const github_1 = __webpack_require__(469);
 const nunit_1 = __webpack_require__(81);
+function failDetails(annotations) {
+    return annotations.map(n => `${n.message}`).join("\n\n");
+}
 async function run() {
     try {
         const path = core_1.getInput('path');
@@ -5052,6 +5055,12 @@ async function run() {
         const summary = results.failed > 0
             ? `${results.failed} tests failed`
             : `${results.passed} tests passed`;
+        const details = `
+**${results.passed} tests passed**
+**${results.failed} tests failed**
+# Failed Tests
+${failDetails(results.annotations)}
+`;
         await octokit.checks.create({
             head_sha: github_1.context.sha,
             name: 'Tests',
@@ -5062,7 +5071,8 @@ async function run() {
             output: {
                 title: 'Test Results',
                 summary,
-                annotations: results.annotations.slice(0, numFailures)
+                annotations: results.annotations.slice(0, numFailures),
+                text: details
             }
         });
     }
