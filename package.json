@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
+  "name": "nunit-result",
   "version": "0.0.0",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "Action to add nunit tests results ",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -19,13 +19,18 @@
   },
   "keywords": [
     "actions",
-    "node",
-    "setup"
+    "nunit",
+    "test",
+    "report"
   ],
-  "author": "YourNameOrOrganization",
+  "author": "MirrorNG",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.0"
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^2.1.1",
+    "@actions/glob": "^0.1.0",
+    "@types/xml2json": "^0.11.0",
+    "xml2json": "^0.12.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",

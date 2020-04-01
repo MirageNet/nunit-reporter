@@ -2,9 +2,24 @@ name: 'Your name here'
 description: 'Provide a description here'
 author: 'Your name or organization here'
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+  access-token:
+    description: 'github token'
+    required: true
+  path:
+    description: 'glob to junit xml files'
+    required: true
+  includeSummary:
+    description: 'include summary annotation'
+    required: true
+    default: true
+  numFailures:
+    description: 'max number of failed tests to include'
+    require: true
+    default: 30
+  testSrcPath: 
+    description: 'path to test source'
+    required: true
+    default: 'src/test/java/'
 runs:
   using: 'node12'
   main: 'dist/index.js'

@@ -1,0 +1,1468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="333" result="Failed(Child)" total="333" passed="332" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:14:58Z" duration="87.6467512">
+  <test-suite type="TestSuite" id="1367" name="workspace" fullname="workspace" runstate="Runnable" testcasecount="333" result="Failed" site="Child" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:14:58Z" duration="87.646751" total="333" passed="332" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1728" name="Mirror.Tests.dll" fullname="/github/workspace/Library/ScriptAssemblies/Mirror.Tests.dll" runstate="Runnable" testcasecount="333" result="Failed" site="Child" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:14:58Z" duration="87.368017" total="333" passed="332" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="26" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1729" name="Mirror" fullname="Mirror" runstate="Runnable" testcasecount="333" result="Failed" site="Child" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:14:58Z" duration="87.120304" total="333" passed="332" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1730" name="Tests" fullname="Mirror.Tests" runstate="Runnable" testcasecount="333" result="Failed" site="Child" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:14:57Z" duration="86.867365" total="333" passed="332" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1368" name="ArraySegmentWriterTest" fullname="Mirror.Tests.ArraySegmentWriterTest" classname="Mirror.Tests.ArraySegmentWriterTest" runstate="Runnable" testcasecount="6" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.081698" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1369" name="TestEmptyByteArray" fullname="Mirror.Tests.ArraySegmentWriterTest.TestEmptyByteArray" methodname="TestEmptyByteArray" classname="Mirror.Tests.ArraySegmentWriterTest" runstate="Runnable" seed="74947450" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.032110" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1372" name="TestEmptyIntArray" fullname="Mirror.Tests.ArraySegmentWriterTest.TestEmptyIntArray" methodname="TestEmptyIntArray" classname="Mirror.Tests.ArraySegmentWriterTest" runstate="Runnable" seed="587353531" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.001732" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1370" name="TestNullByteArray" fullname="Mirror.Tests.ArraySegmentWriterTest.TestNullByteArray" methodname="TestNullByteArray" classname="Mirror.Tests.ArraySegmentWriterTest" runstate="Runnable" seed="1559501964" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000623" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1373" name="TestNullIntArray" fullname="Mirror.Tests.ArraySegmentWriterTest.TestNullIntArray" methodname="TestNullIntArray" classname="Mirror.Tests.ArraySegmentWriterTest" runstate="Runnable" seed="1252719479" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000473" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1371" name="TestSegmentByteArray" fullname="Mirror.Tests.ArraySegmentWriterTest.TestSegmentByteArray" methodname="TestSegmentByteArray" classname="Mirror.Tests.ArraySegmentWriterTest" runstate="Runnable" seed="655491758" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.002721" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1374" name="TestSegmentIntArray" fullname="Mirror.Tests.ArraySegmentWriterTest.TestSegmentIntArray" methodname="TestSegmentIntArray" classname="Mirror.Tests.ArraySegmentWriterTest" runstate="Runnable" seed="590441402" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.001336" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1375" name="ArrayWriterTest" fullname="Mirror.Tests.ArrayWriterTest" classname="Mirror.Tests.ArrayWriterTest" runstate="Runnable" testcasecount="6" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.012277" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1378" name="TestDataByteArray" fullname="Mirror.Tests.ArrayWriterTest.TestDataByteArray" methodname="TestDataByteArray" classname="Mirror.Tests.ArrayWriterTest" runstate="Runnable" seed="933157145" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.002240" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1381" name="TestDataIntArray" fullname="Mirror.Tests.ArrayWriterTest.TestDataIntArray" methodname="TestDataIntArray" classname="Mirror.Tests.ArrayWriterTest" runstate="Runnable" seed="1720793209" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000908" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1377" name="TestEmptyByteArray" fullname="Mirror.Tests.ArrayWriterTest.TestEmptyByteArray" methodname="TestEmptyByteArray" classname="Mirror.Tests.ArrayWriterTest" runstate="Runnable" seed="78546410" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000521" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1380" name="TestEmptyIntArray" fullname="Mirror.Tests.ArrayWriterTest.TestEmptyIntArray" methodname="TestEmptyIntArray" classname="Mirror.Tests.ArrayWriterTest" runstate="Runnable" seed="573867174" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000401" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1376" name="TestNullByterray" fullname="Mirror.Tests.ArrayWriterTest.TestNullByterray" methodname="TestNullByterray" classname="Mirror.Tests.ArrayWriterTest" runstate="Runnable" seed="1399625660" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000334" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1379" name="TestNullIntArray" fullname="Mirror.Tests.ArrayWriterTest.TestNullIntArray" methodname="TestNullIntArray" classname="Mirror.Tests.ArrayWriterTest" runstate="Runnable" seed="1572946540" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000371" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1382" name="BasicAuthenticatorTest" fullname="Mirror.Tests.BasicAuthenticatorTest" classname="Mirror.Tests.BasicAuthenticatorTest" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.005845" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1383" name="AuthRequestMessageTest" fullname="Mirror.Tests.BasicAuthenticatorTest.AuthRequestMessageTest" methodname="AuthRequestMessageTest" classname="Mirror.Tests.BasicAuthenticatorTest" runstate="Runnable" seed="1199339218" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.001708" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1384" name="AuthResponseMessageTest" fullname="Mirror.Tests.BasicAuthenticatorTest.AuthResponseMessageTest" methodname="AuthResponseMessageTest" classname="Mirror.Tests.BasicAuthenticatorTest" runstate="Runnable" seed="1529646509" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000969" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1385" name="CustomAttrributeTest" fullname="Mirror.Tests.CustomAttrributeTest" classname="Mirror.Tests.CustomAttrributeTest" runstate="Runnable" testcasecount="5" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.008464" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1388" name="ClientRPCAttributeTest" fullname="Mirror.Tests.CustomAttrributeTest.ClientRPCAttributeTest" methodname="ClientRPCAttributeTest" classname="Mirror.Tests.CustomAttrributeTest" runstate="Runnable" seed="293017500" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000919" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1387" name="CommandAttributeTest" fullname="Mirror.Tests.CustomAttrributeTest.CommandAttributeTest" methodname="CommandAttributeTest" classname="Mirror.Tests.CustomAttrributeTest" runstate="Runnable" seed="1522844450" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000398" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1390" name="SyncEventAttributeTest" fullname="Mirror.Tests.CustomAttrributeTest.SyncEventAttributeTest" methodname="SyncEventAttributeTest" classname="Mirror.Tests.CustomAttrributeTest" runstate="Runnable" seed="927377731" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000368" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1386" name="SyncVarAttributeTest" fullname="Mirror.Tests.CustomAttrributeTest.SyncVarAttributeTest" methodname="SyncVarAttributeTest" classname="Mirror.Tests.CustomAttrributeTest" runstate="Runnable" seed="943427776" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000476" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1389" name="TargetRPCAttributeTest" fullname="Mirror.Tests.CustomAttrributeTest.TargetRPCAttributeTest" methodname="TargetRPCAttributeTest" classname="Mirror.Tests.CustomAttrributeTest" runstate="Runnable" seed="438244361" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000369" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1391" name="CustomRWTest" fullname="Mirror.Tests.CustomRWTest" classname="Mirror.Tests.CustomRWTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.002626" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1392" name="TestCustomRW" fullname="Mirror.Tests.CustomRWTest.TestCustomRW" methodname="TestCustomRW" classname="Mirror.Tests.CustomRWTest" runstate="Runnable" seed="143538664" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000893" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1393" name="ExponentialMovingAverageTest" fullname="Mirror.Tests.ExponentialMovingAverageTest" classname="Mirror.Tests.ExponentialMovingAverageTest" runstate="Runnable" testcasecount="3" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.006992" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1394" name="TestInitial" fullname="Mirror.Tests.ExponentialMovingAverageTest.TestInitial" methodname="TestInitial" classname="Mirror.Tests.ExponentialMovingAverageTest" runstate="Runnable" seed="248037629" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.001769" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1395" name="TestMovingAverage" fullname="Mirror.Tests.ExponentialMovingAverageTest.TestMovingAverage" methodname="TestMovingAverage" classname="Mirror.Tests.ExponentialMovingAverageTest" runstate="Runnable" seed="22506525" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000844" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1396" name="TestVar" fullname="Mirror.Tests.ExponentialMovingAverageTest.TestVar" methodname="TestVar" classname="Mirror.Tests.ExponentialMovingAverageTest" runstate="Runnable" seed="1769840823" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.000369" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1397" name="FallbackTest" fullname="Mirror.Tests.FallbackTest" classname="Mirror.Tests.FallbackTest" runstate="Runnable" testcasecount="9" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.563959" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1398" name="TestAvailable" fullname="Mirror.Tests.FallbackTest.TestAvailable" methodname="TestAvailable" classname="Mirror.Tests.FallbackTest" runstate="Runnable" seed="386407595" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.314182" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+            <test-case id="1405" name="TestClientSend" fullname="Mirror.Tests.FallbackTest.TestClientSend" methodname="TestClientSend" classname="Mirror.Tests.FallbackTest" runstate="Runnable" seed="1962735397" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.021633" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+            <test-case id="1400" name="TestConnect" fullname="Mirror.Tests.FallbackTest.TestConnect" methodname="TestConnect" classname="Mirror.Tests.FallbackTest" runstate="Runnable" seed="574170504" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.012911" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+            <test-case id="1403" name="TestConnected" fullname="Mirror.Tests.FallbackTest.TestConnected" methodname="TestConnected" classname="Mirror.Tests.FallbackTest" runstate="Runnable" seed="1717618326" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.011818" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+            <test-case id="1401" name="TestConnectFirstUri" fullname="Mirror.Tests.FallbackTest.TestConnectFirstUri" methodname="TestConnectFirstUri" classname="Mirror.Tests.FallbackTest" runstate="Runnable" seed="1740590790" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.014950" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+            <test-case id="1402" name="TestConnectSecondUri" fullname="Mirror.Tests.FallbackTest.TestConnectSecondUri" methodname="TestConnectSecondUri" classname="Mirror.Tests.FallbackTest" runstate="Runnable" seed="85691229" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.014762" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+            <test-case id="1404" name="TestDisconnect" fullname="Mirror.Tests.FallbackTest.TestDisconnect" methodname="TestDisconnect" classname="Mirror.Tests.FallbackTest" runstate="Runnable" seed="1024521057" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.011673" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+            <test-case id="1399" name="TestNotAvailable" fullname="Mirror.Tests.FallbackTest.TestNotAvailable" methodname="TestNotAvailable" classname="Mirror.Tests.FallbackTest" runstate="Runnable" seed="350953416" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.012054" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1406" name="TestServerConnected" fullname="Mirror.Tests.FallbackTest.TestServerConnected" methodname="TestServerConnected" classname="Mirror.Tests.FallbackTest" runstate="Runnable" seed="1434694221" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:31Z" duration="0.127486" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1407" name="FallbackTransportTest" fullname="Mirror.Tests.FallbackTransportTest" classname="Mirror.Tests.FallbackTransportTest" runstate="Runnable" testcasecount="7" result="Passed" start-time="2020-03-22 14:13:31Z" end-time="2020-03-22 14:13:32Z" duration="0.544994" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1408" name="TestAvailable" fullname="Mirror.Tests.FallbackTransportTest.TestAvailable" methodname="TestAvailable" classname="Mirror.Tests.FallbackTransportTest" runstate="Runnable" seed="1104382266" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.029949" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+            <test-case id="1413" name="TestClientSend" fullname="Mirror.Tests.FallbackTransportTest.TestClientSend" methodname="TestClientSend" classname="Mirror.Tests.FallbackTransportTest" runstate="Runnable" seed="2105245980" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.064421" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+            <test-case id="1410" name="TestConnect" fullname="Mirror.Tests.FallbackTransportTest.TestConnect" methodname="TestConnect" classname="Mirror.Tests.FallbackTransportTest" runstate="Runnable" seed="352366814" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.039126" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+            <test-case id="1411" name="TestConnected" fullname="Mirror.Tests.FallbackTransportTest.TestConnected" methodname="TestConnected" classname="Mirror.Tests.FallbackTransportTest" runstate="Runnable" seed="707611036" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.035472" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+            <test-case id="1412" name="TestDisconnect" fullname="Mirror.Tests.FallbackTransportTest.TestDisconnect" methodname="TestDisconnect" classname="Mirror.Tests.FallbackTransportTest" runstate="Runnable" seed="643168331" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.035931" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+            <test-case id="1409" name="TestNotAvailable" fullname="Mirror.Tests.FallbackTransportTest.TestNotAvailable" methodname="TestNotAvailable" classname="Mirror.Tests.FallbackTransportTest" runstate="Runnable" seed="1461454399" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.017574" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1414" name="TestServerConnected" fullname="Mirror.Tests.FallbackTransportTest.TestServerConnected" methodname="TestServerConnected" classname="Mirror.Tests.FallbackTransportTest" runstate="Runnable" seed="1650998203" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.032054" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+FallbackTransport available: Castle.Proxies.TransportProxy
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1415" name="FloatBytePackerTest" fullname="Mirror.Tests.FloatBytePackerTest" classname="Mirror.Tests.FloatBytePackerTest" runstate="Runnable" testcasecount="3" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.010786" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1417" name="ScaleByteToFloat" fullname="Mirror.Tests.FloatBytePackerTest.ScaleByteToFloat" methodname="ScaleByteToFloat" classname="Mirror.Tests.FloatBytePackerTest" runstate="Runnable" seed="157431665" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.001874" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1418" name="TestPackFloatToUShort" fullname="Mirror.Tests.FloatBytePackerTest.TestPackFloatToUShort" methodname="TestPackFloatToUShort" classname="Mirror.Tests.FloatBytePackerTest" runstate="Runnable" seed="2130751391" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.002564" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1416" name="TestScaleFloatToByte" fullname="Mirror.Tests.FloatBytePackerTest.TestScaleFloatToByte" methodname="TestScaleFloatToByte" classname="Mirror.Tests.FloatBytePackerTest" runstate="Runnable" seed="2011967392" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.000512" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1419" name="MessageBaseTests" fullname="Mirror.Tests.MessageBaseTests" classname="Mirror.Tests.MessageBaseTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.008076" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1420" name="Roundtrip" fullname="Mirror.Tests.MessageBaseTests.Roundtrip" methodname="Roundtrip" classname="Mirror.Tests.MessageBaseTests" runstate="Runnable" seed="1737691462" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.004453" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1421" name="WovenSerializationBodyRoundtrip" fullname="Mirror.Tests.MessageBaseTests.WovenSerializationBodyRoundtrip" methodname="WovenSerializationBodyRoundtrip" classname="Mirror.Tests.MessageBaseTests" runstate="Runnable" seed="1700659721" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.000759" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1422" name="MessageInheritanceTests" fullname="Mirror.Tests.MessageInheritanceTests" classname="Mirror.Tests.MessageInheritanceTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.002698" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1423" name="Roundtrip" fullname="Mirror.Tests.MessageInheritanceTests.Roundtrip" methodname="Roundtrip" classname="Mirror.Tests.MessageInheritanceTests" runstate="Runnable" seed="978319272" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.000855" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1424" name="MessagePackerTest" fullname="Mirror.Tests.MessagePackerTest" classname="Mirror.Tests.MessagePackerTest" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.010772" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1425" name="TestPacking" fullname="Mirror.Tests.MessagePackerTest.TestPacking" methodname="TestPacking" classname="Mirror.Tests.MessagePackerTest" runstate="Runnable" seed="422119189" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.003437" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1426" name="TestUnpackIdMismatch" fullname="Mirror.Tests.MessagePackerTest.TestUnpackIdMismatch" methodname="TestUnpackIdMismatch" classname="Mirror.Tests.MessagePackerTest" runstate="Runnable" seed="1940948272" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.000611" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1428" name="TestUnpackInvalidMessage" fullname="Mirror.Tests.MessagePackerTest.TestUnpackInvalidMessage" methodname="TestUnpackInvalidMessage" classname="Mirror.Tests.MessagePackerTest" runstate="Runnable" seed="1343291564" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.001533" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1427" name="TestUnpackMessageNonGeneric" fullname="Mirror.Tests.MessagePackerTest.TestUnpackMessageNonGeneric" methodname="TestUnpackMessageNonGeneric" classname="Mirror.Tests.MessagePackerTest" runstate="Runnable" seed="1417084963" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.000503" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1429" name="MessageTests" fullname="Mirror.Tests.MessageTests" classname="Mirror.Tests.MessageTests" runstate="Runnable" testcasecount="17" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.068331" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1441" name="AddPlayerMessageTest" fullname="Mirror.Tests.MessageTests.AddPlayerMessageTest" methodname="AddPlayerMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="26122309" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.001196" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1430" name="CommandMessageTest" fullname="Mirror.Tests.MessageTests.CommandMessageTest" methodname="CommandMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="418275099" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.003216" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1431" name="DisconnectMessageTest" fullname="Mirror.Tests.MessageTests.DisconnectMessageTest" methodname="DisconnectMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="2059563666" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.001023" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1432" name="ErrorMessageTest" fullname="Mirror.Tests.MessageTests.ErrorMessageTest" methodname="ErrorMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="366832243" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.001085" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1433" name="NetworkPingMessageTest" fullname="Mirror.Tests.MessageTests.NetworkPingMessageTest" methodname="NetworkPingMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="1967965468" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.001166" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1434" name="NetworkPongMessageTest" fullname="Mirror.Tests.MessageTests.NetworkPongMessageTest" methodname="NetworkPongMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="1638104918" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.001461" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1435" name="NotReadyMessageTest" fullname="Mirror.Tests.MessageTests.NotReadyMessageTest" methodname="NotReadyMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="210287181" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.000982" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1436" name="ObjectDestroyMessageTest" fullname="Mirror.Tests.MessageTests.ObjectDestroyMessageTest" methodname="ObjectDestroyMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="1988617531" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.001018" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1437" name="ObjectHideMessageTest" fullname="Mirror.Tests.MessageTests.ObjectHideMessageTest" methodname="ObjectHideMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="1001960102" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.001190" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1438" name="ObjectSpawnFinishedMessageTest" fullname="Mirror.Tests.MessageTests.ObjectSpawnFinishedMessageTest" methodname="ObjectSpawnFinishedMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="1923562586" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.000942" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1439" name="ObjectSpawnStartedMessageTest" fullname="Mirror.Tests.MessageTests.ObjectSpawnStartedMessageTest" methodname="ObjectSpawnStartedMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="125778327" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.000942" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1440" name="ReadyMessageTest" fullname="Mirror.Tests.MessageTests.ReadyMessageTest" methodname="ReadyMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="692158723" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.000994" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1442" name="RemovePlayerMessageTest" fullname="Mirror.Tests.MessageTests.RemovePlayerMessageTest" methodname="RemovePlayerMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="444449576" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.000927" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1443" name="RpcMessageTest" fullname="Mirror.Tests.MessageTests.RpcMessageTest" methodname="RpcMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="2074669202" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.000967" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1444" name="SpawnMessageTest" fullname="Mirror.Tests.MessageTests.SpawnMessageTest" methodname="SpawnMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="1115501643" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.026391" asserts="0">
+              <properties />
+              <output><![CDATA[sceneId:0 | assetId:baaa6c74-2aed-4fce-8506-b196edc03a79
+sceneId:42 | assetId:33ce5696-c13e-4032-bb6d-6b86caac42d0
+]]></output>
+            </test-case>
+            <test-case id="1445" name="SyncEventMessageTest" fullname="Mirror.Tests.MessageTests.SyncEventMessageTest" methodname="SyncEventMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="1252499418" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.001130" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1446" name="UpdateVarsMessageTest" fullname="Mirror.Tests.MessageTests.UpdateVarsMessageTest" methodname="UpdateVarsMessageTest" classname="Mirror.Tests.MessageTests" runstate="Runnable" seed="775329172" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.000929" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1447" name="MultiplexTest" fullname="Mirror.Tests.MultiplexTest" classname="Mirror.Tests.MultiplexTest" runstate="Runnable" testcasecount="9" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.215889" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1448" name="TestAvailable" fullname="Mirror.Tests.MultiplexTest.TestAvailable" methodname="TestAvailable" classname="Mirror.Tests.MultiplexTest" runstate="Runnable" seed="670612633" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.019137" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1455" name="TestClientSend" fullname="Mirror.Tests.MultiplexTest.TestClientSend" methodname="TestClientSend" classname="Mirror.Tests.MultiplexTest" runstate="Runnable" seed="1838234873" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.018018" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1450" name="TestConnect" fullname="Mirror.Tests.MultiplexTest.TestConnect" methodname="TestConnect" classname="Mirror.Tests.MultiplexTest" runstate="Runnable" seed="1108754814" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.028002" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1453" name="TestConnected" fullname="Mirror.Tests.MultiplexTest.TestConnected" methodname="TestConnected" classname="Mirror.Tests.MultiplexTest" runstate="Runnable" seed="442177392" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.011958" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1451" name="TestConnectFirstUri" fullname="Mirror.Tests.MultiplexTest.TestConnectFirstUri" methodname="TestConnectFirstUri" classname="Mirror.Tests.MultiplexTest" runstate="Runnable" seed="1465103641" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.017507" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1452" name="TestConnectSecondUri" fullname="Mirror.Tests.MultiplexTest.TestConnectSecondUri" methodname="TestConnectSecondUri" classname="Mirror.Tests.MultiplexTest" runstate="Runnable" seed="1630651849" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.021366" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1454" name="TestDisconnect" fullname="Mirror.Tests.MultiplexTest.TestDisconnect" methodname="TestDisconnect" classname="Mirror.Tests.MultiplexTest" runstate="Runnable" seed="648214548" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.017719" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1449" name="TestNotAvailable" fullname="Mirror.Tests.MultiplexTest.TestNotAvailable" methodname="TestNotAvailable" classname="Mirror.Tests.MultiplexTest" runstate="Runnable" seed="1238749265" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.021842" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1456" name="TestServerConnected" fullname="Mirror.Tests.MultiplexTest.TestServerConnected" methodname="TestServerConnected" classname="Mirror.Tests.MultiplexTest" runstate="Runnable" seed="2077095930" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.019376" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1457" name="NetworkIdentityTests" fullname="Mirror.Tests.NetworkIdentityTests" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" testcasecount="29" result="Failed" site="Child" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:33Z" duration="0.438285" total="29" passed="28" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1484" name="AddAllReadyServerConnectionsToObservers" fullname="Mirror.Tests.NetworkIdentityTests.AddAllReadyServerConnectionsToObservers" methodname="AddAllReadyServerConnectionsToObservers" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1546156723" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.034315" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1477" name="AddObserver" fullname="Mirror.Tests.NetworkIdentityTests.AddObserver" methodname="AddObserver" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1611641185" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.009801" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+AddObserver for New Game Object (UnityEngine.GameObject) observer list is null
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1462" name="AssignSceneID" fullname="Mirror.Tests.NetworkIdentityTests.AssignSceneID" methodname="AssignSceneID" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1825033109" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.005296" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1478" name="ClearObservers" fullname="Mirror.Tests.NetworkIdentityTests.ClearObservers" methodname="ClearObservers" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="691193889" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.004949" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1481" name="GetNewObservers" fullname="Mirror.Tests.NetworkIdentityTests.GetNewObservers" methodname="GetNewObservers" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="918702026" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.007247" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1482" name="GetNewObserversClearsHashSet" fullname="Mirror.Tests.NetworkIdentityTests.GetNewObserversClearsHashSet" methodname="GetNewObserversClearsHashSet" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="903891020" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.008394" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1483" name="GetNewObserversFalseIfNoComponents" fullname="Mirror.Tests.NetworkIdentityTests.GetNewObserversFalseIfNoComponents" methodname="GetNewObserversFalseIfNoComponents" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1341739783" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.011371" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1459" name="GetSetAssetId" fullname="Mirror.Tests.NetworkIdentityTests.GetSetAssetId" methodname="GetSetAssetId" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1506163140" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.018917" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1469" name="NotifyAuthorityCallsOnStartStopAuthority" fullname="Mirror.Tests.NetworkIdentityTests.NotifyAuthorityCallsOnStartStopAuthority" methodname="NotifyAuthorityCallsOnStartStopAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1653996840" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.011969" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1471" name="OnCheckObserver" fullname="Mirror.Tests.NetworkIdentityTests.OnCheckObserver" methodname="OnCheckObserver" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1579802768" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.018850" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+Exception in OnCheckObserver:some exception   at Mirror.Tests.NetworkIdentityTests+CheckObserverExceptionNetworkBehaviour.OnCheckObserver (Mirror.NetworkConnection conn) [0x00016] in /github/workspace/Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs:131 
+  at Mirror.NetworkIdentity.OnCheckObserver (Mirror.NetworkConnection conn) [0x00013] in /github/workspace/Assets/Mirror/Runtime/NetworkIdentity.cs:666 
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1474" name="OnDeserializeSafelyShouldDetectAndHandleDeSerializationMismatch" fullname="Mirror.Tests.NetworkIdentityTests.OnDeserializeSafelyShouldDetectAndHandleDeSerializationMismatch" methodname="OnDeserializeSafelyShouldDetectAndHandleDeSerializationMismatch" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1497464835" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.008386" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1476" name="OnNetworkDestroy" fullname="Mirror.Tests.NetworkIdentityTests.OnNetworkDestroy" methodname="OnNetworkDestroy" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1716488586" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.018994" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+Exception in OnNetworkDestroy:some exception   at Mirror.Tests.NetworkIdentityTests+NetworkDestroyExceptionNetworkBehaviour.OnNetworkDestroy () [0x0000f] in /github/workspace/Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs:101 
+  at Mirror.NetworkIdentity.OnNetworkDestroy () [0x00013] in /github/workspace/Assets/Mirror/Runtime/NetworkIdentity.cs:688 
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1473" name="OnSerializeAllSafelyShouldDetectTooManyComponents" fullname="Mirror.Tests.NetworkIdentityTests.OnSerializeAllSafelyShouldDetectTooManyComponents" methodname="OnSerializeAllSafelyShouldDetectTooManyComponents" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1454227721" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.009282" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1472" name="OnSerializeAndDeserializeAllSafely" fullname="Mirror.Tests.NetworkIdentityTests.OnSerializeAndDeserializeAllSafely" methodname="OnSerializeAndDeserializeAllSafely" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1098829394" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.013446" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1470" name="OnSetHostVisibilityCallsComponentsAndCatchesExceptions" fullname="Mirror.Tests.NetworkIdentityTests.OnSetHostVisibilityCallsComponentsAndCatchesExceptions" methodname="OnSetHostVisibilityCallsComponentsAndCatchesExceptions" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1172111790" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.013937" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+Exception in OnSetLocalVisibility:some exception   at Mirror.Tests.NetworkIdentityTests+SetHostVisibilityExceptionNetworkBehaviour.OnSetHostVisibility (System.Boolean visible) [0x00016] in /github/workspace/Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs:119 
+  at Mirror.NetworkIdentity.OnSetHostVisibility (System.Boolean visible) [0x00013] in /github/workspace/Assets/Mirror/Runtime/NetworkIdentity.cs:651 
+Exception in OnSetLocalVisibility:some exception   at Mirror.Tests.NetworkIdentityTests+SetHostVisibilityExceptionNetworkBehaviour.OnSetHostVisibility (System.Boolean visible) [0x00016] in /github/workspace/Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs:119 
+  at Mirror.NetworkIdentity.OnSetHostVisibility (System.Boolean visible) [0x00013] in /github/workspace/Assets/Mirror/Runtime/NetworkIdentity.cs:651 
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1467" name="OnStartAuthorityCallsComponentsAndCatchesExceptions" fullname="Mirror.Tests.NetworkIdentityTests.OnStartAuthorityCallsComponentsAndCatchesExceptions" methodname="OnStartAuthorityCallsComponentsAndCatchesExceptions" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1386592119" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.007899" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+Exception in OnStartAuthority:some exception   at Mirror.Tests.NetworkIdentityTests+StartAuthorityExceptionNetworkBehaviour.OnStartAuthority () [0x0000f] in /github/workspace/Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs:53 
+  at Mirror.NetworkIdentity.OnStartAuthority () [0x00013] in /github/workspace/Assets/Mirror/Runtime/NetworkIdentity.cs:616 
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1466" name="OnStartClientCallsComponentsAndCatchesExceptions" fullname="Mirror.Tests.NetworkIdentityTests.OnStartClientCallsComponentsAndCatchesExceptions" methodname="OnStartClientCallsComponentsAndCatchesExceptions" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1312552463" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.010049" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+Exception in OnStartClient:some exception   at Mirror.Tests.NetworkIdentityTests+StartClientExceptionNetworkBehaviour.OnStartClient () [0x0000f] in /github/workspace/Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs:43 
+  at Mirror.NetworkIdentity.OnStartClient () [0x0006b] in /github/workspace/Assets/Mirror/Runtime/NetworkIdentity.cs:561 
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1475" name="OnStartLocalPlayer" fullname="Mirror.Tests.NetworkIdentityTests.OnStartLocalPlayer" methodname="OnStartLocalPlayer" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="410820800" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.009483" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+Exception in OnStartLocalPlayer:some exception   at Mirror.Tests.NetworkIdentityTests+StartLocalPlayerExceptionNetworkBehaviour.OnStartLocalPlayer () [0x0000f] in /github/workspace/Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs:85 
+  at Mirror.NetworkIdentity.OnStartLocalPlayer () [0x0002a] in /github/workspace/Assets/Mirror/Runtime/NetworkIdentity.cs:586 
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1465" name="OnStartServerCallsComponentsAndCatchesExceptions" fullname="Mirror.Tests.NetworkIdentityTests.OnStartServerCallsComponentsAndCatchesExceptions" methodname="OnStartServerCallsComponentsAndCatchesExceptions" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1439258811" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.007275" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+Exception in OnStartServer:some exception   at Mirror.Tests.NetworkIdentityTests+StartServerExceptionNetworkBehaviour.OnStartServer () [0x0000f] in /github/workspace/Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs:33 
+  at Mirror.NetworkIdentity.OnStartServer () [0x000a8] in /github/workspace/Assets/Mirror/Runtime/NetworkIdentity.cs:534 
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1458" name="OnStartServerTest" fullname="Mirror.Tests.NetworkIdentityTests.OnStartServerTest" methodname="OnStartServerTest" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="558940043" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.005437" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1468" name="OnStopAuthorityCallsComponentsAndCatchesExceptions" fullname="Mirror.Tests.NetworkIdentityTests.OnStopAuthorityCallsComponentsAndCatchesExceptions" methodname="OnStopAuthorityCallsComponentsAndCatchesExceptions" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1648130987" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.009170" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+Exception in OnStopAuthority:some exception   at Mirror.Tests.NetworkIdentityTests+StopAuthorityExceptionNetworkBehaviour.OnStopAuthority () [0x0000f] in /github/workspace/Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs:69 
+  at Mirror.NetworkIdentity.OnStopAuthority () [0x00013] in /github/workspace/Assets/Mirror/Runtime/NetworkIdentity.cs:636 
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1464" name="OnValidateSetupIDsSetsEmptyAssetIDForSceneObject" fullname="Mirror.Tests.NetworkIdentityTests.OnValidateSetupIDsSetsEmptyAssetIDForSceneObject" methodname="OnValidateSetupIDsSetsEmptyAssetIDForSceneObject" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="181401740" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.004294" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1485" name="RebuildObserversAddsOwnReadyPlayer" fullname="Mirror.Tests.NetworkIdentityTests.RebuildObserversAddsOwnReadyPlayer" methodname="RebuildObserversAddsOwnReadyPlayer" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="2014964669" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:32Z" duration="0.007336" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1486" name="RebuildObserversOnlyAddsOwnPlayerIfReady" fullname="Mirror.Tests.NetworkIdentityTests.RebuildObserversOnlyAddsOwnPlayerIfReady" methodname="RebuildObserversOnlyAddsOwnPlayerIfReady" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="502360673" result="Passed" start-time="2020-03-22 14:13:32Z" end-time="2020-03-22 14:13:33Z" duration="0.005092" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1461" name="RemoveObserverInternal" fullname="Mirror.Tests.NetworkIdentityTests.RemoveObserverInternal" methodname="RemoveObserverInternal" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="2043317977" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.004413" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1479" name="Reset" fullname="Mirror.Tests.NetworkIdentityTests.Reset" methodname="Reset" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="296878193" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.005868" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1480" name="ServerUpdate" fullname="Mirror.Tests.NetworkIdentityTests.ServerUpdate" methodname="ServerUpdate" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1748324986" result="Failed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.052314" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: 1
+  But was:  0
+]]></message>
+                <stack-trace><![CDATA[at Mirror.Tests.NetworkIdentityTests.ServerUpdate () [0x00194] in /github/workspace/Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs:895
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Closing connection: connection(0). Received message Mirror.UpdateVarsMessage that required authentication, but the user has not authenticated yet
+Closing connection: connection(0). Received message Mirror.UpdateVarsMessage that required authentication, but the user has not authenticated yet
+]]></output>
+            </test-case>
+            <test-case id="1460" name="SetClientOwner" fullname="Mirror.Tests.NetworkIdentityTests.SetClientOwner" methodname="SetClientOwner" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="58762888" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.016588" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+Object New Game Object (Mirror.NetworkIdentity) netId=0 already has an owner. Use RemoveClientAuthority() first
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1463" name="SetSceneIdSceneHashPartInternal" fullname="Mirror.Tests.NetworkIdentityTests.SetSceneIdSceneHashPartInternal" methodname="SetSceneIdSceneHashPartInternal" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1625386172" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.008924" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1487" name="NetworkReaderTest" fullname="Mirror.Tests.NetworkReaderTest" classname="Mirror.Tests.NetworkReaderTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.005375" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1488" name="ReadBytesCountTooBigTest" fullname="Mirror.Tests.NetworkReaderTest.ReadBytesCountTooBigTest" methodname="ReadBytesCountTooBigTest" classname="Mirror.Tests.NetworkReaderTest" runstate="Runnable" seed="1497103800" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000608" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1489" name="NetworkTransformChildTest" fullname="Mirror.Tests.NetworkTransformChildTest" classname="Mirror.Tests.NetworkTransformChildTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.005085" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1490" name="TargetComponentTest" fullname="Mirror.Tests.NetworkTransformChildTest.TargetComponentTest" methodname="TargetComponentTest" classname="Mirror.Tests.NetworkTransformChildTest" runstate="Runnable" seed="1324925370" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.003229" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1491" name="NetworkTransformTest" fullname="Mirror.Tests.NetworkTransformTest" classname="Mirror.Tests.NetworkTransformTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.007742" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1492" name="SerializeIntoWriterTest" fullname="Mirror.Tests.NetworkTransformTest.SerializeIntoWriterTest" methodname="SerializeIntoWriterTest" classname="Mirror.Tests.NetworkTransformTest" runstate="Runnable" seed="1624687871" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.003396" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1493" name="NetworkWriterPoolTest" fullname="Mirror.Tests.NetworkWriterPoolTest" classname="Mirror.Tests.NetworkWriterPoolTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.002393" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1494" name="TestPoolRecycling" fullname="Mirror.Tests.NetworkWriterPoolTest.TestPoolRecycling" methodname="TestPoolRecycling" classname="Mirror.Tests.NetworkWriterPoolTest" runstate="Runnable" seed="463518108" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000764" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1495" name="NetworkWriterTest" fullname="Mirror.Tests.NetworkWriterTest" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" testcasecount="55" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.235369" total="55" passed="55" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1541" name="TestByteEndianness" fullname="Mirror.Tests.NetworkWriterTest.TestByteEndianness" methodname="TestByteEndianness" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1155400211" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001181" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1526" name="TestChar" fullname="Mirror.Tests.NetworkWriterTest.TestChar" methodname="TestChar" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1552779744" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000916" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1515" name="TestColor" fullname="Mirror.Tests.NetworkWriterTest.TestColor" methodname="TestColor" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1475541665" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.005342" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1516" name="TestColor32" fullname="Mirror.Tests.NetworkWriterTest.TestColor32" methodname="TestColor32" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="445066149" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.003864" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1540" name="TestDecimalBinaryCompatibility" fullname="Mirror.Tests.NetworkWriterTest.TestDecimalBinaryCompatibility" methodname="TestDecimalBinaryCompatibility" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="297789237" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001417" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1537" name="TestDecimals" fullname="Mirror.Tests.NetworkWriterTest.TestDecimals" methodname="TestDecimals" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="398279533" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001805" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1539" name="TestDoubleBinaryCompatibility" fullname="Mirror.Tests.NetworkWriterTest.TestDoubleBinaryCompatibility" methodname="TestDoubleBinaryCompatibility" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1177817903" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000513" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1536" name="TestDoubles" fullname="Mirror.Tests.NetworkWriterTest.TestDoubles" methodname="TestDoubles" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="235458635" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001049" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1538" name="TestFloatBinaryCompatibility" fullname="Mirror.Tests.NetworkWriterTest.TestFloatBinaryCompatibility" methodname="TestFloatBinaryCompatibility" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1234099718" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000826" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1535" name="TestFloats" fullname="Mirror.Tests.NetworkWriterTest.TestFloats" methodname="TestFloats" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="121840963" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000939" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1534" name="TestGuid" fullname="Mirror.Tests.NetworkWriterTest.TestGuid" methodname="TestGuid" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="902672002" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000887" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1547" name="TestIntEndianness" fullname="Mirror.Tests.NetworkWriterTest.TestIntEndianness" methodname="TestIntEndianness" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1184915671" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000474" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1548" name="TestLongEndianness" fullname="Mirror.Tests.NetworkWriterTest.TestLongEndianness" methodname="TestLongEndianness" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="711802825" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000540" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1521" name="TestMatrix4x4" fullname="Mirror.Tests.NetworkWriterTest.TestMatrix4x4" methodname="TestMatrix4x4" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="559427568" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.013424" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1502" name="TestOverwritingData" fullname="Mirror.Tests.NetworkWriterTest.TestOverwritingData" methodname="TestOverwritingData" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="472593466" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001792" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1530" name="TestPackedInt32" fullname="Mirror.Tests.NetworkWriterTest.TestPackedInt32" methodname="TestPackedInt32" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1908623949" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000854" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1531" name="TestPackedInt32Failure" fullname="Mirror.Tests.NetworkWriterTest.TestPackedInt32Failure" methodname="TestPackedInt32Failure" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="830411125" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001229" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1533" name="TestPackedInt64" fullname="Mirror.Tests.NetworkWriterTest.TestPackedInt64" methodname="TestPackedInt64" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1176032101" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001903" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1528" name="TestPackedUInt32" fullname="Mirror.Tests.NetworkWriterTest.TestPackedUInt32" methodname="TestPackedUInt32" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="674736377" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000596" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1529" name="TestPackedUInt32Failure" fullname="Mirror.Tests.NetworkWriterTest.TestPackedUInt32Failure" methodname="TestPackedUInt32Failure" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="806775507" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000797" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1532" name="TestPackedUInt64" fullname="Mirror.Tests.NetworkWriterTest.TestPackedUInt64" methodname="TestPackedUInt64" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1454927784" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000972" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1519" name="TestPlane" fullname="Mirror.Tests.NetworkWriterTest.TestPlane" methodname="TestPlane" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="974312783" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.010237" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1517" name="TestQuaternion" fullname="Mirror.Tests.NetworkWriterTest.TestQuaternion" methodname="TestQuaternion" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1043534832" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001758" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1520" name="TestRay" fullname="Mirror.Tests.NetworkWriterTest.TestRay" methodname="TestRay" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1357557595" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.004595" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1507" name="TestReading0LengthBytes" fullname="Mirror.Tests.NetworkWriterTest.TestReading0LengthBytes" methodname="TestReading0LengthBytes" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="370701817" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000814" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1506" name="TestReading0LengthBytesAndSize" fullname="Mirror.Tests.NetworkWriterTest.TestReading0LengthBytesAndSize" methodname="TestReading0LengthBytesAndSize" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="494750514" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000493" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1522" name="TestReadingInvalidString" fullname="Mirror.Tests.NetworkWriterTest.TestReadingInvalidString" methodname="TestReadingInvalidString" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="867363246" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.002294" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1505" name="TestReadingLengthWrapAround" fullname="Mirror.Tests.NetworkWriterTest.TestReadingLengthWrapAround" methodname="TestReadingLengthWrapAround" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1276647458" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000528" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1509" name="TestReadingTooMuch" fullname="Mirror.Tests.NetworkWriterTest.TestReadingTooMuch" methodname="TestReadingTooMuch" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="346679234" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.010317" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1523" name="TestReadingTruncatedString" fullname="Mirror.Tests.NetworkWriterTest.TestReadingTruncatedString" methodname="TestReadingTruncatedString" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1046098068" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000724" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1518" name="TestRect" fullname="Mirror.Tests.NetworkWriterTest.TestRect" methodname="TestRect" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1122176171" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.006860" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1545" name="TestSbyteEndianness" fullname="Mirror.Tests.NetworkWriterTest.TestSbyteEndianness" methodname="TestSbyteEndianness" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1774182" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000581" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1504" name="TestSetLengthInitialization" fullname="Mirror.Tests.NetworkWriterTest.TestSetLengthInitialization" methodname="TestSetLengthInitialization" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1384104437" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000581" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1503" name="TestSetLengthZeroes" fullname="Mirror.Tests.NetworkWriterTest.TestSetLengthZeroes" methodname="TestSetLengthZeroes" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1314505256" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000471" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1546" name="TestShortEndianness" fullname="Mirror.Tests.NetworkWriterTest.TestShortEndianness" methodname="TestShortEndianness" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="2028560073" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000592" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1524" name="TestToArray" fullname="Mirror.Tests.NetworkWriterTest.TestToArray" methodname="TestToArray" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="679139169" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000440" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1525" name="TestToArraySegment" fullname="Mirror.Tests.NetworkWriterTest.TestToArraySegment" methodname="TestToArraySegment" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1497799112" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000511" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1543" name="TestUIntEndianness" fullname="Mirror.Tests.NetworkWriterTest.TestUIntEndianness" methodname="TestUIntEndianness" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="252122155" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000451" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1544" name="TestULongEndianness" fullname="Mirror.Tests.NetworkWriterTest.TestULongEndianness" methodname="TestULongEndianness" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1117212588" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000544" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1527" name="TestUnicodeString" fullname="Mirror.Tests.NetworkWriterTest.TestUnicodeString" methodname="TestUnicodeString" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="687772583" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001005" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1542" name="TestUShortEndianness" fullname="Mirror.Tests.NetworkWriterTest.TestUShortEndianness" methodname="TestUShortEndianness" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="736200148" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000459" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1510" name="TestVector2" fullname="Mirror.Tests.NetworkWriterTest.TestVector2" methodname="TestVector2" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1567030138" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.003817" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1513" name="TestVector2Int" fullname="Mirror.Tests.NetworkWriterTest.TestVector2Int" methodname="TestVector2Int" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="251241191" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.006886" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1511" name="TestVector3" fullname="Mirror.Tests.NetworkWriterTest.TestVector3" methodname="TestVector3" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1012497136" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.002129" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1514" name="TestVector3Int" fullname="Mirror.Tests.NetworkWriterTest.TestVector3Int" methodname="TestVector3Int" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1553144652" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.008798" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1512" name="TestVector4" fullname="Mirror.Tests.NetworkWriterTest.TestVector4" methodname="TestVector4" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1202532247" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.003802" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1549" name="TestWritingAndReading" fullname="Mirror.Tests.NetworkWriterTest.TestWritingAndReading" methodname="TestWritingAndReading" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1781586678" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.002514" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1500" name="TestWritingBytesAndReadingSegment" fullname="Mirror.Tests.NetworkWriterTest.TestWritingBytesAndReadingSegment" methodname="TestWritingBytesAndReadingSegment" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="235824766" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000615" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1499" name="TestWritingBytesSegment" fullname="Mirror.Tests.NetworkWriterTest.TestWritingBytesSegment" methodname="TestWritingBytesSegment" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1625080008" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000531" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1498" name="TestWritingHugeArray" fullname="Mirror.Tests.NetworkWriterTest.TestWritingHugeArray" methodname="TestWritingHugeArray" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1934344349" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.008489" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1497" name="TestWritingLargeMessage" fullname="Mirror.Tests.NetworkWriterTest.TestWritingLargeMessage" methodname="TestWritingLargeMessage" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1066525326" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.002895" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1508" name="TestWritingNegativeBytesAndSizeFailure" fullname="Mirror.Tests.NetworkWriterTest.TestWritingNegativeBytesAndSizeFailure" methodname="TestWritingNegativeBytesAndSizeFailure" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1848602965" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000689" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1501" name="TestWritingSegmentAndReadingSegment" fullname="Mirror.Tests.NetworkWriterTest.TestWritingSegmentAndReadingSegment" methodname="TestWritingSegmentAndReadingSegment" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="1354113066" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000600" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1496" name="TestWritingSmallMessage" fullname="Mirror.Tests.NetworkWriterTest.TestWritingSmallMessage" methodname="TestWritingSmallMessage" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="2138358355" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.002245" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1550" name="TestWritingUri" fullname="Mirror.Tests.NetworkWriterTest.TestWritingUri" methodname="TestWritingUri" classname="Mirror.Tests.NetworkWriterTest" runstate="Runnable" seed="2002284982" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.008871" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1551" name="ScriptableObjectWriterTest" fullname="Mirror.Tests.ScriptableObjectWriterTest" classname="Mirror.Tests.ScriptableObjectWriterTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.004094" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1552" name="TestWriteScriptableObject" fullname="Mirror.Tests.ScriptableObjectWriterTest.TestWriteScriptableObject" methodname="TestWriteScriptableObject" classname="Mirror.Tests.ScriptableObjectWriterTest" runstate="Runnable" seed="290354763" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001874" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1553" name="SyncDictionaryTest" fullname="Mirror.Tests.SyncDictionaryTest" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" testcasecount="22" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.045002" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1567" name="CallbackRemoveTest" fullname="Mirror.Tests.SyncDictionaryTest.CallbackRemoveTest" methodname="CallbackRemoveTest" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="92291" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.005733" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1565" name="CallbackTest" fullname="Mirror.Tests.SyncDictionaryTest.CallbackTest" methodname="CallbackTest" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="1597424336" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000980" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1571" name="CopyToOutOfBoundsTest" fullname="Mirror.Tests.SyncDictionaryTest.CopyToOutOfBoundsTest" methodname="CopyToOutOfBoundsTest" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="1177481197" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001052" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1570" name="CopyToOutOfRangeTest" fullname="Mirror.Tests.SyncDictionaryTest.CopyToOutOfRangeTest" methodname="CopyToOutOfRangeTest" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="539963950" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000689" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1569" name="CopyToTest" fullname="Mirror.Tests.SyncDictionaryTest.CopyToTest" methodname="CopyToTest" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="2071065064" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001036" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1568" name="CountTest" fullname="Mirror.Tests.SyncDictionaryTest.CountTest" methodname="CountTest" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="1641389370" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000422" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1574" name="DirtyTest" fullname="Mirror.Tests.SyncDictionaryTest.DirtyTest" methodname="DirtyTest" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="1145611206" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000624" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1575" name="ReadonlyTest" fullname="Mirror.Tests.SyncDictionaryTest.ReadonlyTest" methodname="ReadonlyTest" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="987959971" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000682" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1573" name="ReadOnlyTest" fullname="Mirror.Tests.SyncDictionaryTest.ReadOnlyTest" methodname="ReadOnlyTest" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="1990622891" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000376" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1566" name="ServerCallbackTest" fullname="Mirror.Tests.SyncDictionaryTest.ServerCallbackTest" methodname="ServerCallbackTest" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="579366498" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000976" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1555" name="TestAdd" fullname="Mirror.Tests.SyncDictionaryTest.TestAdd" methodname="TestAdd" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="2075263165" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000475" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1558" name="TestBareSet" fullname="Mirror.Tests.SyncDictionaryTest.TestBareSet" methodname="TestBareSet" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="296796330" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000462" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1559" name="TestBareSetNull" fullname="Mirror.Tests.SyncDictionaryTest.TestBareSetNull" methodname="TestBareSetNull" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="891391323" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000453" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1556" name="TestClear" fullname="Mirror.Tests.SyncDictionaryTest.TestClear" methodname="TestClear" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="1141101277" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000614" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1560" name="TestConsecutiveSet" fullname="Mirror.Tests.SyncDictionaryTest.TestConsecutiveSet" methodname="TestConsecutiveSet" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="1048866413" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000455" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1564" name="TestContains" fullname="Mirror.Tests.SyncDictionaryTest.TestContains" methodname="TestContains" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="1058100325" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000739" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1554" name="TestInit" fullname="Mirror.Tests.SyncDictionaryTest.TestInit" methodname="TestInit" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="1821089508" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000989" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1563" name="TestMultSync" fullname="Mirror.Tests.SyncDictionaryTest.TestMultSync" methodname="TestMultSync" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="1325356993" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000551" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1561" name="TestNullSet" fullname="Mirror.Tests.SyncDictionaryTest.TestNullSet" methodname="TestNullSet" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="1334208896" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000458" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1562" name="TestRemove" fullname="Mirror.Tests.SyncDictionaryTest.TestRemove" methodname="TestRemove" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="1812012183" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000430" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1572" name="TestRemovePair" fullname="Mirror.Tests.SyncDictionaryTest.TestRemovePair" methodname="TestRemovePair" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="863269951" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000833" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1557" name="TestSet" fullname="Mirror.Tests.SyncDictionaryTest.TestSet" methodname="TestSet" classname="Mirror.Tests.SyncDictionaryTest" runstate="Runnable" seed="604380942" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000481" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1576" name="SyncListTest" fullname="Mirror.Tests.SyncListTest" classname="Mirror.Tests.SyncListTest" runstate="Runnable" testcasecount="21" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.072821" total="21" passed="21" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1593" name="CallbackRemoveAtTest" fullname="Mirror.Tests.SyncListTest.CallbackRemoveAtTest" methodname="CallbackRemoveAtTest" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="1469323679" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.005143" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1592" name="CallbackRemoveTest" fullname="Mirror.Tests.SyncListTest.CallbackRemoveTest" methodname="CallbackRemoveTest" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="1742950986" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001074" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1591" name="CallbackTest" fullname="Mirror.Tests.SyncListTest.CallbackTest" methodname="CallbackTest" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="643121435" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000726" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1594" name="CountTest" fullname="Mirror.Tests.SyncListTest.CountTest" methodname="CountTest" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="1775291804" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000473" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1596" name="DirtyTest" fullname="Mirror.Tests.SyncListTest.DirtyTest" methodname="DirtyTest" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="797289152" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.002837" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1597" name="ReadonlyTest" fullname="Mirror.Tests.SyncListTest.ReadonlyTest" methodname="ReadonlyTest" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="1201852345" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.003257" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1595" name="ReadOnlyTest" fullname="Mirror.Tests.SyncListTest.ReadOnlyTest" methodname="ReadOnlyTest" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="33319489" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001060" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1588" name="SyncListBoolTest" fullname="Mirror.Tests.SyncListTest.SyncListBoolTest" methodname="SyncListBoolTest" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="451390912" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.007731" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1590" name="SyncListFloatTest" fullname="Mirror.Tests.SyncListTest.SyncListFloatTest" methodname="SyncListFloatTest" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="5449665" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.004990" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1587" name="SyncListIntTest" fullname="Mirror.Tests.SyncListTest.SyncListIntTest" methodname="SyncListIntTest" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="65541298" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001644" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1589" name="SyncListUintTest" fullname="Mirror.Tests.SyncListTest.SyncListUintTest" methodname="SyncListUintTest" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="1121984714" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001353" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1578" name="TestAdd" fullname="Mirror.Tests.SyncListTest.TestAdd" methodname="TestAdd" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="1871620371" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.002346" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1579" name="TestClear" fullname="Mirror.Tests.SyncListTest.TestClear" methodname="TestClear" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="460886021" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000641" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1585" name="TestFindIndex" fullname="Mirror.Tests.SyncListTest.TestFindIndex" methodname="TestFindIndex" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="148339153" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000877" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1577" name="TestInit" fullname="Mirror.Tests.SyncListTest.TestInit" methodname="TestInit" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="258967540" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000438" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1580" name="TestInsert" fullname="Mirror.Tests.SyncListTest.TestInsert" methodname="TestInsert" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="1252415072" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000914" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1586" name="TestMultSync" fullname="Mirror.Tests.SyncListTest.TestMultSync" methodname="TestMultSync" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="414076631" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.002024" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1584" name="TestRemove" fullname="Mirror.Tests.SyncListTest.TestRemove" methodname="TestRemove" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="146266284" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000563" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1583" name="TestRemoveAt" fullname="Mirror.Tests.SyncListTest.TestRemoveAt" methodname="TestRemoveAt" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="1440214674" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000521" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1581" name="TestSet" fullname="Mirror.Tests.SyncListTest.TestSet" methodname="TestSet" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="1300542665" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000800" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1582" name="TestSetNull" fullname="Mirror.Tests.SyncListTest.TestSetNull" methodname="TestSetNull" classname="Mirror.Tests.SyncListTest" runstate="Runnable" seed="197504942" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000580" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1598" name="SyncSetTest" fullname="Mirror.Tests.SyncSetTest" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" testcasecount="26" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.057201" total="26" passed="26" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1605" name="CallbackRemoveTest" fullname="Mirror.Tests.SyncSetTest.CallbackRemoveTest" methodname="CallbackRemoveTest" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="504348498" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.007176" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1604" name="CallbackTest" fullname="Mirror.Tests.SyncSetTest.CallbackTest" methodname="CallbackTest" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="2112467360" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000749" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1606" name="CountTest" fullname="Mirror.Tests.SyncSetTest.CountTest" methodname="CountTest" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="1997328687" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000495" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1608" name="ReadonlyTest" fullname="Mirror.Tests.SyncSetTest.ReadonlyTest" methodname="ReadonlyTest" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="1884291108" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000742" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1607" name="ReadOnlyTest" fullname="Mirror.Tests.SyncSetTest.ReadOnlyTest" methodname="ReadOnlyTest" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="1977666969" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000391" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1600" name="TestAdd" fullname="Mirror.Tests.SyncSetTest.TestAdd" methodname="TestAdd" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="261263652" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000896" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1601" name="TestClear" fullname="Mirror.Tests.SyncSetTest.TestClear" methodname="TestClear" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="635115774" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000676" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1609" name="TestExceptWith" fullname="Mirror.Tests.SyncSetTest.TestExceptWith" methodname="TestExceptWith" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="363192866" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000717" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1610" name="TestExceptWithSelf" fullname="Mirror.Tests.SyncSetTest.TestExceptWithSelf" methodname="TestExceptWithSelf" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="579961215" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000442" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1599" name="TestInit" fullname="Mirror.Tests.SyncSetTest.TestInit" methodname="TestInit" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="598985673" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000507" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1611" name="TestIntersectWith" fullname="Mirror.Tests.SyncSetTest.TestIntersectWith" methodname="TestIntersectWith" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="51946927" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001212" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1612" name="TestIntersectWithSet" fullname="Mirror.Tests.SyncSetTest.TestIntersectWithSet" methodname="TestIntersectWithSet" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="886080697" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000528" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1615" name="TestIsNotProperSubsetOf" fullname="Mirror.Tests.SyncSetTest.TestIsNotProperSubsetOf" methodname="TestIsNotProperSubsetOf" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="743204546" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001864" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1613" name="TestIsProperSubsetOf" fullname="Mirror.Tests.SyncSetTest.TestIsProperSubsetOf" methodname="TestIsProperSubsetOf" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="1633726198" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000433" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1614" name="TestIsProperSubsetOfSet" fullname="Mirror.Tests.SyncSetTest.TestIsProperSubsetOfSet" methodname="TestIsProperSubsetOfSet" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="265617141" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000985" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1616" name="TestIsProperSuperSetOf" fullname="Mirror.Tests.SyncSetTest.TestIsProperSuperSetOf" methodname="TestIsProperSuperSetOf" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="1033850158" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000833" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1617" name="TestIsSubsetOf" fullname="Mirror.Tests.SyncSetTest.TestIsSubsetOf" methodname="TestIsSubsetOf" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="152193031" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000797" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1618" name="TestIsSupersetOf" fullname="Mirror.Tests.SyncSetTest.TestIsSupersetOf" methodname="TestIsSupersetOf" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="242782149" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000924" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1603" name="TestMultSync" fullname="Mirror.Tests.SyncSetTest.TestMultSync" methodname="TestMultSync" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="1062740395" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000545" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1619" name="TestOverlaps" fullname="Mirror.Tests.SyncSetTest.TestOverlaps" methodname="TestOverlaps" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="628545007" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000561" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1602" name="TestRemove" fullname="Mirror.Tests.SyncSetTest.TestRemove" methodname="TestRemove" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="846876908" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000564" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1620" name="TestSetEquals" fullname="Mirror.Tests.SyncSetTest.TestSetEquals" methodname="TestSetEquals" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="523842047" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000839" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1621" name="TestSymmetricExceptWith" fullname="Mirror.Tests.SyncSetTest.TestSymmetricExceptWith" methodname="TestSymmetricExceptWith" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="906227691" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000778" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1622" name="TestSymmetricExceptWithSelf" fullname="Mirror.Tests.SyncSetTest.TestSymmetricExceptWithSelf" methodname="TestSymmetricExceptWithSelf" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="844134303" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000472" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1623" name="TestUnionWith" fullname="Mirror.Tests.SyncSetTest.TestUnionWith" methodname="TestUnionWith" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="1070245077" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000708" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1624" name="TestUnionWithSelf" fullname="Mirror.Tests.SyncSetTest.TestUnionWithSelf" methodname="TestUnionWithSelf" classname="Mirror.Tests.SyncSetTest" runstate="Runnable" seed="2111078795" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000471" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1625" name="SyncVarTest" fullname="Mirror.Tests.SyncVarTest" classname="Mirror.Tests.SyncVarTest" runstate="Runnable" testcasecount="5" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.014271" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1626" name="TestSettingStruct" fullname="Mirror.Tests.SyncVarTest.TestSettingStruct" methodname="TestSettingStruct" classname="Mirror.Tests.SyncVarTest" runstate="Runnable" seed="725538368" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.002580" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1629" name="TestSynchronizingObjects" fullname="Mirror.Tests.SyncVarTest.TestSynchronizingObjects" methodname="TestSynchronizingObjects" classname="Mirror.Tests.SyncVarTest" runstate="Runnable" seed="861830741" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.002022" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1628" name="TestSyncIntervalAndClearAllComponents" fullname="Mirror.Tests.SyncVarTest.TestSyncIntervalAndClearAllComponents" methodname="TestSyncIntervalAndClearAllComponents" classname="Mirror.Tests.SyncVarTest" runstate="Runnable" seed="1553524727" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.001859" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1627" name="TestSyncIntervalAndClearDirtyComponents" fullname="Mirror.Tests.SyncVarTest.TestSyncIntervalAndClearDirtyComponents" methodname="TestSyncIntervalAndClearDirtyComponents" classname="Mirror.Tests.SyncVarTest" runstate="Runnable" seed="160380093" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000779" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1630" name="TestSyncModeObserversMask" fullname="Mirror.Tests.SyncVarTest.TestSyncModeObserversMask" methodname="TestSyncModeObserversMask" classname="Mirror.Tests.SyncVarTest" runstate="Runnable" seed="1227477849" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.000822" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1631" name="TcpTest" fullname="Mirror.Tests.TcpTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" testcasecount="14" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:35Z" duration="1.798509" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1639" name="ClientKickedCleanupTest" fullname="Mirror.Tests.TcpTest.ClientKickedCleanupTest" methodname="ClientKickedCleanupTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="1764772277" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:33Z" duration="0.156121" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server.Disconnect connectionId:1
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1638" name="ClientTest" fullname="Mirror.Tests.TcpTest.ClientTest" methodname="ClientTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="920327657" result="Passed" start-time="2020-03-22 14:13:33Z" end-time="2020-03-22 14:13:34Z" duration="0.151857" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server disposed
+Going to connect
+Connected
+Got server conncted 1
+Received client data
+Got client data
+Server: stopping...
+Server disposed
+]]></output>
+            </test-case>
+            <test-case id="1642" name="ConnectIPv4Test" fullname="Mirror.Tests.TcpTest.ConnectIPv4Test" methodname="ConnectIPv4Test" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="1551678730" result="Passed" start-time="2020-03-22 14:13:34Z" end-time="2020-03-22 14:13:34Z" duration="0.052350" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1643" name="ConnectIPv6Test" fullname="Mirror.Tests.TcpTest.ConnectIPv6Test" methodname="ConnectIPv6Test" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="1842009335" result="Passed" start-time="2020-03-22 14:13:34Z" end-time="2020-03-22 14:13:34Z" duration="0.051261" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server disposed
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1633" name="DisconnectImmediateTest" fullname="Mirror.Tests.TcpTest.DisconnectImmediateTest" methodname="DisconnectImmediateTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="1454291631" result="Passed" start-time="2020-03-22 14:13:34Z" end-time="2020-03-22 14:13:34Z" duration="0.051883" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server disposed
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1640" name="GetConnectionInfoTest" fullname="Mirror.Tests.TcpTest.GetConnectionInfoTest" methodname="GetConnectionInfoTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="925333173" result="Passed" start-time="2020-03-22 14:13:34Z" end-time="2020-03-22 14:13:34Z" duration="0.050074" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server disposed
+address ::ffff:127.0.0.1
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1644" name="LargeMessageTest" fullname="Mirror.Tests.TcpTest.LargeMessageTest" methodname="LargeMessageTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="1942884017" result="Passed" start-time="2020-03-22 14:13:34Z" end-time="2020-03-22 14:13:34Z" duration="0.110233" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server disposed
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1632" name="NextConnectionIdTest" fullname="Mirror.Tests.TcpTest.NextConnectionIdTest" methodname="NextConnectionIdTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="1817131236" result="Passed" start-time="2020-03-22 14:13:34Z" end-time="2020-03-22 14:13:34Z" duration="0.024355" asserts="0">
+              <properties />
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1641" name="ParseLocalHostTest" fullname="Mirror.Tests.TcpTest.ParseLocalHostTest" methodname="ParseLocalHostTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="1851516543" result="Passed" start-time="2020-03-22 14:13:34Z" end-time="2020-03-22 14:13:34Z" duration="0.075911" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server disposed
+Server disposed
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1636" name="ReconnectTest" fullname="Mirror.Tests.TcpTest.ReconnectTest" methodname="ReconnectTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="1316817297" result="Passed" start-time="2020-03-22 14:13:34Z" end-time="2020-03-22 14:13:34Z" duration="0.050207" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server disposed
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1645" name="ServerStartStopRepeatedTest" fullname="Mirror.Tests.TcpTest.ServerStartStopRepeatedTest" methodname="ServerStartStopRepeatedTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="545011914" result="Passed" start-time="2020-03-22 14:13:34Z" end-time="2020-03-22 14:13:34Z" duration="0.109310" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server disposed
+Tcp server started listening on port 9588
+Server: stopping...
+Server disposed
+Tcp server started listening on port 9588
+Server: stopping...
+Server disposed
+Tcp server started listening on port 9588
+Server: stopping...
+Server disposed
+Tcp server started listening on port 9588
+Server: stopping...
+Server disposed
+Tcp server started listening on port 9588
+Server: stopping...
+Server disposed
+Tcp server started listening on port 9588
+Server: stopping...
+Server disposed
+Tcp server started listening on port 9588
+Server: stopping...
+Server disposed
+Tcp server started listening on port 9588
+Server: stopping...
+Server disposed
+Tcp server started listening on port 9588
+Server: stopping...
+Server disposed
+Tcp server started listening on port 9588
+Server: stopping...
+Server disposed
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1637" name="ServerTest" fullname="Mirror.Tests.TcpTest.ServerTest" methodname="ServerTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="1614606542" result="Passed" start-time="2020-03-22 14:13:34Z" end-time="2020-03-22 14:13:34Z" duration="0.099720" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server disposed
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1634" name="SpamConnectTest" fullname="Mirror.Tests.TcpTest.SpamConnectTest" methodname="SpamConnectTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="669484517" result="Passed" start-time="2020-03-22 14:13:34Z" end-time="2020-03-22 14:13:34Z" duration="0.060131" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server disposed
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1635" name="SpamSendTest" fullname="Mirror.Tests.TcpTest.SpamSendTest" methodname="SpamSendTest" classname="Mirror.Tests.TcpTest" runstate="Runnable" seed="1945133690" result="Passed" start-time="2020-03-22 14:13:34Z" end-time="2020-03-22 14:13:35Z" duration="0.725905" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Start Listening
+Tcp server started listening on port 9587
+Server disposed
+Server: stopping...
+Server disposed
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1646" name="WeaverTest" fullname="Mirror.Tests.WeaverTest" classname="Mirror.Tests.WeaverTest" runstate="Runnable" testcasecount="81" result="Passed" start-time="2020-03-22 14:13:35Z" end-time="2020-03-22 14:14:57Z" duration="82.336424" total="81" passed="81" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1702" name="ClientRpcCantBeStatic" fullname="Mirror.Tests.WeaverTest.ClientRpcCantBeStatic" methodname="ClientRpcCantBeStatic" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="819433721" result="Passed" start-time="2020-03-22 14:13:35Z" end-time="2020-03-22 14:13:40Z" duration="4.360282" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1701" name="ClientRpcStartsWithRpc" fullname="Mirror.Tests.WeaverTest.ClientRpcStartsWithRpc" methodname="ClientRpcStartsWithRpc" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1593344304" result="Passed" start-time="2020-03-22 14:13:40Z" end-time="2020-03-22 14:13:41Z" duration="0.947807" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1700" name="ClientRpcValid" fullname="Mirror.Tests.WeaverTest.ClientRpcValid" methodname="ClientRpcValid" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1593173620" result="Passed" start-time="2020-03-22 14:13:41Z" end-time="2020-03-22 14:13:42Z" duration="1.024398" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1699" name="CommandCantBeStatic" fullname="Mirror.Tests.WeaverTest.CommandCantBeStatic" methodname="CommandCantBeStatic" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="926597165" result="Passed" start-time="2020-03-22 14:13:42Z" end-time="2020-03-22 14:13:43Z" duration="0.958835" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1698" name="CommandStartsWithCmd" fullname="Mirror.Tests.WeaverTest.CommandStartsWithCmd" methodname="CommandStartsWithCmd" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="29618765" result="Passed" start-time="2020-03-22 14:13:43Z" end-time="2020-03-22 14:13:43Z" duration="0.916512" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1697" name="CommandValid" fullname="Mirror.Tests.WeaverTest.CommandValid" methodname="CommandValid" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1138657454" result="Passed" start-time="2020-03-22 14:13:43Z" end-time="2020-03-22 14:13:44Z" duration="0.966760" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1722" name="MessageInvalidDeserializeFieldType" fullname="Mirror.Tests.WeaverTest.MessageInvalidDeserializeFieldType" methodname="MessageInvalidDeserializeFieldType" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1262170743" result="Passed" start-time="2020-03-22 14:13:44Z" end-time="2020-03-22 14:13:46Z" duration="1.569236" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1721" name="MessageInvalidSerializeFieldType" fullname="Mirror.Tests.WeaverTest.MessageInvalidSerializeFieldType" methodname="MessageInvalidSerializeFieldType" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1263356284" result="Passed" start-time="2020-03-22 14:13:46Z" end-time="2020-03-22 14:13:47Z" duration="1.018567" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1723" name="MessageMemberGeneric" fullname="Mirror.Tests.WeaverTest.MessageMemberGeneric" methodname="MessageMemberGeneric" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="2112070752" result="Passed" start-time="2020-03-22 14:13:47Z" end-time="2020-03-22 14:13:48Z" duration="1.036611" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1724" name="MessageMemberInterface" fullname="Mirror.Tests.WeaverTest.MessageMemberInterface" methodname="MessageMemberInterface" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1756337438" result="Passed" start-time="2020-03-22 14:13:48Z" end-time="2020-03-22 14:13:49Z" duration="0.944484" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1720" name="MessageSelfReferencing" fullname="Mirror.Tests.WeaverTest.MessageSelfReferencing" methodname="MessageSelfReferencing" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="20021548" result="Passed" start-time="2020-03-22 14:13:49Z" end-time="2020-03-22 14:13:50Z" duration="0.982606" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1719" name="MessageValid" fullname="Mirror.Tests.WeaverTest.MessageValid" methodname="MessageValid" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1935403766" result="Passed" start-time="2020-03-22 14:13:50Z" end-time="2020-03-22 14:13:51Z" duration="0.937195" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1717" name="MonoBehaviourClient" fullname="Mirror.Tests.WeaverTest.MonoBehaviourClient" methodname="MonoBehaviourClient" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="875741391" result="Passed" start-time="2020-03-22 14:13:51Z" end-time="2020-03-22 14:13:52Z" duration="0.945552" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1718" name="MonoBehaviourClientCallback" fullname="Mirror.Tests.WeaverTest.MonoBehaviourClientCallback" methodname="MonoBehaviourClientCallback" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1801287110" result="Passed" start-time="2020-03-22 14:13:52Z" end-time="2020-03-22 14:13:53Z" duration="0.942140" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1713" name="MonoBehaviourClientRpc" fullname="Mirror.Tests.WeaverTest.MonoBehaviourClientRpc" methodname="MonoBehaviourClientRpc" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="978115679" result="Passed" start-time="2020-03-22 14:13:53Z" end-time="2020-03-22 14:13:54Z" duration="0.928884" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1712" name="MonoBehaviourCommand" fullname="Mirror.Tests.WeaverTest.MonoBehaviourCommand" methodname="MonoBehaviourCommand" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1481737441" result="Passed" start-time="2020-03-22 14:13:54Z" end-time="2020-03-22 14:13:55Z" duration="0.971483" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1715" name="MonoBehaviourServer" fullname="Mirror.Tests.WeaverTest.MonoBehaviourServer" methodname="MonoBehaviourServer" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1132995396" result="Passed" start-time="2020-03-22 14:13:55Z" end-time="2020-03-22 14:13:56Z" duration="0.958312" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1716" name="MonoBehaviourServerCallback" fullname="Mirror.Tests.WeaverTest.MonoBehaviourServerCallback" methodname="MonoBehaviourServerCallback" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="42870811" result="Passed" start-time="2020-03-22 14:13:56Z" end-time="2020-03-22 14:13:57Z" duration="0.912696" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1711" name="MonoBehaviourSyncList" fullname="Mirror.Tests.WeaverTest.MonoBehaviourSyncList" methodname="MonoBehaviourSyncList" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="252085372" result="Passed" start-time="2020-03-22 14:13:57Z" end-time="2020-03-22 14:13:58Z" duration="0.932593" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1710" name="MonoBehaviourSyncVar" fullname="Mirror.Tests.WeaverTest.MonoBehaviourSyncVar" methodname="MonoBehaviourSyncVar" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1060519945" result="Passed" start-time="2020-03-22 14:13:58Z" end-time="2020-03-22 14:13:59Z" duration="0.955408" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1714" name="MonoBehaviourTargetRpc" fullname="Mirror.Tests.WeaverTest.MonoBehaviourTargetRpc" methodname="MonoBehaviourTargetRpc" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1260526004" result="Passed" start-time="2020-03-22 14:13:59Z" end-time="2020-03-22 14:13:59Z" duration="0.904516" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1709" name="MonoBehaviourValid" fullname="Mirror.Tests.WeaverTest.MonoBehaviourValid" methodname="MonoBehaviourValid" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1513747338" result="Passed" start-time="2020-03-22 14:13:59Z" end-time="2020-03-22 14:14:00Z" duration="0.935553" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1665" name="NetworkBehaviourAbstractBaseValid" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourAbstractBaseValid" methodname="NetworkBehaviourAbstractBaseValid" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1812429212" result="Passed" start-time="2020-03-22 14:14:00Z" end-time="2020-03-22 14:14:01Z" duration="0.983771" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1726" name="NetworkBehaviourClient" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourClient" methodname="NetworkBehaviourClient" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="780567888" result="Passed" start-time="2020-03-22 14:14:01Z" end-time="2020-03-22 14:14:02Z" duration="0.922212" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1681" name="NetworkBehaviourClientRpcCoroutine" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourClientRpcCoroutine" methodname="NetworkBehaviourClientRpcCoroutine" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1925555523" result="Passed" start-time="2020-03-22 14:14:02Z" end-time="2020-03-22 14:14:04Z" duration="1.270605" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1689" name="NetworkBehaviourClientRpcDuplicateName" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourClientRpcDuplicateName" methodname="NetworkBehaviourClientRpcDuplicateName" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="948802628" result="Passed" start-time="2020-03-22 14:14:04Z" end-time="2020-03-22 14:14:04Z" duration="0.951500" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1680" name="NetworkBehaviourClientRpcGenericParam" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourClientRpcGenericParam" methodname="NetworkBehaviourClientRpcGenericParam" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1037691587" result="Passed" start-time="2020-03-22 14:14:04Z" end-time="2020-03-22 14:14:05Z" duration="0.959721" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1686" name="NetworkBehaviourClientRpcParamAbstract" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourClientRpcParamAbstract" methodname="NetworkBehaviourClientRpcParamAbstract" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="91227476" result="Passed" start-time="2020-03-22 14:14:05Z" end-time="2020-03-22 14:14:06Z" duration="0.944958" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1687" name="NetworkBehaviourClientRpcParamComponent" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourClientRpcParamComponent" methodname="NetworkBehaviourClientRpcParamComponent" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1380519613" result="Passed" start-time="2020-03-22 14:14:06Z" end-time="2020-03-22 14:14:07Z" duration="0.963051" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1688" name="NetworkBehaviourClientRpcParamNetworkConnection" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourClientRpcParamNetworkConnection" methodname="NetworkBehaviourClientRpcParamNetworkConnection" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="93672765" result="Passed" start-time="2020-03-22 14:14:07Z" end-time="2020-03-22 14:14:08Z" duration="0.928390" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1684" name="NetworkBehaviourClientRpcParamOptional" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourClientRpcParamOptional" methodname="NetworkBehaviourClientRpcParamOptional" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1386434497" result="Passed" start-time="2020-03-22 14:14:08Z" end-time="2020-03-22 14:14:09Z" duration="0.964961" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1683" name="NetworkBehaviourClientRpcParamOut" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourClientRpcParamOut" methodname="NetworkBehaviourClientRpcParamOut" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1048065913" result="Passed" start-time="2020-03-22 14:14:09Z" end-time="2020-03-22 14:14:10Z" duration="0.927590" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1685" name="NetworkBehaviourClientRpcParamRef" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourClientRpcParamRef" methodname="NetworkBehaviourClientRpcParamRef" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1560804217" result="Passed" start-time="2020-03-22 14:14:10Z" end-time="2020-03-22 14:14:11Z" duration="0.964857" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1682" name="NetworkBehaviourClientRpcVoidReturn" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourClientRpcVoidReturn" methodname="NetworkBehaviourClientRpcVoidReturn" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1706634453" result="Passed" start-time="2020-03-22 14:14:11Z" end-time="2020-03-22 14:14:12Z" duration="0.950373" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1668" name="NetworkBehaviourCmdCoroutine" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourCmdCoroutine" methodname="NetworkBehaviourCmdCoroutine" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="8220723" result="Passed" start-time="2020-03-22 14:14:12Z" end-time="2020-03-22 14:14:13Z" duration="0.944967" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1696" name="NetworkBehaviourCmdDuplicateName" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourCmdDuplicateName" methodname="NetworkBehaviourCmdDuplicateName" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="720224978" result="Passed" start-time="2020-03-22 14:14:13Z" end-time="2020-03-22 14:14:14Z" duration="0.940036" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1667" name="NetworkBehaviourCmdGenericParam" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourCmdGenericParam" methodname="NetworkBehaviourCmdGenericParam" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1117503697" result="Passed" start-time="2020-03-22 14:14:14Z" end-time="2020-03-22 14:14:15Z" duration="0.929443" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1693" name="NetworkBehaviourCmdParamAbstract" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourCmdParamAbstract" methodname="NetworkBehaviourCmdParamAbstract" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="748866965" result="Passed" start-time="2020-03-22 14:14:15Z" end-time="2020-03-22 14:14:16Z" duration="0.938078" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1694" name="NetworkBehaviourCmdParamComponent" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourCmdParamComponent" methodname="NetworkBehaviourCmdParamComponent" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="987747649" result="Passed" start-time="2020-03-22 14:14:16Z" end-time="2020-03-22 14:14:17Z" duration="0.949522" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1695" name="NetworkBehaviourCmdParamNetworkConnection" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourCmdParamNetworkConnection" methodname="NetworkBehaviourCmdParamNetworkConnection" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1857349216" result="Passed" start-time="2020-03-22 14:14:17Z" end-time="2020-03-22 14:14:18Z" duration="0.986606" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1691" name="NetworkBehaviourCmdParamOptional" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourCmdParamOptional" methodname="NetworkBehaviourCmdParamOptional" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1330495230" result="Passed" start-time="2020-03-22 14:14:18Z" end-time="2020-03-22 14:14:19Z" duration="0.920525" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1690" name="NetworkBehaviourCmdParamOut" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourCmdParamOut" methodname="NetworkBehaviourCmdParamOut" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="298121613" result="Passed" start-time="2020-03-22 14:14:19Z" end-time="2020-03-22 14:14:20Z" duration="0.933000" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1692" name="NetworkBehaviourCmdParamRef" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourCmdParamRef" methodname="NetworkBehaviourCmdParamRef" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1126303307" result="Passed" start-time="2020-03-22 14:14:20Z" end-time="2020-03-22 14:14:21Z" duration="0.952943" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1669" name="NetworkBehaviourCmdVoidReturn" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourCmdVoidReturn" methodname="NetworkBehaviourCmdVoidReturn" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1701921521" result="Passed" start-time="2020-03-22 14:14:21Z" end-time="2020-03-22 14:14:22Z" duration="0.929567" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1666" name="NetworkBehaviourGeneric" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourGeneric" methodname="NetworkBehaviourGeneric" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1946406341" result="Passed" start-time="2020-03-22 14:14:22Z" end-time="2020-03-22 14:14:22Z" duration="0.931663" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1725" name="NetworkBehaviourServer" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourServer" methodname="NetworkBehaviourServer" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="2139395498" result="Passed" start-time="2020-03-22 14:14:22Z" end-time="2020-03-22 14:14:23Z" duration="0.984499" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1671" name="NetworkBehaviourTargetRpcCoroutine" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourTargetRpcCoroutine" methodname="NetworkBehaviourTargetRpcCoroutine" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="673654682" result="Passed" start-time="2020-03-22 14:14:23Z" end-time="2020-03-22 14:14:24Z" duration="0.954015" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1679" name="NetworkBehaviourTargetRpcDuplicateName" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourTargetRpcDuplicateName" methodname="NetworkBehaviourTargetRpcDuplicateName" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1048916516" result="Passed" start-time="2020-03-22 14:14:24Z" end-time="2020-03-22 14:14:25Z" duration="0.939092" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1670" name="NetworkBehaviourTargetRpcGenericParam" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourTargetRpcGenericParam" methodname="NetworkBehaviourTargetRpcGenericParam" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1170194695" result="Passed" start-time="2020-03-22 14:14:25Z" end-time="2020-03-22 14:14:26Z" duration="0.956254" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1676" name="NetworkBehaviourTargetRpcParamAbstract" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourTargetRpcParamAbstract" methodname="NetworkBehaviourTargetRpcParamAbstract" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1450418585" result="Passed" start-time="2020-03-22 14:14:26Z" end-time="2020-03-22 14:14:27Z" duration="0.969593" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1677" name="NetworkBehaviourTargetRpcParamComponent" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourTargetRpcParamComponent" methodname="NetworkBehaviourTargetRpcParamComponent" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1855562217" result="Passed" start-time="2020-03-22 14:14:27Z" end-time="2020-03-22 14:14:28Z" duration="0.922288" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1678" name="NetworkBehaviourTargetRpcParamNetworkConnection" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourTargetRpcParamNetworkConnection" methodname="NetworkBehaviourTargetRpcParamNetworkConnection" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1669597228" result="Passed" start-time="2020-03-22 14:14:28Z" end-time="2020-03-22 14:14:29Z" duration="0.947560" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1674" name="NetworkBehaviourTargetRpcParamOptional" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourTargetRpcParamOptional" methodname="NetworkBehaviourTargetRpcParamOptional" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1650146219" result="Passed" start-time="2020-03-22 14:14:29Z" end-time="2020-03-22 14:14:30Z" duration="0.934728" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1673" name="NetworkBehaviourTargetRpcParamOut" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourTargetRpcParamOut" methodname="NetworkBehaviourTargetRpcParamOut" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1325066917" result="Passed" start-time="2020-03-22 14:14:30Z" end-time="2020-03-22 14:14:31Z" duration="0.927677" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1675" name="NetworkBehaviourTargetRpcParamRef" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourTargetRpcParamRef" methodname="NetworkBehaviourTargetRpcParamRef" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="493120867" result="Passed" start-time="2020-03-22 14:14:31Z" end-time="2020-03-22 14:14:32Z" duration="0.940040" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1672" name="NetworkBehaviourTargetRpcVoidReturn" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourTargetRpcVoidReturn" methodname="NetworkBehaviourTargetRpcVoidReturn" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="704185996" result="Passed" start-time="2020-03-22 14:14:32Z" end-time="2020-03-22 14:14:33Z" duration="0.951340" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1664" name="NetworkBehaviourValid" fullname="Mirror.Tests.WeaverTest.NetworkBehaviourValid" methodname="NetworkBehaviourValid" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1096268446" result="Passed" start-time="2020-03-22 14:14:33Z" end-time="2020-03-22 14:14:34Z" duration="0.948363" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1647" name="RecursionCount" fullname="Mirror.Tests.WeaverTest.RecursionCount" methodname="RecursionCount" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1537080672" result="Passed" start-time="2020-03-22 14:14:34Z" end-time="2020-03-22 14:14:35Z" duration="0.950311" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1708" name="SyncEventParamGeneric" fullname="Mirror.Tests.WeaverTest.SyncEventParamGeneric" methodname="SyncEventParamGeneric" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1057725303" result="Passed" start-time="2020-03-22 14:14:35Z" end-time="2020-03-22 14:14:36Z" duration="1.095548" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1707" name="SyncEventStartsWithEvent" fullname="Mirror.Tests.WeaverTest.SyncEventStartsWithEvent" methodname="SyncEventStartsWithEvent" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="390142851" result="Passed" start-time="2020-03-22 14:14:36Z" end-time="2020-03-22 14:14:37Z" duration="0.953529" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1706" name="SyncEventValid" fullname="Mirror.Tests.WeaverTest.SyncEventValid" methodname="SyncEventValid" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="837247896" result="Passed" start-time="2020-03-22 14:14:37Z" end-time="2020-03-22 14:14:38Z" duration="0.952251" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1663" name="SyncListByteValid" fullname="Mirror.Tests.WeaverTest.SyncListByteValid" methodname="SyncListByteValid" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1719507142" result="Passed" start-time="2020-03-22 14:14:38Z" end-time="2020-03-22 14:14:39Z" duration="1.044725" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1662" name="SyncListMissingParamlessCtor" fullname="Mirror.Tests.WeaverTest.SyncListMissingParamlessCtor" methodname="SyncListMissingParamlessCtor" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1118720566" result="Passed" start-time="2020-03-22 14:14:39Z" end-time="2020-03-22 14:14:40Z" duration="1.099022" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1661" name="SyncListValid" fullname="Mirror.Tests.WeaverTest.SyncListValid" methodname="SyncListValid" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="882692933" result="Passed" start-time="2020-03-22 14:14:40Z" end-time="2020-03-22 14:14:41Z" duration="0.919658" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1658" name="SyncVarsCantBeArray" fullname="Mirror.Tests.WeaverTest.SyncVarsCantBeArray" methodname="SyncVarsCantBeArray" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1644682650" result="Passed" start-time="2020-03-22 14:14:41Z" end-time="2020-03-22 14:14:42Z" duration="1.092410" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1653" name="SyncVarsDerivedNetworkBehaviour" fullname="Mirror.Tests.WeaverTest.SyncVarsDerivedNetworkBehaviour" methodname="SyncVarsDerivedNetworkBehaviour" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1793815600" result="Passed" start-time="2020-03-22 14:14:42Z" end-time="2020-03-22 14:14:43Z" duration="0.965441" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1657" name="SyncVarsDifferentModule" fullname="Mirror.Tests.WeaverTest.SyncVarsDifferentModule" methodname="SyncVarsDifferentModule" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="712096768" result="Passed" start-time="2020-03-22 14:14:43Z" end-time="2020-03-22 14:14:44Z" duration="0.931774" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1655" name="SyncVarsGenericParam" fullname="Mirror.Tests.WeaverTest.SyncVarsGenericParam" methodname="SyncVarsGenericParam" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1349223766" result="Passed" start-time="2020-03-22 14:14:44Z" end-time="2020-03-22 14:14:45Z" duration="0.977843" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1656" name="SyncVarsInterface" fullname="Mirror.Tests.WeaverTest.SyncVarsInterface" methodname="SyncVarsInterface" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="48505737" result="Passed" start-time="2020-03-22 14:14:45Z" end-time="2020-03-22 14:14:46Z" duration="0.945377" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1660" name="SyncVarsMoreThan63" fullname="Mirror.Tests.WeaverTest.SyncVarsMoreThan63" methodname="SyncVarsMoreThan63" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="2048511454" result="Passed" start-time="2020-03-22 14:14:46Z" end-time="2020-03-22 14:14:47Z" duration="0.967000" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1649" name="SyncVarsNoHook" fullname="Mirror.Tests.WeaverTest.SyncVarsNoHook" methodname="SyncVarsNoHook" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1927341289" result="Passed" start-time="2020-03-22 14:14:47Z" end-time="2020-03-22 14:14:48Z" duration="0.938990" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1650" name="SyncVarsNoHookParams" fullname="Mirror.Tests.WeaverTest.SyncVarsNoHookParams" methodname="SyncVarsNoHookParams" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="72638454" result="Passed" start-time="2020-03-22 14:14:48Z" end-time="2020-03-22 14:14:49Z" duration="0.919960" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1654" name="SyncVarsStatic" fullname="Mirror.Tests.WeaverTest.SyncVarsStatic" methodname="SyncVarsStatic" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="923205642" result="Passed" start-time="2020-03-22 14:14:49Z" end-time="2020-03-22 14:14:50Z" duration="0.951470" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1659" name="SyncVarsSyncList" fullname="Mirror.Tests.WeaverTest.SyncVarsSyncList" methodname="SyncVarsSyncList" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="455156670" result="Passed" start-time="2020-03-22 14:14:50Z" end-time="2020-03-22 14:14:51Z" duration="1.035268" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1651" name="SyncVarsTooManyHookParams" fullname="Mirror.Tests.WeaverTest.SyncVarsTooManyHookParams" methodname="SyncVarsTooManyHookParams" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1626082307" result="Passed" start-time="2020-03-22 14:14:51Z" end-time="2020-03-22 14:14:52Z" duration="0.921467" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1648" name="SyncVarsValid" fullname="Mirror.Tests.WeaverTest.SyncVarsValid" methodname="SyncVarsValid" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="438454447" result="Passed" start-time="2020-03-22 14:14:52Z" end-time="2020-03-22 14:14:53Z" duration="0.975275" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1652" name="SyncVarsWrongHookType" fullname="Mirror.Tests.WeaverTest.SyncVarsWrongHookType" methodname="SyncVarsWrongHookType" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="2124316150" result="Passed" start-time="2020-03-22 14:14:53Z" end-time="2020-03-22 14:14:53Z" duration="0.963816" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1705" name="TargetRpcCantBeStatic" fullname="Mirror.Tests.WeaverTest.TargetRpcCantBeStatic" methodname="TargetRpcCantBeStatic" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="2111094352" result="Passed" start-time="2020-03-22 14:14:53Z" end-time="2020-03-22 14:14:54Z" duration="0.953347" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1704" name="TargetRpcStartsWithTarget" fullname="Mirror.Tests.WeaverTest.TargetRpcStartsWithTarget" methodname="TargetRpcStartsWithTarget" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="887295414" result="Passed" start-time="2020-03-22 14:14:54Z" end-time="2020-03-22 14:14:55Z" duration="0.937844" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1703" name="TargetRpcValid" fullname="Mirror.Tests.WeaverTest.TargetRpcValid" methodname="TargetRpcValid" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="1752102519" result="Passed" start-time="2020-03-22 14:14:55Z" end-time="2020-03-22 14:14:56Z" duration="0.971364" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1727" name="TestingScriptableObjectArraySerialization" fullname="Mirror.Tests.WeaverTest.TestingScriptableObjectArraySerialization" methodname="TestingScriptableObjectArraySerialization" classname="Mirror.Tests.WeaverTest" runstate="Runnable" seed="789331104" result="Passed" start-time="2020-03-22 14:14:56Z" end-time="2020-03-22 14:14:57Z" duration="1.027462" asserts="0">
+              <properties />
+              <output><![CDATA[
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

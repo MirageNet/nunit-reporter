@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="95" result="Failed(Child)" total="95" passed="92" failed="3" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:16Z" duration="2.9252146">
+  <test-suite type="TestSuite" id="1000" name="workspace" fullname="workspace" runstate="Runnable" testcasecount="95" result="Failed" site="Child" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:16Z" duration="2.925215" total="95" passed="92" failed="3" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1105" name="Mirror.Tests.Play.dll" fullname="/github/workspace/Library/ScriptAssemblies/Mirror.Tests.Play.dll" runstate="Runnable" testcasecount="95" result="Failed" site="Child" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:16Z" duration="2.778116" total="95" passed="92" failed="3" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="26" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1106" name="Mirror" fullname="Mirror" runstate="Runnable" testcasecount="95" result="Failed" site="Child" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:16Z" duration="2.637555" total="95" passed="92" failed="3" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1107" name="Tests" fullname="Mirror.Tests" runstate="Runnable" testcasecount="95" result="Failed" site="Child" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:16Z" duration="2.508182" total="95" passed="92" failed="3" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1001" name="FlagsTests" fullname="Mirror.Tests.FlagsTests" classname="Mirror.Tests.FlagsTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:13Z" duration="0.210718" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1002" name="CanCallServerFunctionAsServer" fullname="Mirror.Tests.FlagsTests.CanCallServerFunctionAsServer" methodname="CanCallServerFunctionAsServer" classname="Mirror.Tests.FlagsTests" runstate="Runnable" seed="725682528" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:13Z" duration="0.150369" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1003" name="CannotCallClientFunctionAsServer" fullname="Mirror.Tests.FlagsTests.CannotCallClientFunctionAsServer" methodname="CannotCallClientFunctionAsServer" classname="Mirror.Tests.FlagsTests" runstate="Runnable" seed="1222811149" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:13Z" duration="0.018388" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+[Client] function 'System.Void Mirror.Tests.Flags::CallClientFunction()' called on server
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1033" name="NetworkBehaviourHookGuardTester" fullname="Mirror.Tests.NetworkBehaviourHookGuardTester" classname="Mirror.Tests.NetworkBehaviourHookGuardTester" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:13Z" duration="0.014157" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[Server disposed
+Server disposed
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            <test-case id="1034" name="HookGuard" fullname="Mirror.Tests.NetworkBehaviourHookGuardTester.HookGuard" methodname="HookGuard" classname="Mirror.Tests.NetworkBehaviourHookGuardTester" runstate="Runnable" seed="1645943998" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:13Z" duration="0.000708" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1035" name="NetworkBehaviourInitSyncObjectTester" fullname="Mirror.Tests.NetworkBehaviourInitSyncObjectTester" classname="Mirror.Tests.NetworkBehaviourInitSyncObjectTester" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:13Z" duration="0.013214" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            <test-case id="1036" name="InitSyncObject" fullname="Mirror.Tests.NetworkBehaviourInitSyncObjectTester.InitSyncObject" methodname="InitSyncObject" classname="Mirror.Tests.NetworkBehaviourInitSyncObjectTester" runstate="Runnable" seed="1108808178" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:13Z" duration="0.007666" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1004" name="NetworkBehaviourTests" fullname="Mirror.Tests.NetworkBehaviourTests" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" testcasecount="28" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:14Z" duration="0.873243" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1015" name="ComponentIndex" fullname="Mirror.Tests.NetworkBehaviourTests.ComponentIndex" methodname="ComponentIndex" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1240378061" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:13Z" duration="0.055540" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1018" name="GetDelegate" fullname="Mirror.Tests.NetworkBehaviourTests.GetDelegate" methodname="GetDelegate" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="205673771" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:13Z" duration="0.041529" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1014" name="HasIdentitysConnectionToClient" fullname="Mirror.Tests.NetworkBehaviourTests.HasIdentitysConnectionToClient" methodname="HasIdentitysConnectionToClient" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="722271548" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:13Z" duration="0.015348" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1013" name="HasIdentitysConnectionToServer" fullname="Mirror.Tests.NetworkBehaviourTests.HasIdentitysConnectionToServer" methodname="HasIdentitysConnectionToServer" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="691161721" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:13Z" duration="0.032842" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1012" name="HasIdentitysNetId" fullname="Mirror.Tests.NetworkBehaviourTests.HasIdentitysNetId" methodname="HasIdentitysNetId" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="959384862" result="Passed" start-time="2020-03-21 22:48:13Z" end-time="2020-03-21 22:48:14Z" duration="0.026567" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1007" name="IsClient" fullname="Mirror.Tests.NetworkBehaviourTests.IsClient" methodname="IsClient" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="156499552" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.019817" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1008" name="IsClientOnly" fullname="Mirror.Tests.NetworkBehaviourTests.IsClientOnly" methodname="IsClientOnly" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1853474616" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.018143" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1006" name="IsServer" fullname="Mirror.Tests.NetworkBehaviourTests.IsServer" methodname="IsServer" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1147122051" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.032034" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1005" name="IsServerOnly" fullname="Mirror.Tests.NetworkBehaviourTests.IsServerOnly" methodname="IsServerOnly" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1722653653" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.025123" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1016" name="OnCheckObserverTrueByDefault" fullname="Mirror.Tests.NetworkBehaviourTests.OnCheckObserverTrueByDefault" methodname="OnCheckObserverTrueByDefault" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="223031598" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.017225" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1010" name="OnStartServer" fullname="Mirror.Tests.NetworkBehaviourTests.OnStartServer" methodname="OnStartServer" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1170353719" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.031777" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1009" name="PlayerHasAuthorityByDefault" fullname="Mirror.Tests.NetworkBehaviourTests.PlayerHasAuthorityByDefault" methodname="PlayerHasAuthorityByDefault" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="2014387521" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.026661" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1017" name="RegisterDelegateDoesntOverwrite" fullname="Mirror.Tests.NetworkBehaviourTests.RegisterDelegateDoesntOverwrite" methodname="RegisterDelegateDoesntOverwrite" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1814241017" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.056503" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Function Mirror.Tests.NetworkBehaviourDelegateComponent.Delegate and Mirror.Tests.NetworkBehaviourDelegateComponent.Delegate2 have the same hash.  Please rename one of them
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1011" name="SpawnedObjectNoAuthority" fullname="Mirror.Tests.NetworkBehaviourTests.SpawnedObjectNoAuthority" methodname="SpawnedObjectNoAuthority" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1685911867" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.032987" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1020" name="SyncVarGameObjectEqualNull" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualNull" methodname="SyncVarGameObjectEqualNull" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1717188804" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.026114" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1025" name="SyncVarGameObjectEqualUnspawnedGO" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualUnspawnedGO" methodname="SyncVarGameObjectEqualUnspawnedGO" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1254153887" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.030880" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+SetSyncVarGameObject GameObject New Game Object (UnityEngine.GameObject) has a zero netId. Maybe it is not spawned yet?
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1026" name="SyncVarGameObjectEqualUnspawnedGOZeroNetIdIsTrue" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualUnspawnedGOZeroNetIdIsTrue" methodname="SyncVarGameObjectEqualUnspawnedGOZeroNetIdIsTrue" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="388627088" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.035822" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+SetSyncVarGameObject GameObject New Game Object (UnityEngine.GameObject) has a zero netId. Maybe it is not spawned yet?
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1023" name="SyncVarGameObjectEqualValidGOWithDifferentNetId" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualValidGOWithDifferentNetId" methodname="SyncVarGameObjectEqualValidGOWithDifferentNetId" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1023492101" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.041053" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1024" name="SyncVarGameObjectEqualValidGOWithSameNetId" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualValidGOWithSameNetId" methodname="SyncVarGameObjectEqualValidGOWithSameNetId" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="39947482" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.015804" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1022" name="SyncVarGameObjectEqualWithoutIdentityComponent" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualWithoutIdentityComponent" methodname="SyncVarGameObjectEqualWithoutIdentityComponent" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="344813387" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.014195" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1021" name="SyncVarGameObjectEqualZeroNetIdAndGOWithoutIdentityComponentIsTrue" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualZeroNetIdAndGOWithoutIdentityComponentIsTrue" methodname="SyncVarGameObjectEqualZeroNetIdAndGOWithoutIdentityComponentIsTrue" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1730655130" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.014880" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1019" name="SyncVarGameObjectEqualZeroNetIdNullIsTrue" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualZeroNetIdNullIsTrue" methodname="SyncVarGameObjectEqualZeroNetIdNullIsTrue" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="644907220" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.031396" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1028" name="SyncVarNetworkIdentityEqualNull" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarNetworkIdentityEqualNull" methodname="SyncVarNetworkIdentityEqualNull" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="114844987" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.030506" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1031" name="SyncVarNetworkIdentityEqualUnspawnedIdentity" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarNetworkIdentityEqualUnspawnedIdentity" methodname="SyncVarNetworkIdentityEqualUnspawnedIdentity" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1658011192" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.042332" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+SetSyncVarNetworkIdentity NetworkIdentity New Game Object (Mirror.NetworkIdentity) has a zero netId. Maybe it is not spawned yet?
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1032" name="SyncVarNetworkIdentityEqualUnspawnedIdentityZeroNetIdIsTrue" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarNetworkIdentityEqualUnspawnedIdentityZeroNetIdIsTrue" methodname="SyncVarNetworkIdentityEqualUnspawnedIdentityZeroNetIdIsTrue" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1608433338" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.029743" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+SetSyncVarNetworkIdentity NetworkIdentity New Game Object (Mirror.NetworkIdentity) has a zero netId. Maybe it is not spawned yet?
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1029" name="SyncVarNetworkIdentityEqualValidIdentityWithDifferentNetId" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarNetworkIdentityEqualValidIdentityWithDifferentNetId" methodname="SyncVarNetworkIdentityEqualValidIdentityWithDifferentNetId" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1150676601" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.018615" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1030" name="SyncVarNetworkIdentityEqualValidIdentityWithSameNetId" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarNetworkIdentityEqualValidIdentityWithSameNetId" methodname="SyncVarNetworkIdentityEqualValidIdentityWithSameNetId" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1656743668" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.023112" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1027" name="SyncVarNetworkIdentityEqualZeroNetIdNullIsTrue" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarNetworkIdentityEqualZeroNetIdNullIsTrue" methodname="SyncVarNetworkIdentityEqualZeroNetIdNullIsTrue" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1773550759" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:14Z" duration="0.021069" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1037" name="NetworkIdentityTests" fullname="Mirror.Tests.NetworkIdentityTests" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:15Z" duration="0.459540" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+Server disposed
+]]></output>
+            <test-case id="1044" name="AssignAuthority" fullname="Mirror.Tests.NetworkIdentityTests.AssignAuthority" methodname="AssignAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="599943131" result="Passed" start-time="2020-03-21 22:48:14Z" end-time="2020-03-21 22:48:15Z" duration="0.274936" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+]]></output>
+            </test-case>
+            <test-case id="1042" name="AssignClientAuthorityCallback" fullname="Mirror.Tests.NetworkIdentityTests.AssignClientAuthorityCallback" methodname="AssignClientAuthorityCallback" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1470968428" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.012598" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+]]></output>
+            </test-case>
+            <test-case id="1038" name="AssignClientAuthorityNoServer" fullname="Mirror.Tests.NetworkIdentityTests.AssignClientAuthorityNoServer" methodname="AssignClientAuthorityNoServer" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1208673131" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.013446" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1047" name="AssignNullAuthority" fullname="Mirror.Tests.NetworkIdentityTests.AssignNullAuthority" methodname="AssignNullAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1822266513" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.006518" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+]]></output>
+            </test-case>
+            <test-case id="1043" name="DefaultAuthority" fullname="Mirror.Tests.NetworkIdentityTests.DefaultAuthority" methodname="DefaultAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1374322621" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.004028" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+]]></output>
+            </test-case>
+            <test-case id="1040" name="IsClient" fullname="Mirror.Tests.NetworkIdentityTests.IsClient" methodname="IsClient" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1282721888" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.004603" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+]]></output>
+            </test-case>
+            <test-case id="1041" name="IsLocalPlayer" fullname="Mirror.Tests.NetworkIdentityTests.IsLocalPlayer" methodname="IsLocalPlayer" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1557271524" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.005360" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+]]></output>
+            </test-case>
+            <test-case id="1039" name="IsServer" fullname="Mirror.Tests.NetworkIdentityTests.IsServer" methodname="IsServer" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1658150488" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.029035" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+]]></output>
+            </test-case>
+            <test-case id="1046" name="ReassignClientAuthority" fullname="Mirror.Tests.NetworkIdentityTests.ReassignClientAuthority" methodname="ReassignClientAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="588469636" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.009882" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+]]></output>
+            </test-case>
+            <test-case id="1050" name="RemoveClientAuthority" fullname="Mirror.Tests.NetworkIdentityTests.RemoveClientAuthority" methodname="RemoveClientAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1590593294" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.012706" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+]]></output>
+            </test-case>
+            <test-case id="1048" name="RemoveclientAuthorityNotSpawned" fullname="Mirror.Tests.NetworkIdentityTests.RemoveclientAuthorityNotSpawned" methodname="RemoveclientAuthorityNotSpawned" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1038644922" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.002888" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1049" name="RemoveClientAuthorityOfOwner" fullname="Mirror.Tests.NetworkIdentityTests.RemoveClientAuthorityOfOwner" methodname="RemoveClientAuthorityOfOwner" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="2115249359" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.012339" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+]]></output>
+            </test-case>
+            <test-case id="1045" name="SpawnWithAuthority" fullname="Mirror.Tests.NetworkIdentityTests.SpawnWithAuthority" methodname="SpawnWithAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1744050782" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.011913" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1051" name="NetworkManagerTest" fullname="Mirror.Tests.NetworkManagerTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.324606" total="12" passed="9" failed="3" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1056" name="ConnectedClientTest" fullname="Mirror.Tests.NetworkManagerTest.ConnectedClientTest" methodname="ConnectedClientTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="1392386610" result="Failed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.072702" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] Exception: Already listening'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[Mirror.NetworkServer:OnError(Int32, Exception) (at Assets/Mirror/Runtime/NetworkServer.cs:448)
+UnityEngine.Events.UnityEvent`2:Invoke(Int32, Exception)
+Mirror.Tcp.TcpTransport:<Awake>b__5_3(Int32, Exception) (at Assets/Mirror/Runtime/Transport/Tcp/TcpTransport.cs:30)
+Mirror.Tcp.<ListenAsync>d__22:MoveNext() (at Assets/Mirror/Runtime/Transport/Tcp/Server.cs:78)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start(<ListenAsync>d__22&)
+Mirror.Tcp.Server:ListenAsync(Int32)
+Mirror.Tcp.TcpTransport:ServerStart() (at Assets/Mirror/Runtime/Transport/Tcp/TcpTransport.cs:61)
+Mirror.NetworkServer:Listen() (at Assets/Mirror/Runtime/NetworkServer.cs:158)
+Mirror.NetworkManager:SetupServer() (at Assets/Mirror/Runtime/NetworkManager.cs:264)
+Mirror.NetworkManager:StartServer() (at Assets/Mirror/Runtime/NetworkManager.cs:307)
+Mirror.Tests.<<ConnectedClientTest>b__8_0>d:MoveNext() (at Assets/Mirror/Tests/Play/NetworkManagerTest.cs:91)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start(<<ConnectedClientTest>b__8_0>d&)
+Mirror.Tests.NetworkManagerTest:<ConnectedClientTest>b__8_0()
+Mirror.Tests.<RunAsync>d__0:MoveNext() (at Assets/Mirror/Tests/Play/AsyncUtil.cs:13)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at /home/builduser/buildslave/unity/build/Runtime/Export/Scripting/Coroutines.cs:17)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Exception: Already listening
+]]></output>
+            </test-case>
+            <test-case id="1057" name="ConnectedClientUriTest" fullname="Mirror.Tests.NetworkManagerTest.ConnectedClientUriTest" methodname="ConnectedClientUriTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="865394881" result="Failed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.068570" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] SocketException: Address already in use'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[System.Net.Sockets.Socket.Bind (System.Net.EndPoint localEP) (at <ae22a4e8f83c41d69684ae7f557133d9>:0)
+System.Net.Sockets.TcpListener.Start (System.Int32 backlog) (at <ae22a4e8f83c41d69684ae7f557133d9>:0)
+System.Net.Sockets.TcpListener.Start () (at <ae22a4e8f83c41d69684ae7f557133d9>:0)
+Mirror.Tcp.Server+<ListenAsync>d__22.MoveNext () (at Assets/Mirror/Runtime/Transport/Tcp/Server.cs:88)
+Mirror.NetworkServer:OnError(Int32, Exception) (at Assets/Mirror/Runtime/NetworkServer.cs:448)
+UnityEngine.Events.UnityEvent`2:Invoke(Int32, Exception)
+Mirror.Tcp.TcpTransport:<Awake>b__5_3(Int32, Exception) (at Assets/Mirror/Runtime/Transport/Tcp/TcpTransport.cs:30)
+Mirror.Tcp.<ListenAsync>d__22:MoveNext() (at Assets/Mirror/Runtime/Transport/Tcp/Server.cs:111)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start(<ListenAsync>d__22&)
+Mirror.Tcp.Server:ListenAsync(Int32)
+Mirror.Tcp.TcpTransport:ServerStart() (at Assets/Mirror/Runtime/Transport/Tcp/TcpTransport.cs:61)
+Mirror.NetworkServer:Listen() (at Assets/Mirror/Runtime/NetworkServer.cs:158)
+Mirror.NetworkManager:SetupServer() (at Assets/Mirror/Runtime/NetworkManager.cs:264)
+Mirror.NetworkManager:StartServer() (at Assets/Mirror/Runtime/NetworkManager.cs:307)
+Mirror.NetworkManager:Start() (at Assets/Mirror/Runtime/NetworkManager.cs:223)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+SocketException: Address already in use
+]]></output>
+            </test-case>
+            <test-case id="1058" name="ConnectedHostTest" fullname="Mirror.Tests.NetworkManagerTest.ConnectedHostTest" methodname="ConnectedHostTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="2078222148" result="Failed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.027083" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] SocketException: Address already in use'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[System.Net.Sockets.Socket.Bind (System.Net.EndPoint localEP) (at <ae22a4e8f83c41d69684ae7f557133d9>:0)
+System.Net.Sockets.TcpListener.Start (System.Int32 backlog) (at <ae22a4e8f83c41d69684ae7f557133d9>:0)
+System.Net.Sockets.TcpListener.Start () (at <ae22a4e8f83c41d69684ae7f557133d9>:0)
+Mirror.Tcp.Server+<ListenAsync>d__22.MoveNext () (at Assets/Mirror/Runtime/Transport/Tcp/Server.cs:88)
+Mirror.NetworkServer:OnError(Int32, Exception) (at Assets/Mirror/Runtime/NetworkServer.cs:448)
+UnityEngine.Events.UnityEvent`2:Invoke(Int32, Exception)
+Mirror.Tcp.TcpTransport:<Awake>b__5_3(Int32, Exception) (at Assets/Mirror/Runtime/Transport/Tcp/TcpTransport.cs:30)
+Mirror.Tcp.<ListenAsync>d__22:MoveNext() (at Assets/Mirror/Runtime/Transport/Tcp/Server.cs:111)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start(<ListenAsync>d__22&)
+Mirror.Tcp.Server:ListenAsync(Int32)
+Mirror.Tcp.TcpTransport:ServerStart() (at Assets/Mirror/Runtime/Transport/Tcp/TcpTransport.cs:61)
+Mirror.NetworkServer:Listen() (at Assets/Mirror/Runtime/NetworkServer.cs:158)
+Mirror.NetworkManager:SetupServer() (at Assets/Mirror/Runtime/NetworkManager.cs:264)
+Mirror.NetworkManager:StartServer() (at Assets/Mirror/Runtime/NetworkManager.cs:307)
+Mirror.Tests.NetworkManagerTest:ConnectedHostTest() (at Assets/Mirror/Tests/Play/NetworkManagerTest.cs:119)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at /home/builduser/buildslave/unity/build/Runtime/Export/Scripting/Coroutines.cs:17)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+SocketException: Address already in use
+]]></output>
+            </test-case>
+            <test-case id="1063" name="GetStartPositionTest" fullname="Mirror.Tests.NetworkManagerTest.GetStartPositionTest" methodname="GetStartPositionTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="1105599334" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.014729" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+]]></output>
+            </test-case>
+            <test-case id="1061" name="RegisterStartPositionTest" fullname="Mirror.Tests.NetworkManagerTest.RegisterStartPositionTest" methodname="RegisterStartPositionTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="483680917" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.026192" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+]]></output>
+            </test-case>
+            <test-case id="1060" name="ShutdownTest" fullname="Mirror.Tests.NetworkManagerTest.ShutdownTest" methodname="ShutdownTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="1343324873" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.016868" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+]]></output>
+            </test-case>
+            <test-case id="1055" name="StartClientTest" fullname="Mirror.Tests.NetworkManagerTest.StartClientTest" methodname="StartClientTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="1831216923" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.010637" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+]]></output>
+            </test-case>
+            <test-case id="1053" name="StartServerTest" fullname="Mirror.Tests.NetworkManagerTest.StartServerTest" methodname="StartServerTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="1660335214" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.012774" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1059" name="StopClientTest" fullname="Mirror.Tests.NetworkManagerTest.StopClientTest" methodname="StopClientTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="915314615" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.007628" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+]]></output>
+            </test-case>
+            <test-case id="1054" name="StopServerTest" fullname="Mirror.Tests.NetworkManagerTest.StopServerTest" methodname="StopServerTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="1697060456" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.013258" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1062" name="UnRegisterStartPositionTest" fullname="Mirror.Tests.NetworkManagerTest.UnRegisterStartPositionTest" methodname="UnRegisterStartPositionTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="846327504" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.009327" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+]]></output>
+            </test-case>
+            <test-case id="1052" name="VariableTest" fullname="Mirror.Tests.NetworkManagerTest.VariableTest" methodname="VariableTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="1933617326" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.009523" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1064" name="NetworkServerTest" fullname="Mirror.Tests.NetworkServerTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" testcasecount="30" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.317322" total="30" passed="30" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[Server disposed
+Server disposed
+]]></output>
+            <test-case id="1082" name="ActivateHostSceneCallsOnStartClient" fullname="Mirror.Tests.NetworkServerTest.ActivateHostSceneCallsOnStartClient" methodname="ActivateHostSceneCallsOnStartClient" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1701803997" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.005016" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1073" name="AddConnectionTest" fullname="Mirror.Tests.NetworkServerTest.AddConnectionTest" methodname="AddConnectionTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="996891575" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.005656" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1093" name="ClearAllComponentsDirtyBits" fullname="Mirror.Tests.NetworkServerTest.ClearAllComponentsDirtyBits" methodname="ClearAllComponentsDirtyBits" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1604274441" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.004255" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1092" name="ClearDirtyComponentsDirtyBits" fullname="Mirror.Tests.NetworkServerTest.ClearDirtyComponentsDirtyBits" methodname="ClearDirtyComponentsDirtyBits" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1080528528" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.003633" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1071" name="ConnectDuplicateConnectionIdsTest" fullname="Mirror.Tests.NetworkServerTest.ConnectDuplicateConnectionIdsTest" methodname="ConnectDuplicateConnectionIdsTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="193857740" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.004976" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1066" name="ConnectionEventTest" fullname="Mirror.Tests.NetworkServerTest.ConnectionEventTest" methodname="ConnectionEventTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1715473080" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.105328" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1069" name="ConnectionsDictTest" fullname="Mirror.Tests.NetworkServerTest.ConnectionsDictTest" methodname="ConnectionsDictTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="325678304" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.003708" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1075" name="DisconnectAllConnectionsTest" fullname="Mirror.Tests.NetworkServerTest.DisconnectAllConnectionsTest" methodname="DisconnectAllConnectionsTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="935788963" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.003760" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1076" name="DisconnectAllTest" fullname="Mirror.Tests.NetworkServerTest.DisconnectAllTest" methodname="DisconnectAllTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1571106520" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.005580" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1068" name="DisconnectMessageHandlerTest" fullname="Mirror.Tests.NetworkServerTest.DisconnectMessageHandlerTest" methodname="DisconnectMessageHandlerTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="2129924454" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.002975" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1086" name="GetNetworkIdentity" fullname="Mirror.Tests.NetworkServerTest.GetNetworkIdentity" methodname="GetNetworkIdentity" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="91607638" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.007322" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+GameObject New Game Object doesn't have NetworkIdentity.
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1088" name="HideForConnection" fullname="Mirror.Tests.NetworkServerTest.HideForConnection" methodname="HideForConnection" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1260385798" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.004446" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1065" name="IsActiveTest" fullname="Mirror.Tests.NetworkServerTest.IsActiveTest" methodname="IsActiveTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="30657259" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.002896" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1072" name="LocalClientActiveTest" fullname="Mirror.Tests.NetworkServerTest.LocalClientActiveTest" methodname="LocalClientActiveTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="2047487596" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.002807" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1067" name="MaxConnectionsTest" fullname="Mirror.Tests.NetworkServerTest.MaxConnectionsTest" methodname="MaxConnectionsTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1001145053" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.003781" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1070" name="OnConnectedOnlyAllowsGreaterZeroConnectionIdsTest" fullname="Mirror.Tests.NetworkServerTest.OnConnectedOnlyAllowsGreaterZeroConnectionIdsTest" methodname="OnConnectedOnlyAllowsGreaterZeroConnectionIdsTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1141708612" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.008091" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+Server.HandleConnect: invalid connectionId: 0 . Needs to be >0, because 0 is reserved for local player.
+Server.HandleConnect: invalid connectionId: -1 . Needs to be >0, because 0 is reserved for local player.
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1078" name="OnDataReceivedInvalidConnectionIdTest" fullname="Mirror.Tests.NetworkServerTest.OnDataReceivedInvalidConnectionIdTest" methodname="OnDataReceivedInvalidConnectionIdTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="2117180594" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.008386" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+HandleData Unknown connectionId:42
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1077" name="OnDataReceivedTest" fullname="Mirror.Tests.NetworkServerTest.OnDataReceivedTest" methodname="OnDataReceivedTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1073755851" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.005327" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1081" name="ReadyMessageSetsClientReadyTest" fullname="Mirror.Tests.NetworkServerTest.ReadyMessageSetsClientReadyTest" methodname="ReadyMessageSetsClientReadyTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="628864559" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.003915" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1084" name="RegisterUnregisterClearHandlerTest" fullname="Mirror.Tests.NetworkServerTest.RegisterUnregisterClearHandlerTest" methodname="RegisterUnregisterClearHandlerTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1764905385" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.010525" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+IgnoreFailingMessages:true
+Unknown message ID 31056 connection(42). May be due to no existing RegisterHandler for this message.
+
+IgnoreFailingMessages:false
+
+IgnoreFailingMessages:true
+Unknown message ID 31056 connection(42). May be due to no existing RegisterHandler for this message.
+
+IgnoreFailingMessages:false
+]]></output>
+            </test-case>
+            <test-case id="1074" name="RemoveConnectionTest" fullname="Mirror.Tests.NetworkServerTest.RemoveConnectionTest" methodname="RemoveConnectionTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1737485937" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.003497" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1083" name="SendToAllTest" fullname="Mirror.Tests.NetworkServerTest.SendToAllTest" methodname="SendToAllTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="664726674" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.003952" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1085" name="SendToClientOfPlayer" fullname="Mirror.Tests.NetworkServerTest.SendToClientOfPlayer" methodname="SendToClientOfPlayer" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1138287061" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.003834" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1080" name="SetAllClientsNotReadyTest" fullname="Mirror.Tests.NetworkServerTest.SetAllClientsNotReadyTest" methodname="SetAllClientsNotReadyTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1127636425" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.004039" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1079" name="SetClientReadyAndNotReadyTest" fullname="Mirror.Tests.NetworkServerTest.SetClientReadyAndNotReadyTest" methodname="SetClientReadyAndNotReadyTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="66420753" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.003960" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1087" name="ShowForConnection" fullname="Mirror.Tests.NetworkServerTest.ShowForConnection" methodname="ShowForConnection" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1074743980" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.004046" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1094" name="ShutdownCleanupTest" fullname="Mirror.Tests.NetworkServerTest.ShutdownCleanupTest" methodname="ShutdownCleanupTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1589788869" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.003565" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1090" name="SpawnObjects" fullname="Mirror.Tests.NetworkServerTest.SpawnObjects" methodname="SpawnObjects" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="2065408389" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.007346" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+]]></output>
+            </test-case>
+            <test-case id="1091" name="UnSpawn" fullname="Mirror.Tests.NetworkServerTest.UnSpawn" methodname="UnSpawn" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1463793319" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.003847" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+            <test-case id="1089" name="ValidateSceneObject" fullname="Mirror.Tests.NetworkServerTest.ValidateSceneObject" methodname="ValidateSceneObject" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1495857633" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.004879" asserts="0">
+              <properties />
+              <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1095" name="NetworkServerTests" fullname="Mirror.Tests.NetworkServerTests" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.027243" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1096" name="InitializeTest" fullname="Mirror.Tests.NetworkServerTests.InitializeTest" methodname="InitializeTest" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="1765014167" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.010828" asserts="0">
+              <properties />
+              <output><![CDATA[Tcp transport initialized!
+Tcp server started listening on port 7777
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1098" name="ShutdownTest" fullname="Mirror.Tests.NetworkServerTests.ShutdownTest" methodname="ShutdownTest" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="1581876442" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.006639" asserts="0">
+              <properties />
+              <output><![CDATA[Tcp transport initialized!
+Tcp server started listening on port 7777
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1097" name="SpawnTest" fullname="Mirror.Tests.NetworkServerTests.SpawnTest" methodname="SpawnTest" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="1255651492" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.005770" asserts="0">
+              <properties />
+              <output><![CDATA[Tcp transport initialized!
+Tcp server started listening on port 7777
+Server: stopping...
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1099" name="RpcTests" fullname="Mirror.Tests.RpcTests" classname="Mirror.Tests.RpcTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:16Z" duration="0.101817" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[Server disposed
+Server disposed
+Server disposed
+]]></output>
+            <test-case id="1103" name="ClientRpc" fullname="Mirror.Tests.RpcTests.ClientRpc" methodname="ClientRpc" classname="Mirror.Tests.RpcTests" runstate="Runnable" seed="1382284485" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:15Z" duration="0.019495" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1101" name="Command" fullname="Mirror.Tests.RpcTests.Command" methodname="Command" classname="Mirror.Tests.RpcTests" runstate="Runnable" seed="1461072637" result="Passed" start-time="2020-03-21 22:48:15Z" end-time="2020-03-21 22:48:16Z" duration="0.017307" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1102" name="CommandWithNetworkIdentity" fullname="Mirror.Tests.RpcTests.CommandWithNetworkIdentity" methodname="CommandWithNetworkIdentity" classname="Mirror.Tests.RpcTests" runstate="Runnable" seed="1483903554" result="Passed" start-time="2020-03-21 22:48:16Z" end-time="2020-03-21 22:48:16Z" duration="0.015784" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1100" name="CommandWithoutAuthority" fullname="Mirror.Tests.RpcTests.CommandWithoutAuthority" methodname="CommandWithoutAuthority" classname="Mirror.Tests.RpcTests" runstate="Runnable" seed="1176662697" result="Passed" start-time="2020-03-21 22:48:16Z" end-time="2020-03-21 22:48:16Z" duration="0.015424" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+            <test-case id="1104" name="TargetRpc" fullname="Mirror.Tests.RpcTests.TargetRpc" methodname="TargetRpc" classname="Mirror.Tests.RpcTests" runstate="Runnable" seed="1149797815" result="Passed" start-time="2020-03-21 22:48:16Z" end-time="2020-03-21 22:48:16Z" duration="0.023518" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Tcp transport initialized!
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+Tcp server started listening on port 7777
+Incorrect use of Destroy. Use NetworkServer.Destroy instead for networked objects.
+Server: stopping...
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
