@@ -22,7 +22,7 @@ async function run(): Promise<void> {
         ? `${results.failed} tests failed`
         : `${results.passed} tests passed`
 
-    const details = results.failed > 0 ?
+    const details = results.failed == 0 ?
     `** ${results.passed} tests passed**`
     :`
 **${results.passed} tests passed**
