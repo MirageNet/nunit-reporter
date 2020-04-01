@@ -11,36 +11,27 @@ async function run(): Promise<void> {
     const results = await readResults(path)
 
     const octokit = new GitHub(accessToken)
-    const req = {
-      ...context.repo,
-      ref: context.sha
-    }
-    const res = await octokit.checks.listForRef(req)
 
-    const checkRunId = res.data.check_runs.filter(
-      check => check.name === 'build'
-    )[0].id
+    const summary = results.failed > 0
+      ? `${results.failed} tests failed`
+      : `${results.passed} tests passed`;
 
-    const annotationLevel = results.failed > 0 ? 'failure' : 'notice'
-    const annotation = new Annotation(
-      'test',
-      0,
-      0,
-      0,
-      0,
-      annotationLevel,
-      `Passed tests ${results.passed}\nFailed tests ${results.failed}`
-    )
 
-    await octokit.checks.update({
-      ...context.repo,
-      check_run_id: checkRunId,
+    await octokit.checks.create({
+      head_sha: context.sha,
+      name: 'Tests',
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      status: 'completed',
+      conclusion: results.failed > 0 ? 'failure' : 'success',
       output: {
         title: 'Test Results',
-        summary: `Num passed etc`,
-        annotations: [annotation, ...results.annotations].slice(0, numFailures)
+        summary: summary,
+        annotations: results.annotations,
       }
+
     })
+
   } catch (error) {
     setFailed(error.message)
   }
