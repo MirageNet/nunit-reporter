@@ -5056,7 +5056,9 @@ async function run() {
         const summary = results.failed > 0
             ? `${results.failed} tests failed`
             : `${results.passed} tests passed`;
-        const details = `
+        const details = results.failed > 0 ?
+            `** ${results.passed} tests passed**`
+            : `
 **${results.passed} tests passed**
 **${results.failed} tests failed**
 # Failed Tests
