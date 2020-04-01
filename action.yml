@@ -1,6 +1,6 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Paul Pacheco'
+description: 'Github action for publishing nunit results as github checks'
+author: 'MirrorNG'
 inputs:
   access-token:
     description: 'github token'
@@ -8,18 +8,10 @@ inputs:
   path:
     description: 'glob to junit xml files'
     required: true
-  includeSummary:
-    description: 'include summary annotation'
-    required: true
-    default: true
   numFailures:
     description: 'max number of failed tests to include'
     require: true
     default: 30
-  testSrcPath: 
-    description: 'path to test source'
-    required: true
-    default: 'src/test/java/'
 runs:
   using: 'node12'
   main: 'dist/index.js'
