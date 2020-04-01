@@ -2258,7 +2258,7 @@ function testCaseAnnotation(testcase) {
         const message = testcase.failure.message;
         const classname = testcase.classname;
         const methodname = testcase.methodname;
-        return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, "failure", `Failed test ${methodname} in ${classname}\n${message}`);
+        return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `Failed test ${methodname} in ${classname}\n${message}`);
     }
     return null;
 }
@@ -2301,7 +2301,7 @@ async function parseNunit(nunitReport) {
     const nunitResults = await xml2js_1.parseStringPromise(nunitReport, {
         trim: true,
         mergeAttrs: true,
-        explicitArray: false,
+        explicitArray: false
     });
     const testRun = nunitResults['test-run'];
     const annotations = getAnnotations(testRun);
@@ -5054,14 +5054,14 @@ async function run() {
             ref: github_1.context.sha
         };
         const res = await octokit.checks.listForRef(req);
-        const check_run_id = res.data.check_runs.filter(check => check.name === 'build')[0].id;
-        const annotation_level = results.failed > 0 ? 'failure' : 'notice';
-        const annotation = new nunit_1.Annotation('test', 0, 0, 0, 0, annotation_level, `Passed tests ${results.passed}\nFailed tests ${results.failed}`);
+        const checkRunId = res.data.check_runs.filter(check => check.name === 'build')[0].id;
+        const annotationLevel = results.failed > 0 ? 'failure' : 'notice';
+        const annotation = new nunit_1.Annotation('test', 0, 0, 0, 0, annotationLevel, `Passed tests ${results.passed}\nFailed tests ${results.failed}`);
         await octokit.checks.update({
             ...github_1.context.repo,
-            check_run_id,
+            check_run_id: checkRunId,
             output: {
-                title: "Test Results",
+                title: 'Test Results',
                 summary: `Num passed etc`,
                 annotations: [annotation, ...results.annotations].slice(0, numFailures)
             }
