@@ -2258,7 +2258,7 @@ function testCaseAnnotation(testcase) {
         const message = testcase.failure.message;
         const classname = testcase.classname;
         const methodname = testcase.methodname;
-        return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `Failed test ${methodname} in ${classname}\n${message}`);
+        return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `* Failed test ${methodname} in ${classname}\n    \`\`\`${message}\`\`\`\n    \`\`\`${testcase.failure['stack-trace']}\`\`\``);
     }
     return null;
 }
