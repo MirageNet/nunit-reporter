@@ -49,7 +49,7 @@ function getLocation(stacktrace: string): [string, number] {
     const lineNo = parseInt(match[2])
     if (lineNo !== 0) return [match[1], lineNo]
   }
-
+  
   return ['unknown', 0]
 }
 
