@@ -30,11 +30,12 @@ test('parse TestCase', async () => {
 
     expect(annotation).toBeTruthy();
 
-    expect(annotation?.path).toBe("Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs");
-    expect(annotation?.start_line).toBe(895);
-    expect(annotation?.end_line).toBe(895);
-    expect(annotation?.message).toContain("Failed test ServerUpdate in Mirror.Tests.NetworkIdentityTests")
-    expect(annotation?.annotation_level).toBe('failure');
+    expect(annotation.path).toBe("Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs");
+    expect(annotation.start_line).toBe(895);
+    expect(annotation.end_line).toBe(895);
+    expect(annotation.title).toBe("Failed test ServerUpdate in Mirror.Tests.NetworkIdentityTests")
+    expect(annotation.message).toBe("Expected: 1\n  But was:  0")
+    expect(annotation.annotation_level).toBe('failure');
 
 })
 
@@ -48,11 +49,12 @@ test('parse Results', async () => {
     expect(results.failed).toBe(1);
 
     const annotation =  results.annotations[0];
-    expect(annotation?.path).toBe("Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs");
-    expect(annotation?.start_line).toBe(895);
-    expect(annotation?.end_line).toBe(895);
-    expect(annotation?.message).toContain("Failed test ServerUpdate in Mirror.Tests.NetworkIdentityTests")
-    expect(annotation?.annotation_level).toBe('failure');
+    expect(annotation.path).toBe("Assets/Mirror/Tests/Editor/NetworkIdentityTests.cs");
+    expect(annotation.start_line).toBe(895);
+    expect(annotation.end_line).toBe(895);
+    expect(annotation.title).toBe("Failed test ServerUpdate in Mirror.Tests.NetworkIdentityTests")
+    expect(annotation.message).toBe("Expected: 1\n  But was:  0")
+    expect(annotation.annotation_level).toBe('failure');
 });
 
 test('parse all Results', async () => {

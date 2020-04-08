@@ -2223,14 +2223,16 @@ const xml2js_1 = __webpack_require__(992);
 const glob_1 = __webpack_require__(281);
 const fs_1 = __webpack_require__(747);
 class Annotation {
-    constructor(path, start_line, end_line, start_column, end_column, annotation_level, message) {
+    constructor(path, start_line, end_line, start_column, end_column, annotation_level, title, message, raw_details) {
         this.path = path;
         this.start_line = start_line;
         this.end_line = end_line;
         this.start_column = start_column;
         this.end_column = end_column;
         this.annotation_level = annotation_level;
+        this.title = title;
         this.message = message;
+        this.raw_details = raw_details;
     }
 }
 exports.Annotation = Annotation;
@@ -2262,7 +2264,7 @@ function testCaseAnnotation(testcase) {
     const stacktrace = 'stack-trace' in testcase.failure
         ? testcase.failure['stack-trace'].substring(0, 65536)
         : '';
-    return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `Failed test ${methodname} in ${classname}\n${message}\n\n${stacktrace}`);
+    return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `Failed test ${methodname} in ${classname}`, message, stacktrace);
 }
 exports.testCaseAnnotation = testCaseAnnotation;
 function testCaseDetails(testcase) {
