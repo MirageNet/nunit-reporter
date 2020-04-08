@@ -2254,7 +2254,9 @@ function getLocation(stacktrace) {
 }
 function testCaseAnnotation(testcase) {
     if (testcase.result === 'Failed') {
-        const [filename, lineno] = getLocation(testcase.failure['stack-trace']);
+        const [filename, lineno] = 'stack-trace' in testcase.failure
+            ? getLocation(testcase.failure['stack-trace'])
+            : ['', 0];
         const sanitizedFilename = filename.replace(/^\/github\/workspace\//, '');
         const message = testcase.failure.message;
         const classname = testcase.classname;
