@@ -1,6 +1,8 @@
 import { parseStringPromise } from 'xml2js'
 import { create } from '@actions/glob'
 import { promises as fs } from 'fs'
+import {context} from '@actions/github'
+import {relative} from 'path'
 
 export class Annotation {
   public constructor(
@@ -18,7 +20,7 @@ export class Annotation {
 }
 
 function getLocation(stacktrace: string): [string, number] {
-  // assertions stack traces
+  // assertions stack traces as reported by unity
   const matches = stacktrace.matchAll(/in (.*):(\d+)/g)
 
   for (const match of matches) {
@@ -26,24 +28,40 @@ function getLocation(stacktrace: string): [string, number] {
     if (lineNo !== 0) return [match[1], lineNo]
   }
 
-  // exceptions stack traces
-  const matches2 = stacktrace.matchAll(/\(at (.*):(\d+)\)/g)
+  // assertions stack traces as reported by dotnet
+  const matches2 = stacktrace.matchAll(/in (.*):line (\d+)/g)
 
   for (const match of matches2) {
     const lineNo = parseInt(match[2])
     if (lineNo !== 0) return [match[1], lineNo]
   }
 
-  return ['', 0]
+  // exceptions stack traces as reported by unity
+  const matches3 = stacktrace.matchAll(/\(at (.*):(\d+)\)/g)
+
+  for (const match of matches3) {
+    const lineNo = parseInt(match[2])
+    if (lineNo !== 0) return [match[1], lineNo]
+  }
+
+    // exceptions stack traces as reported by dotnet
+  const matches4 = stacktrace.matchAll(/\(at (.*):line (\d+)\)/g)
+
+  for (const match of matches4) {
+    const lineNo = parseInt(match[2])
+    if (lineNo !== 0) return [match[1], lineNo]
+  }
+  
+  return ['unknown', 0]
 }
 
 export function testCaseAnnotation(testcase: any): Annotation {
   const [filename, lineno] =
     'stack-trace' in testcase.failure
       ? getLocation(testcase.failure['stack-trace'])
-      : ['unknown', 0]
+      : ['unknown', 0];
 
-  const sanitizedFilename = filename.replace(/^\/github\/workspace\//, '')
+  const sanitizedFilename = relative(process.cwd(), filename);
   const message = testcase.failure.message
   const classname = testcase.classname
   const methodname = testcase.methodname
