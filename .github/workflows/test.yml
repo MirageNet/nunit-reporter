@@ -20,5 +20,5 @@ jobs:
     - uses: actions/checkout@v1
     - uses: ./
       with: 
-        path: '*.xml'
+        path: '__tests__/*.xml'
         access-token: ${{secrets.GITHUB_TOKEN}}
