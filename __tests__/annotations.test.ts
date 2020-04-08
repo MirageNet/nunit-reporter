@@ -59,5 +59,5 @@ test('parse all Results', async () => {
 
     var results = await readResults("__tests__/*.xml");
 
-    expect(results.annotations).toHaveLength(4);
+    expect(results.annotations).toHaveLength(6);
 });

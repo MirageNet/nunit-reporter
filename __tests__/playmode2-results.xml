@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="108" result="Failed(Child)" total="108" passed="105" failed="2" inconclusive="0" skipped="1" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-04-08 00:22:52Z" end-time="2020-04-08 00:23:07Z" duration="15.4596229">
+  <test-suite type="TestSuite" id="1000" name="workspace" fullname="workspace" runstate="Runnable" testcasecount="108" result="Failed" site="Child" start-time="2020-04-08 00:22:52Z" end-time="2020-04-08 00:23:07Z" duration="15.459623" total="108" passed="105" failed="2" inconclusive="0" skipped="1" asserts="0">
+    <properties />
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1005" name="Mirror.Tests.Performance.Runtime.dll" fullname="/github/workspace/Library/ScriptAssemblies/Mirror.Tests.Performance.Runtime.dll" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-04-08 00:22:52Z" end-time="2020-04-08 00:23:01Z" duration="9.031395" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="26" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1006" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-04-08 00:22:52Z" end-time="2020-04-08 00:23:01Z" duration="9.004186" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1001" name="BenchmarkPerformance" fullname="Tests.BenchmarkPerformance" classname="Tests.BenchmarkPerformance" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2020-04-08 00:22:52Z" end-time="2020-04-08 00:23:01Z" duration="8.932499" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties>
+            <property name="Category" value="Performance" />
+            <property name="Category" value="Benchmark" />
+          </properties>
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1002" name="Benchmark10k" fullname="Tests.BenchmarkPerformance.Benchmark10k" methodname="Benchmark10k" classname="Tests.BenchmarkPerformance" runstate="Runnable" seed="313844679" result="Failed" label="Error" start-time="2020-04-08 00:22:52Z" end-time="2020-04-08 00:23:01Z" duration="8.887231" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="Category" value="Performance" />
+            </properties>
+            <failure>
+              <message><![CDATA[AfterTest : Unhandled log message: '[Error] Can't remove BenchmarkNetworkManager (Script) because NetworkManagerHUD (Script) depends on it'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+            </failure>
+            <output><![CDATA[The referenced script (Unknown) on this Behaviour is missing!
+The referenced script on this Behaviour (Game Object 'Spawn') is missing!
+Thank you for using Mirror! https://mirror-networking.com
+NetworkManagerLateUpdate Nanosecond Median:600.00 Min:400.00 Max:196100.00 Avg:2203.33 Std:17774.71 SampleCount: 120 Sum: 264400.00
+Time Millisecond Median:15.74 Min:14.86 Max:40.00 Avg:16.52 Std:2.80 SampleCount: 120 Sum: 1982.03
+
+##performancetestresult2:{"SampleGroups":[{"Name":"NetworkManagerLateUpdate","Unit":2,"IncreaseIsBetter":false,"Samples":[0.1961,0.00060000000000000006,0.0005,0.0005,0.0005,0.0005,0.0005,0.0005,0.0005,0.0005,0.00060000000000000006,0.0005,0.0005,0.00060000000000000006,0.00060000000000000006,0.0007,0.0008,0.00060000000000000006,0.0007,0.0007,0.0005,0.00060000000000000006,0.0005,0.0007,0.0007,0.0005,0.0005,0.00060000000000000006,0.0007,0.00060000000000000006,0.0005,0.0005,0.0008,0.0008,0.0005,0.0008,0.00060000000000000006,0.0007,0.00060000000000000006,0.00060000000000000006,0.0005,0.0007,0.00060000000000000006,0.0007,0.00060000000000000006,0.0007,0.0005,0.00060000000000000006,0.0008,0.00060000000000000006,0.00060000000000000006,0.00060000000000000006,0.00060000000000000006,0.0007,0.0007,0.0008,0.0007,0.00060000000000000006,0.00060000000000000006,0.0007,0.0008,0.00060000000000000006,0.0005,0.0005,0.00060000000000000006,0.00060000000000000006,0.0005,0.0005,0.00060000000000000006,0.0005,0.0005,0.0005,0.0007,0.00060000000000000006,0.0005,0.0005,0.00060000000000000006,0.0005,0.0005,0.0005,0.00060000000000000006,0.00060000000000000006,0.00060000000000000006,0.00060000000000000006,0.00060000000000000006,0.0005,0.0005,0.00060000000000000006,0.0005,0.0005,0.00060000000000000006,0.00060000000000000006,0.0005,0.0005,0.0005,0.0005,0.0005,0.00060000000000000006,0.0004,0.0005,0.0005,0.0005,0.0005,0.0005,0.0005,0.0005,0.0004,0.0005,0.0005,0.0005,0.0005,0.00060000000000000006,0.0005,0.0005,0.0005,0.0005,0.0005,0.0005,0.00060000000000000006,0.0007],"Min":0.0004,"Max":0.1961,"Median":0.00060000000000000006,"Average":0.0022033333333333306,"StandardDeviation":0.017774714875037772,"Sum":0.26439999999999969},{"Name":"Time","Unit":2,"IncreaseIsBetter":false,"Samples":[16.6522,15.634,15.367500000000001,15.7438,15.185400000000001,15.214500000000001,15.0249,15.3952,15.3053,16.4995,17.4994,19.4402,16.6156,16.398600000000002,15.0728,15.1806,15.513300000000001,15.942400000000001,15.959700000000002,15.870700000000001,16.081300000000002,15.566600000000001,15.530800000000001,15.9802,15.364500000000001,15.091800000000001,15.8559,15.893400000000002,15.626800000000001,15.609200000000001,15.451400000000001,16.2114,17.7364,16.2546,15.2264,15.467,15.468,25.8593,25.1937,16.9327,16.3249,15.858500000000001,15.1315,15.6056,15.132000000000001,15.1493,15.301300000000001,15.0381,15.4086,15.3297,15.338500000000002,15.3156,15.274700000000001,15.002400000000002,15.489,15.1263,14.8598,15.2444,15.1965,15.3839,15.521,14.991900000000001,15.4763,15.4593,15.156,15.1468,15.3201,15.243500000000001,15.134300000000001,15.652700000000001,18.312900000000003,18.4417,16.634700000000002,17.0269,16.6369,16.8367,15.5014,15.610700000000001,15.834000000000001,15.693900000000001,16.4661,25.5543,39.996500000000005,19.0832,17.501,17.220100000000002,17.0604,16.244,16.8212,15.2872,15.134400000000001,15.9061,15.6051,15.8254,17.4333,16.0003,15.484,15.219000000000001,15.494800000000001,15.3613,15.2375,16.4446,17.094,15.7247,16.6023,15.8277,16.6763,17.4633,18.063200000000002,17.658,18.276500000000002,17.2256,17.997500000000002,17.8386,19.155900000000003,17.9941,17.5332,16.1371,15.7946,16.5307],"Min":14.8598,"Max":39.996500000000005,"Median":15.7438,"Average":16.516936666666663,"StandardDeviation":2.7968767673643087,"Sum":1982.0323999999996}],"Name":"Tests.BenchmarkPerformance.Benchmark10k","Version":"1","Categories":["Performance","Benchmark","Performance"]}
+##performancetestruninfo2:{"TestSuite":"Playmode","Date":1586305369,"Player":{"Development":true,"ScreenWidth":0,"ScreenHeight":0,"ScreenRefreshRate":0,"Fullscreen":false,"Vsync":1,"AntiAliasing":2,"Batchmode":true,"RenderThreadingMode":"GraphicsJobs","GpuSkinning":false,"Platform":"LinuxEditor","ColorSpace":"Gamma","AnisotropicFiltering":"ForceEnable","BlendWeights":"FourBones","GraphicsApi":"Null","ScriptingBackend":"Mono2x","AndroidTargetSdkVersion":"AndroidApiLevelAuto","AndroidBuildSystem":"Gradle","BuildTarget":"StandaloneLinux64","StereoRenderingPath":"MultiPass"},"Hardware":{"OperatingSystem":"Linux 5.0 Ubuntu 18.04 64bit","DeviceModel":"PC","DeviceName":"21b87a345b97","ProcessorType":"Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz","ProcessorCount":2,"GraphicsDeviceName":"Null Device","SystemMemorySizeMB":6945},"Editor":{"Version":"2019.3.0f1","Branch":"2019.3/staging","Changeset":"ffacea4b84e7","Date":1574394952},"Dependencies":["com.unity.ext.nunit@1.0.0","com.unity.ide.vscode@1.1.4","com.unity.test-framework@1.1.13","com.unity.test-framework.performance@2.0.9-preview","com.unity.testtools.codecoverage@0.2.3-preview","com.unity.textmeshpro@2.0.1","com.unity.ugui@1.0.0","com.unity.modules.ai@1.0.0","com.unity.modules.androidjni@1.0.0","com.unity.modules.animation@1.0.0","com.unity.modules.assetbundle@1.0.0","com.unity.modules.audio@1.0.0","com.unity.modules.cloth@1.0.0","com.unity.modules.director@1.0.0","com.unity.modules.imageconversion@1.0.0","com.unity.modules.imgui@1.0.0","com.unity.modules.jsonserialize@1.0.0","com.unity.modules.particlesystem@1.0.0","com.unity.modules.physics@1.0.0","com.unity.modules.physics2d@1.0.0","com.unity.modules.screencapture@1.0.0","com.unity.modules.terrain@1.0.0","com.unity.modules.terrainphysics@1.0.0","com.unity.modules.tilemap@1.0.0","com.unity.modules.ui@1.0.0","com.unity.modules.uielements@1.0.0","com.unity.modules.umbra@1.0.0","com.unity.modules.unityanalytics@1.0.0","com.unity.modules.unitywebrequest@1.0.0","com.unity.modules.unitywebrequestassetbundle@1.0.0","com.unity.modules.unitywebrequestaudio@1.0.0","com.unity.modules.unitywebrequesttexture@1.0.0","com.unity.modules.unitywebrequestwww@1.0.0","com.unity.modules.vehicles@1.0.0","com.unity.modules.video@1.0.0","com.unity.modules.vr@1.0.0","com.unity.modules.wind@1.0.0","com.unity.modules.xr@1.0.0"],"Results":[]}
+Can't remove BenchmarkNetworkManager (Script) because NetworkManagerHUD (Script) depends on it
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1003" name="ULocalConnectionPerformance" fullname="Tests.ULocalConnectionPerformance" classname="Tests.ULocalConnectionPerformance" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.041352" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties>
+            <property name="Category" value="Performance" />
+          </properties>
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1004" name="ULocalConnectionPerformanceWithEnumeratorPasses" fullname="Tests.ULocalConnectionPerformance.ULocalConnectionPerformanceWithEnumeratorPasses" methodname="ULocalConnectionPerformanceWithEnumeratorPasses" classname="Tests.ULocalConnectionPerformance" runstate="Runnable" seed="1207766149" result="Failed" label="Error" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.031344" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="Category" value="Performance" />
+            </properties>
+            <failure>
+              <message><![CDATA[SetUp : System.AggregateException : One or more errors occurred.
+  ----> System.NullReferenceException : Object reference not set to an instance of an object]]></message>
+              <stack-trace><![CDATA[--SetUp
+  at Mirror.Tests.AsyncUtil+<RunAsync>d__0.MoveNext () [0x0006e] in /github/workspace/Assets/Mirror/Tests/Common/AsyncUtil.cs:16 
+  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__9[T].MoveNext () [0x00121] in /github/workspace/Library/PackageCache/com.unity.test-framework@1.1.13/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs:62 
+--NullReferenceException
+  at Mirror.NetworkManager+<SetupServer>d__15.MoveNext () [0x0002f] in /github/workspace/Assets/Mirror/Runtime/NetworkManager.cs:180 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <437ba245d8404784b9fbab9b439ac908>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0003e] in <437ba245d8404784b9fbab9b439ac908>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <437ba245d8404784b9fbab9b439ac908>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <437ba245d8404784b9fbab9b439ac908>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.GetResult () [0x00000] in <437ba245d8404784b9fbab9b439ac908>:0 
+  at Mirror.NetworkManager+<StartHost>d__19.MoveNext () [0x00020] in /github/workspace/Assets/Mirror/Runtime/NetworkManager.cs:268 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <437ba245d8404784b9fbab9b439ac908>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0003e] in <437ba245d8404784b9fbab9b439ac908>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <437ba245d8404784b9fbab9b439ac908>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <437ba245d8404784b9fbab9b439ac908>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.GetResult () [0x00000] in <437ba245d8404784b9fbab9b439ac908>:0 
+  at Tests.ULocalConnectionPerformance+<<SetUp>b__4_0>d.MoveNext () [0x0009d] in /github/workspace/Assets/Mirror/Tests/Performance/Runtime/ULocalConnectionPerformance.cs:33 ]]></stack-trace>
+            </failure>
+            <output><![CDATA[SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+
+##performancetestresult2:{"SampleGroups":[],"Name":"Tests.ULocalConnectionPerformance.ULocalConnectionPerformanceWithEnumeratorPasses","Version":"1","Categories":["Performance","Performance"]}
+Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1110" name="Mirror.Tests.Runtime.dll" fullname="/github/workspace/Library/ScriptAssemblies/Mirror.Tests.Runtime.dll" runstate="Runnable" testcasecount="93" result="Skipped" label="Ignored" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:03Z" duration="1.605272" total="93" passed="92" failed="0" inconclusive="0" skipped="1" asserts="0">
+      <properties>
+        <property name="_PID" value="26" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <reason>
+        <message><![CDATA[One or more child tests were ignored]]></message>
+      </reason>
+      <test-suite type="TestSuite" id="1112" name="Mirror" fullname="Mirror" runstate="Runnable" testcasecount="92" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:03Z" duration="1.497946" total="92" passed="92" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1113" name="Tests" fullname="Mirror.Tests" runstate="Runnable" testcasecount="92" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:02Z" duration="1.417865" total="92" passed="92" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1009" name="FlagsTests" fullname="Mirror.Tests.FlagsTests" classname="Mirror.Tests.FlagsTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.033683" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1010" name="CanCallServerFunctionAsServer" fullname="Mirror.Tests.FlagsTests.CanCallServerFunctionAsServer" methodname="CanCallServerFunctionAsServer" classname="Mirror.Tests.FlagsTests" runstate="Runnable" seed="1440462827" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.018901" asserts="0">
+              <properties />
+              <output><![CDATA[SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+]]></output>
+            </test-case>
+            <test-case id="1011" name="CannotCallClientFunctionAsServer" fullname="Mirror.Tests.FlagsTests.CannotCallClientFunctionAsServer" methodname="CannotCallClientFunctionAsServer" classname="Mirror.Tests.FlagsTests" runstate="Runnable" seed="384800735" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.008162" asserts="0">
+              <properties />
+              <output><![CDATA[SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+NetworkManager: added default Transport because there was none yet.
+[Client] function 'System.Void Mirror.Tests.Flags::CallClientFunction()' called on server
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1041" name="NetworkBehaviourHookGuardTester" fullname="Mirror.Tests.NetworkBehaviourHookGuardTester" classname="Mirror.Tests.NetworkBehaviourHookGuardTester" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.010113" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            <test-case id="1042" name="HookGuard" fullname="Mirror.Tests.NetworkBehaviourHookGuardTester.HookGuard" methodname="HookGuard" classname="Mirror.Tests.NetworkBehaviourHookGuardTester" runstate="Runnable" seed="325005429" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.001163" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1043" name="NetworkBehaviourInitSyncObjectTester" fullname="Mirror.Tests.NetworkBehaviourInitSyncObjectTester" classname="Mirror.Tests.NetworkBehaviourInitSyncObjectTester" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.014843" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            <test-case id="1044" name="InitSyncObject" fullname="Mirror.Tests.NetworkBehaviourInitSyncObjectTester.InitSyncObject" methodname="InitSyncObject" classname="Mirror.Tests.NetworkBehaviourInitSyncObjectTester" runstate="Runnable" seed="1594216461" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.008980" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1012" name="NetworkBehaviourTests" fullname="Mirror.Tests.NetworkBehaviourTests" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" testcasecount="28" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.364047" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1023" name="ComponentIndex" fullname="Mirror.Tests.NetworkBehaviourTests.ComponentIndex" methodname="ComponentIndex" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="705721841" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.049498" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1026" name="GetDelegate" fullname="Mirror.Tests.NetworkBehaviourTests.GetDelegate" methodname="GetDelegate" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="567284096" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.022205" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1022" name="HasIdentitysConnectionToClient" fullname="Mirror.Tests.NetworkBehaviourTests.HasIdentitysConnectionToClient" methodname="HasIdentitysConnectionToClient" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1582077950" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.008176" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1021" name="HasIdentitysConnectionToServer" fullname="Mirror.Tests.NetworkBehaviourTests.HasIdentitysConnectionToServer" methodname="HasIdentitysConnectionToServer" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1317586771" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007882" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1020" name="HasIdentitysNetId" fullname="Mirror.Tests.NetworkBehaviourTests.HasIdentitysNetId" methodname="HasIdentitysNetId" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1502436649" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007758" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1015" name="IsClient" fullname="Mirror.Tests.NetworkBehaviourTests.IsClient" methodname="IsClient" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="125865389" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.006818" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1016" name="IsClientOnly" fullname="Mirror.Tests.NetworkBehaviourTests.IsClientOnly" methodname="IsClientOnly" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="740169831" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007419" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1014" name="IsServer" fullname="Mirror.Tests.NetworkBehaviourTests.IsServer" methodname="IsServer" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="680502347" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.008178" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1013" name="IsServerOnly" fullname="Mirror.Tests.NetworkBehaviourTests.IsServerOnly" methodname="IsServerOnly" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1284954815" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.008094" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1024" name="OnCheckObserverTrueByDefault" fullname="Mirror.Tests.NetworkBehaviourTests.OnCheckObserverTrueByDefault" methodname="OnCheckObserverTrueByDefault" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="653450610" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007628" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1018" name="OnStartServer" fullname="Mirror.Tests.NetworkBehaviourTests.OnStartServer" methodname="OnStartServer" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="340049143" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.012982" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1017" name="PlayerHasAuthorityByDefault" fullname="Mirror.Tests.NetworkBehaviourTests.PlayerHasAuthorityByDefault" methodname="PlayerHasAuthorityByDefault" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1853475431" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.008026" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1025" name="RegisterDelegateDoesntOverwrite" fullname="Mirror.Tests.NetworkBehaviourTests.RegisterDelegateDoesntOverwrite" methodname="RegisterDelegateDoesntOverwrite" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="648585734" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.020706" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+Function Mirror.Tests.NetworkBehaviourDelegateComponent.Delegate and Mirror.Tests.NetworkBehaviourDelegateComponent.Delegate2 have the same hash.  Please rename one of them
+]]></output>
+            </test-case>
+            <test-case id="1019" name="SpawnedObjectNoAuthority" fullname="Mirror.Tests.NetworkBehaviourTests.SpawnedObjectNoAuthority" methodname="SpawnedObjectNoAuthority" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1743444506" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007591" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1028" name="SyncVarGameObjectEqualNull" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualNull" methodname="SyncVarGameObjectEqualNull" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1372487334" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007575" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1033" name="SyncVarGameObjectEqualUnspawnedGO" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualUnspawnedGO" methodname="SyncVarGameObjectEqualUnspawnedGO" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="979108016" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.015797" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+SetSyncVarGameObject GameObject New Game Object (UnityEngine.GameObject) has a zero netId. Maybe it is not spawned yet?
+]]></output>
+            </test-case>
+            <test-case id="1034" name="SyncVarGameObjectEqualUnspawnedGOZeroNetIdIsTrue" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualUnspawnedGOZeroNetIdIsTrue" methodname="SyncVarGameObjectEqualUnspawnedGOZeroNetIdIsTrue" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="815002208" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.014349" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+SetSyncVarGameObject GameObject New Game Object (UnityEngine.GameObject) has a zero netId. Maybe it is not spawned yet?
+]]></output>
+            </test-case>
+            <test-case id="1031" name="SyncVarGameObjectEqualValidGOWithDifferentNetId" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualValidGOWithDifferentNetId" methodname="SyncVarGameObjectEqualValidGOWithDifferentNetId" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1056799767" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007232" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1032" name="SyncVarGameObjectEqualValidGOWithSameNetId" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualValidGOWithSameNetId" methodname="SyncVarGameObjectEqualValidGOWithSameNetId" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1836744854" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007302" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1030" name="SyncVarGameObjectEqualWithoutIdentityComponent" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualWithoutIdentityComponent" methodname="SyncVarGameObjectEqualWithoutIdentityComponent" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1419405108" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007127" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1029" name="SyncVarGameObjectEqualZeroNetIdAndGOWithoutIdentityComponentIsTrue" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualZeroNetIdAndGOWithoutIdentityComponentIsTrue" methodname="SyncVarGameObjectEqualZeroNetIdAndGOWithoutIdentityComponentIsTrue" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="542099623" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007134" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1027" name="SyncVarGameObjectEqualZeroNetIdNullIsTrue" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarGameObjectEqualZeroNetIdNullIsTrue" methodname="SyncVarGameObjectEqualZeroNetIdNullIsTrue" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="895885036" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007115" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1036" name="SyncVarNetworkIdentityEqualNull" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarNetworkIdentityEqualNull" methodname="SyncVarNetworkIdentityEqualNull" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="680230812" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007254" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1039" name="SyncVarNetworkIdentityEqualUnspawnedIdentity" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarNetworkIdentityEqualUnspawnedIdentity" methodname="SyncVarNetworkIdentityEqualUnspawnedIdentity" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="420336460" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.014748" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+SetSyncVarNetworkIdentity NetworkIdentity New Game Object (Mirror.NetworkIdentity) has a zero netId. Maybe it is not spawned yet?
+]]></output>
+            </test-case>
+            <test-case id="1040" name="SyncVarNetworkIdentityEqualUnspawnedIdentityZeroNetIdIsTrue" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarNetworkIdentityEqualUnspawnedIdentityZeroNetIdIsTrue" methodname="SyncVarNetworkIdentityEqualUnspawnedIdentityZeroNetIdIsTrue" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="297095114" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.013863" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+SetSyncVarNetworkIdentity NetworkIdentity New Game Object (Mirror.NetworkIdentity) has a zero netId. Maybe it is not spawned yet?
+]]></output>
+            </test-case>
+            <test-case id="1037" name="SyncVarNetworkIdentityEqualValidIdentityWithDifferentNetId" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarNetworkIdentityEqualValidIdentityWithDifferentNetId" methodname="SyncVarNetworkIdentityEqualValidIdentityWithDifferentNetId" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1726867506" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.009415" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1038" name="SyncVarNetworkIdentityEqualValidIdentityWithSameNetId" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarNetworkIdentityEqualValidIdentityWithSameNetId" methodname="SyncVarNetworkIdentityEqualValidIdentityWithSameNetId" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="243412123" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007438" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1035" name="SyncVarNetworkIdentityEqualZeroNetIdNullIsTrue" fullname="Mirror.Tests.NetworkBehaviourTests.SyncVarNetworkIdentityEqualZeroNetIdNullIsTrue" methodname="SyncVarNetworkIdentityEqualZeroNetIdNullIsTrue" classname="Mirror.Tests.NetworkBehaviourTests" runstate="Runnable" seed="1930765827" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.007286" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1045" name="NetworkIdentityTests" fullname="Mirror.Tests.NetworkIdentityTests" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:02Z" duration="0.038492" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1052" name="AssignAuthority" fullname="Mirror.Tests.NetworkIdentityTests.AssignAuthority" methodname="AssignAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="828336666" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.002534" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1050" name="AssignClientAuthorityCallback" fullname="Mirror.Tests.NetworkIdentityTests.AssignClientAuthorityCallback" methodname="AssignClientAuthorityCallback" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="795003200" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:01Z" duration="0.001904" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1046" name="AssignClientAuthorityNoServer" fullname="Mirror.Tests.NetworkIdentityTests.AssignClientAuthorityNoServer" methodname="AssignClientAuthorityNoServer" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="2034433010" result="Passed" start-time="2020-04-08 00:23:01Z" end-time="2020-04-08 00:23:02Z" duration="0.005342" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1055" name="AssignNullAuthority" fullname="Mirror.Tests.NetworkIdentityTests.AssignNullAuthority" methodname="AssignNullAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="510980978" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001383" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1051" name="DefaultAuthority" fullname="Mirror.Tests.NetworkIdentityTests.DefaultAuthority" methodname="DefaultAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1986389709" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001070" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1048" name="IsClient" fullname="Mirror.Tests.NetworkIdentityTests.IsClient" methodname="IsClient" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1796155488" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001117" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1049" name="IsLocalPlayer" fullname="Mirror.Tests.NetworkIdentityTests.IsLocalPlayer" methodname="IsLocalPlayer" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1822200764" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001076" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1047" name="IsServer" fullname="Mirror.Tests.NetworkIdentityTests.IsServer" methodname="IsServer" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="948328051" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001068" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1054" name="ReassignClientAuthority" fullname="Mirror.Tests.NetworkIdentityTests.ReassignClientAuthority" methodname="ReassignClientAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1313234919" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001334" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1058" name="RemoveClientAuthority" fullname="Mirror.Tests.NetworkIdentityTests.RemoveClientAuthority" methodname="RemoveClientAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1076807677" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001378" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1056" name="RemoveclientAuthorityNotSpawned" fullname="Mirror.Tests.NetworkIdentityTests.RemoveclientAuthorityNotSpawned" methodname="RemoveclientAuthorityNotSpawned" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="511917132" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001341" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1057" name="RemoveClientAuthorityOfOwner" fullname="Mirror.Tests.NetworkIdentityTests.RemoveClientAuthorityOfOwner" methodname="RemoveClientAuthorityOfOwner" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="1718904580" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001311" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1053" name="SpawnWithAuthority" fullname="Mirror.Tests.NetworkIdentityTests.SpawnWithAuthority" methodname="SpawnWithAuthority" classname="Mirror.Tests.NetworkIdentityTests" runstate="Runnable" seed="43013137" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001064" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1059" name="NetworkManagerTest" fullname="Mirror.Tests.NetworkManagerTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" testcasecount="9" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.442304" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1064" name="ConnectedClientTest" fullname="Mirror.Tests.NetworkManagerTest.ConnectedClientTest" methodname="ConnectedClientTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="1150481595" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.273130" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1065" name="ConnectedClientUriTest" fullname="Mirror.Tests.NetworkManagerTest.ConnectedClientUriTest" methodname="ConnectedClientUriTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="628182908" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.019938" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1066" name="ConnectedHostTest" fullname="Mirror.Tests.NetworkManagerTest.ConnectedHostTest" methodname="ConnectedHostTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="1778242908" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.015329" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1067" name="ConnectionRefusedTest" fullname="Mirror.Tests.NetworkManagerTest.ConnectionRefusedTest" methodname="ConnectionRefusedTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="592032887" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.065415" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1063" name="StartClientTest" fullname="Mirror.Tests.NetworkManagerTest.StartClientTest" methodname="StartClientTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="1102511679" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.010203" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1061" name="StartServerTest" fullname="Mirror.Tests.NetworkManagerTest.StartServerTest" methodname="StartServerTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="2062973476" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.007915" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1068" name="StopClientTest" fullname="Mirror.Tests.NetworkManagerTest.StopClientTest" methodname="StopClientTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="1130265117" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.014621" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1062" name="StopServerTest" fullname="Mirror.Tests.NetworkManagerTest.StopServerTest" methodname="StopServerTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="1153374677" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.020162" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1060" name="VariableTest" fullname="Mirror.Tests.NetworkManagerTest.VariableTest" methodname="VariableTest" classname="Mirror.Tests.NetworkManagerTest" runstate="Runnable" seed="6852181" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001590" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1069" name="NetworkServerTest" fullname="Mirror.Tests.NetworkServerTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" testcasecount="21" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.192387" total="21" passed="21" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1083" name="ActivateHostSceneCallsOnStartClient" fullname="Mirror.Tests.NetworkServerTest.ActivateHostSceneCallsOnStartClient" methodname="ActivateHostSceneCallsOnStartClient" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="6785787" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.018982" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1078" name="AddConnectionTest" fullname="Mirror.Tests.NetworkServerTest.AddConnectionTest" methodname="AddConnectionTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="929646089" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.009720" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1090" name="ClearAllComponentsDirtyBits" fullname="Mirror.Tests.NetworkServerTest.ClearAllComponentsDirtyBits" methodname="ClearAllComponentsDirtyBits" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1280666095" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001652" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1089" name="ClearDirtyComponentsDirtyBits" fullname="Mirror.Tests.NetworkServerTest.ClearDirtyComponentsDirtyBits" methodname="ClearDirtyComponentsDirtyBits" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="304543304" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001738" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1072" name="ConnectedEventTest" fullname="Mirror.Tests.NetworkServerTest.ConnectedEventTest" methodname="ConnectedEventTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1136112881" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.004817" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1073" name="ConnectionTest" fullname="Mirror.Tests.NetworkServerTest.ConnectionTest" methodname="ConnectionTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="57218811" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.002232" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1080" name="DisconnectAllConnectionsTest" fullname="Mirror.Tests.NetworkServerTest.DisconnectAllConnectionsTest" methodname="DisconnectAllConnectionsTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1309912628" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.002684" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1070" name="DisconnectIsActiveTest" fullname="Mirror.Tests.NetworkServerTest.DisconnectIsActiveTest" methodname="DisconnectIsActiveTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="2093933051" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.009812" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1075" name="DisconnectMessageHandlerTest" fullname="Mirror.Tests.NetworkServerTest.DisconnectMessageHandlerTest" methodname="DisconnectMessageHandlerTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="968506106" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001767" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1071" name="DisconnectRemoveHandlers" fullname="Mirror.Tests.NetworkServerTest.DisconnectRemoveHandlers" methodname="DisconnectRemoveHandlers" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="810317688" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.009855" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1084" name="GetNetworkIdentity" fullname="Mirror.Tests.NetworkServerTest.GetNetworkIdentity" methodname="GetNetworkIdentity" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="350433683" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.008031" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1085" name="GetNoNetworkIdentity" fullname="Mirror.Tests.NetworkServerTest.GetNoNetworkIdentity" methodname="GetNoNetworkIdentity" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1610164081" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001828" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1086" name="HideForConnection" fullname="Mirror.Tests.NetworkServerTest.HideForConnection" methodname="HideForConnection" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="180096275" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.072952" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1077" name="LocalClientActiveTest" fullname="Mirror.Tests.NetworkServerTest.LocalClientActiveTest" methodname="LocalClientActiveTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1936905061" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001712" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1074" name="MaxConnectionsTest" fullname="Mirror.Tests.NetworkServerTest.MaxConnectionsTest" methodname="MaxConnectionsTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="504864230" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.005741" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1076" name="MultipleConnectionsTest" fullname="Mirror.Tests.NetworkServerTest.MultipleConnectionsTest" methodname="MultipleConnectionsTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1188920622" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001723" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1079" name="RemoveConnectionTest" fullname="Mirror.Tests.NetworkServerTest.RemoveConnectionTest" methodname="RemoveConnectionTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1783798429" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001392" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1082" name="SetAllClientsNotReadyTest" fullname="Mirror.Tests.NetworkServerTest.SetAllClientsNotReadyTest" methodname="SetAllClientsNotReadyTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1912147581" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.003280" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1081" name="SetClientReadyAndNotReadyTest" fullname="Mirror.Tests.NetworkServerTest.SetClientReadyAndNotReadyTest" methodname="SetClientReadyAndNotReadyTest" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="887642252" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001449" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1088" name="UnSpawn" fullname="Mirror.Tests.NetworkServerTest.UnSpawn" methodname="UnSpawn" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1827988354" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.002218" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1087" name="ValidateSceneObject" fullname="Mirror.Tests.NetworkServerTest.ValidateSceneObject" methodname="ValidateSceneObject" classname="Mirror.Tests.NetworkServerTest" runstate="Runnable" seed="1625722154" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001592" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1091" name="NetworkServerTests" fullname="Mirror.Tests.NetworkServerTests" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" testcasecount="11" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.127646" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1092" name="InitializeTest" fullname="Mirror.Tests.NetworkServerTests.InitializeTest" methodname="InitializeTest" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="1916406601" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.002029" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1094" name="ReadyMessageSetsClientReadyTest" fullname="Mirror.Tests.NetworkServerTests.ReadyMessageSetsClientReadyTest" methodname="ReadyMessageSetsClientReadyTest" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="615954071" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.009312" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1100" name="RegisterMessage1" fullname="Mirror.Tests.NetworkServerTests.RegisterMessage1" methodname="RegisterMessage1" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="1817683218" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.037766" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1101" name="RegisterMessage2" fullname="Mirror.Tests.NetworkServerTests.RegisterMessage2" methodname="RegisterMessage2" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="1980021344" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.009970" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1095" name="SendToAll" fullname="Mirror.Tests.NetworkServerTests.SendToAll" methodname="SendToAll" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="998583277" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.011108" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1096" name="SendToClientOfPlayer" fullname="Mirror.Tests.NetworkServerTests.SendToClientOfPlayer" methodname="SendToClientOfPlayer" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="1015814053" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.011494" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1097" name="ShowForConnection" fullname="Mirror.Tests.NetworkServerTests.ShowForConnection" methodname="ShowForConnection" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="619249444" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.015780" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1099" name="SpawnPrefabObject" fullname="Mirror.Tests.NetworkServerTests.SpawnPrefabObject" methodname="SpawnPrefabObject" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="1272421175" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001231" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1098" name="SpawnSceneObject" fullname="Mirror.Tests.NetworkServerTests.SpawnSceneObject" methodname="SpawnSceneObject" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="375427561" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001089" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1093" name="SpawnTest" fullname="Mirror.Tests.NetworkServerTests.SpawnTest" methodname="SpawnTest" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="1352076409" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.001106" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1102" name="UnRegisterMessage1" fullname="Mirror.Tests.NetworkServerTests.UnRegisterMessage1" methodname="UnRegisterMessage1" classname="Mirror.Tests.NetworkServerTests" runstate="Runnable" seed="1283871820" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.012635" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Unknown message ID 30067 connection(127.0.0.1:0). May be due to no existing RegisterHandler for this message.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1103" name="RpcTests" fullname="Mirror.Tests.RpcTests" classname="Mirror.Tests.RpcTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.115386" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1107" name="ClientRpc" fullname="Mirror.Tests.RpcTests.ClientRpc" methodname="ClientRpc" classname="Mirror.Tests.RpcTests" runstate="Runnable" seed="422757276" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.021176" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1105" name="Command" fullname="Mirror.Tests.RpcTests.Command" methodname="Command" classname="Mirror.Tests.RpcTests" runstate="Runnable" seed="689388182" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.019473" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1106" name="CommandWithNetworkIdentity" fullname="Mirror.Tests.RpcTests.CommandWithNetworkIdentity" methodname="CommandWithNetworkIdentity" classname="Mirror.Tests.RpcTests" runstate="Runnable" seed="241980694" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.019772" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1104" name="CommandWithoutAuthority" fullname="Mirror.Tests.RpcTests.CommandWithoutAuthority" methodname="CommandWithoutAuthority" classname="Mirror.Tests.RpcTests" runstate="Runnable" seed="1990357704" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.007935" asserts="0">
+              <properties />
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1109" name="DisconnectHostTest" fullname="Mirror.Tests.RpcTests.DisconnectHostTest" methodname="DisconnectHostTest" classname="Mirror.Tests.RpcTests" runstate="Runnable" seed="252328733" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.019077" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+            <test-case id="1108" name="TargetRpc" fullname="Mirror.Tests.RpcTests.TargetRpc" methodname="TargetRpc" classname="Mirror.Tests.RpcTests" runstate="Runnable" seed="1143495278" result="Passed" start-time="2020-04-08 00:23:02Z" end-time="2020-04-08 00:23:02Z" duration="0.019619" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[Thank you for using Mirror! https://mirror-networking.com
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestSuite" id="1111" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="1" result="Skipped" label="Ignored" start-time="2020-04-08 00:23:03Z" end-time="2020-04-08 00:23:03Z" duration="0.008870" total="1" passed="0" failed="0" inconclusive="0" skipped="1" asserts="0">
+        <properties />
+        <reason>
+          <message><![CDATA[One or more child tests were ignored]]></message>
+        </reason>
+        <test-suite type="TestFixture" id="1007" name="NetworkIdentityTests" fullname="Tests.NetworkIdentityTests" classname="Tests.NetworkIdentityTests" runstate="Runnable" testcasecount="1" result="Skipped" label="Ignored" start-time="2020-04-08 00:23:03Z" end-time="2020-04-08 00:23:03Z" duration="0.005228" total="1" passed="0" failed="0" inconclusive="0" skipped="1" asserts="0">
+          <properties />
+          <reason>
+            <message><![CDATA[One or more child tests were ignored]]></message>
+          </reason>
+          <test-case id="1008" name="OnDestroyIsServerTrue" fullname="Tests.NetworkIdentityTests.OnDestroyIsServerTrue" methodname="OnDestroyIsServerTrue" classname="Tests.NetworkIdentityTests" runstate="Ignored" seed="15733200" result="Skipped" label="Ignored" start-time="2020-04-08 00:23:03Z" end-time="2020-04-08 00:23:03Z" duration="0.000422" asserts="0">
+            <properties>
+              <property name="_SKIPREASON" value="Figure out a better way to pass this test" />
+            </properties>
+            <reason>
+              <message><![CDATA[Figure out a better way to pass this test]]></message>
+            </reason>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1130" name="Unity.PerformanceTesting.Tests.Runtime.dll" fullname="/github/workspace/Library/ScriptAssemblies/Unity.PerformanceTesting.Tests.Runtime.dll" runstate="Runnable" testcasecount="13" result="Passed" start-time="2020-04-08 00:23:03Z" end-time="2020-04-08 00:23:07Z" duration="4.659102" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="26" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1115" name="FrametimeOverloadTests" fullname="FrametimeOverloadTests" classname="FrametimeOverloadTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-04-08 00:23:03Z" end-time="2020-04-08 00:23:07Z" duration="4.477400" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1116" name="MeasureFrames_WhenYielding_RecordsFrametimes" fullname="FrametimeOverloadTests.MeasureFrames_WhenYielding_RecordsFrametimes" methodname="MeasureFrames_WhenYielding_RecordsFrametimes" classname="FrametimeOverloadTests" runstate="Runnable" seed="841659017" result="Passed" start-time="2020-04-08 00:23:03Z" end-time="2020-04-08 00:23:03Z" duration="0.026811" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[FrameTime Microsecond Median:4057.40 Min:4051.70 Max:4057.40 Avg:4054.55 Std:2.85 SampleCount: 2 Sum: 8109.10
+
+##performancetestresult2:{"SampleGroups":[{"Name":"FrameTime","Unit":2,"IncreaseIsBetter":false,"Samples":[4.0573999285697937,4.05169976875186],"Min":4.05169976875186,"Max":4.0573999285697937,"Median":4.0573999285697937,"Average":4.0545498486608267,"StandardDeviation":0.0028500799089670181,"Sum":8.1090996973216534}],"Name":"FrametimeOverloadTests.MeasureFrames_WhenYielding_RecordsFrametimes","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+        <test-case id="1118" name="MeasureFrames_WithCustomDefinition_AssignsDefinition" fullname="FrametimeOverloadTests.MeasureFrames_WithCustomDefinition_AssignsDefinition" methodname="MeasureFrames_WithCustomDefinition_AssignsDefinition" classname="FrametimeOverloadTests" runstate="Runnable" seed="1368270856" result="Passed" start-time="2020-04-08 00:23:03Z" end-time="2020-04-08 00:23:04Z" duration="0.852265" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[TIME Microsecond Median:4057.00 Min:3918.40 Max:4287.60 Avg:4061.52 Std:47.37 SampleCount: 120 Sum: 487382.70
+
+##performancetestresult2:{"SampleGroups":[{"Name":"TIME","Unit":2,"IncreaseIsBetter":false,"Samples":[3.9184,4.0714000000000006,4.0915,4.0046,4.0734,4.1257,4.0264,4.1095000000000006,3.9974000000000003,4.057,4.0587,4.1936,3.9614000000000003,4.0189,4.0477,4.0534,4.2518,4.0638000000000005,4.0273,4.0386000000000006,4.0544,4.0609,4.1564000000000005,3.9970000000000003,4.0619000000000005,4.0768,4.1068,4.0265,4.046,4.0470000000000006,4.0436000000000005,4.0955,4.069,4.0258,4.0608,4.0678,4.0854,4.0951,4.0112000000000005,4.0786,4.0266,4.064,4.0816,4.0358,4.0498,4.0938,4.0373,4.073,4.0193,4.0551,4.045,4.0779000000000005,4.0873,4.0136,4.0617,4.0884,4.0547,4.1082,3.9696000000000002,4.0520000000000005,4.049,4.0673,4.1421,4.0274,3.9963,4.2876,4.0296,4.0896,4.0128,4.0474000000000006,4.0868,4.0286,4.088,4.0203,4.0493000000000006,4.0520000000000005,4.0714000000000006,4.0793,4.0426,4.0427,4.0533,4.0527000000000006,4.1153,4.0285,4.0355,4.0652,4.0429,4.0945,4.0197,4.0548,4.0592000000000006,4.0712,4.0846,4.1146,4.0579,4.0536,4.0706,4.0948,4.0038,4.0518,4.1311,4.0944,4.1037,4.0154000000000005,4.057,4.0798000000000005,4.0466,4.0873,4.0213,4.1159,4.0321,4.0953,4.1158,3.9889,4.0188000000000006,4.0688,4.0503,4.0978,4.0366,4.0395],"Min":3.9184,"Max":4.2876,"Median":4.057,"Average":4.0615225000000015,"StandardDeviation":0.047365927385445886,"Sum":487.38270000000017}],"Name":"FrametimeOverloadTests.MeasureFrames_WithCustomDefinition_AssignsDefinition","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+        <test-case id="1117" name="MeasureFrames_WithNoParams_RecordsSampleGroup" fullname="FrametimeOverloadTests.MeasureFrames_WithNoParams_RecordsSampleGroup" methodname="MeasureFrames_WithNoParams_RecordsSampleGroup" classname="FrametimeOverloadTests" runstate="Runnable" seed="190836285" result="Passed" start-time="2020-04-08 00:23:04Z" end-time="2020-04-08 00:23:04Z" duration="0.854353" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[Time Microsecond Median:4058.30 Min:3745.60 Max:4306.30 Avg:4057.64 Std:59.22 SampleCount: 120 Sum: 486916.70
+
+##performancetestresult2:{"SampleGroups":[{"Name":"Time","Unit":2,"IncreaseIsBetter":false,"Samples":[4.0564,4.1021,4.0343,4.0379000000000005,4.034,4.0559,4.0534,4.3063,3.9994,4.0424,4.0592000000000006,4.0499,4.0971,4.0378,4.042,4.0529,4.0921,4.0931000000000006,3.9945000000000004,4.061,4.0397,4.0652,4.1105,3.9947000000000004,4.0598,4.0680000000000005,4.0475,4.1152000000000006,4.0111,4.0853,4.025,4.0592000000000006,4.0945,4.0212,4.1023000000000005,4.038,4.1224,4.1699,4.0003,3.9897,4.0834,4.0408,4.1311,3.9854000000000003,4.0643,4.0438,4.0645,4.1103000000000005,4.0131000000000006,4.0598,4.0457,4.0583,4.1432,3.9810000000000003,4.0593,4.0844000000000005,3.7456,4.1232,3.9959000000000002,4.0142,4.0144,4.0618,4.1134,3.9957000000000003,4.0628,4.0448,4.0587,4.162,3.9847,4.0459000000000005,4.0519,4.0553,4.1168000000000005,3.9983000000000004,4.0658,4.113,3.9987000000000004,4.1118000000000006,4.0009000000000006,4.0915,4.0407,4.0986,4.0866,3.9959000000000002,4.0521,4.0612,4.0616,4.098,4.0139000000000005,4.045,4.1097,4.0983,4.0741000000000005,4.0009000000000006,4.1144,4.0227,4.042,4.1184,4.0083,4.046,4.0605,4.0697,4.1173,3.9989000000000003,4.0473,4.056,4.0805,4.1264,3.9721,4.1002,4.0117,4.0623000000000005,4.1948,3.9226,4.0550000000000006,4.0904,4.0735,4.1677,3.9534000000000002,4.0513],"Min":3.7456,"Max":4.3063,"Median":4.0583,"Average":4.0576391666666654,"StandardDeviation":0.059219178053275562,"Sum":486.91669999999988}],"Name":"FrametimeOverloadTests.MeasureFrames_WithNoParams_RecordsSampleGroup","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+        <test-case id="1120" name="MeasureFrames_WithProfilerMarkers_RecordsMarkers" fullname="FrametimeOverloadTests.MeasureFrames_WithProfilerMarkers_RecordsMarkers" methodname="MeasureFrames_WithProfilerMarkers_RecordsMarkers" classname="FrametimeOverloadTests" runstate="Runnable" seed="1698004807" result="Passed" start-time="2020-04-08 00:23:04Z" end-time="2020-04-08 00:23:05Z" duration="0.863207" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[TEST_MARKER Microsecond Median:1071.80 Min:1054.40 Max:1946.80 Avg:1085.19 Std:87.29 SampleCount: 120 Sum: 130222.40
+
+##performancetestresult2:{"SampleGroups":[{"Name":"TEST_MARKER","Unit":0,"IncreaseIsBetter":false,"Samples":[1067800.0,1072100.0,1072900.0,1071400.0,1071300.0,1066300.0,1071200.0,1071600.0,1072100.0,1071500.0,1073700.0,1072000.0,1074200.0,1070500.0,1070100.0,1070600.0,1070100.0,1070000.0,1076500.0,1068200.0,1071500.0,1069400.0,1076000.0,1071700.0,1070500.0,1071500.0,1066800.0,1067100.0,1067500.0,1067300.0,1068500.0,1071900.0,1054400.0,1071600.0,1071200.0,1072000.0,1069500.0,1065100.0,1072100.0,1070800.0,1070100.0,1084800.0,1069000.0,1076000.0,1073200.0,1078900.0,1074600.0,1069000.0,1073400.0,1082100.0,1074100.0,1073900.0,1067500.0,1073400.0,1079300.0,1077000.0,1072300.0,1070900.0,1073200.0,1071900.0,1077700.0,1074100.0,1073500.0,1073400.0,1117900.0,1099600.0,1074700.0,1073100.0,1079700.0,1077500.0,1946800.0,1362000.0,1082900.0,1074700.0,1073800.0,1076500.0,1073000.0,1083200.0,1070000.0,1068600.0,1069900.0,1069200.0,1071000.0,1074800.0,1068500.0,1073800.0,1073000.0,1123900.0,1077300.0,1077800.0,1073900.0,1074300.0,1061900.0,1071800.0,1068100.0,1074100.0,1072300.0,1072000.0,1071600.0,1069700.0,1071400.0,1070600.0,1071000.0,1072600.0,1072100.0,1070800.0,1070700.0,1070600.0,1070400.0,1070800.0,1070200.0,1070800.0,1071400.0,1071600.0,1076300.0,1070700.0,1071300.0,1070200.0,1352300.0,1069900.0],"Min":1054400.0,"Max":1946800.0,"Median":1071800.0,"Average":1085186.6666666667,"StandardDeviation":87294.115812897508,"Sum":130222400.0}],"Name":"FrametimeOverloadTests.MeasureFrames_WithProfilerMarkers_RecordsMarkers","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+        <test-case id="1121" name="MeasureFrames_WithProfilerMarkers_string_RecordsMarkers" fullname="FrametimeOverloadTests.MeasureFrames_WithProfilerMarkers_string_RecordsMarkers" methodname="MeasureFrames_WithProfilerMarkers_string_RecordsMarkers" classname="FrametimeOverloadTests" runstate="Runnable" seed="872400899" result="Passed" start-time="2020-04-08 00:23:05Z" end-time="2020-04-08 00:23:06Z" duration="0.862585" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[TEST_MARKER Microsecond Median:2139.00 Min:2132.40 Max:2837.60 Avg:2153.92 Std:72.74 SampleCount: 120 Sum: 258470.30
+
+##performancetestresult2:{"SampleGroups":[{"Name":"TEST_MARKER","Unit":0,"IncreaseIsBetter":false,"Samples":[2837600.0,2134100.0,2138200.0,2137700.0,2137100.0,2140400.0,2135100.0,2140400.0,2140200.0,2145600.0,2136700.0,2145500.0,2135400.0,2140600.0,2142500.0,2138000.0,2136400.0,2143800.0,2139200.0,2139800.0,2139600.0,2147900.0,2138300.0,2137000.0,2138000.0,2142600.0,2135300.0,2161000.0,2179700.0,2140100.0,2135000.0,2138700.0,2336100.0,2138700.0,2139800.0,2233300.0,2141100.0,2143200.0,2132700.0,2137700.0,2141000.0,2137800.0,2139800.0,2136000.0,2291600.0,2138300.0,2138100.0,2137900.0,2136200.0,2136900.0,2137000.0,2136900.0,2137700.0,2136300.0,2138100.0,2136900.0,2137200.0,2142100.0,2137500.0,2144100.0,2140300.0,2143500.0,2137200.0,2151500.0,2137300.0,2137000.0,2136600.0,2142600.0,2138100.0,2139000.0,2138800.0,2152200.0,2140500.0,2138800.0,2143400.0,2136700.0,2137200.0,2136400.0,2159600.0,2140900.0,2139400.0,2139800.0,2149500.0,2139100.0,2138700.0,2137100.0,2210700.0,2133500.0,2135700.0,2132400.0,2140200.0,2133700.0,2136500.0,2135100.0,2142900.0,2142000.0,2140300.0,2137600.0,2137000.0,2137300.0,2137500.0,2138500.0,2338600.0,2149000.0,2141700.0,2369800.0,2147500.0,2147900.0,2136200.0,2152500.0,2144000.0,2141000.0,2140700.0,2148400.0,2137500.0,2135900.0,2138200.0,2141100.0,2141000.0,2139700.0],"Min":2132400.0,"Max":2837600.0,"Median":2139000.0,"Average":2153919.1666666665,"StandardDeviation":72741.714643700529,"Sum":258470300.0}],"Name":"FrametimeOverloadTests.MeasureFrames_WithProfilerMarkers_string_RecordsMarkers","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+        <test-case id="1119" name="MeasureFrames_WithRecordingDisabled_RecordsNoSampleGroups" fullname="FrametimeOverloadTests.MeasureFrames_WithRecordingDisabled_RecordsNoSampleGroups" methodname="MeasureFrames_WithRecordingDisabled_RecordsNoSampleGroups" classname="FrametimeOverloadTests" runstate="Runnable" seed="674013393" result="Passed" start-time="2020-04-08 00:23:06Z" end-time="2020-04-08 00:23:07Z" duration="0.854379" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[
+##performancetestresult2:{"SampleGroups":[],"Name":"FrametimeOverloadTests.MeasureFrames_WithRecordingDisabled_RecordsNoSampleGroups","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+        <test-case id="1123" name="MeasureFrames_WithWarmup_ThrowsException" fullname="FrametimeOverloadTests.MeasureFrames_WithWarmup_ThrowsException" methodname="MeasureFrames_WithWarmup_ThrowsException" classname="FrametimeOverloadTests" runstate="Runnable" seed="425429614" result="Passed" start-time="2020-04-08 00:23:07Z" end-time="2020-04-08 00:23:07Z" duration="0.028902" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[Provide execution count or remove warmup count from frames measurement.
+
+##performancetestresult2:{"SampleGroups":[],"Name":"FrametimeOverloadTests.MeasureFrames_WithWarmup_ThrowsException","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+        <test-case id="1122" name="MeasureFrames_WithWarmupAndExecutions_RecordsSpecifiedAmount" fullname="FrametimeOverloadTests.MeasureFrames_WithWarmupAndExecutions_RecordsSpecifiedAmount" methodname="MeasureFrames_WithWarmupAndExecutions_RecordsSpecifiedAmount" classname="FrametimeOverloadTests" runstate="Runnable" seed="875138214" result="Passed" start-time="2020-04-08 00:23:07Z" end-time="2020-04-08 00:23:07Z" duration="0.101812" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[Time Microsecond Median:4065.70 Min:3777.30 Max:4262.30 Avg:4039.59 Std:136.50 SampleCount: 10 Sum: 40395.90
+
+##performancetestresult2:{"SampleGroups":[{"Name":"Time","Unit":2,"IncreaseIsBetter":false,"Samples":[3.9416,4.1871,3.8944,4.0657000000000005,4.2623000000000006,4.1502,3.7773000000000003,3.9998,4.0697,4.0478000000000005],"Min":3.7773000000000003,"Max":4.2623000000000006,"Median":4.0657000000000005,"Average":4.03959,"StandardDeviation":0.13649568821028749,"Sum":40.3959}],"Name":"FrametimeOverloadTests.MeasureFrames_WithWarmupAndExecutions_RecordsSpecifiedAmount","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1124" name="MeasureProfilerSamplesTests" fullname="MeasureProfilerSamplesTests" classname="MeasureProfilerSamplesTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2020-04-08 00:23:07Z" end-time="2020-04-08 00:23:07Z" duration="0.134328" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1128" name="MeasureProfilerSamples_ManyFrames_RecordsSamples" fullname="MeasureProfilerSamplesTests.MeasureProfilerSamples_ManyFrames_RecordsSamples" methodname="MeasureProfilerSamples_ManyFrames_RecordsSamples" classname="MeasureProfilerSamplesTests" runstate="Runnable" seed="727901633" result="Passed" start-time="2020-04-08 00:23:07Z" end-time="2020-04-08 00:23:07Z" duration="0.039465" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[TestMarker Microsecond Median:1069.10 Min:1067.10 Max:1080.50 Avg:1071.13 Std:5.46 SampleCount: 4 Sum: 4284.50
+
+##performancetestresult2:{"SampleGroups":[{"Name":"TestMarker","Unit":0,"IncreaseIsBetter":false,"Samples":[1080500.0,1069100.0,1067800.0,1067100.0],"Min":1067100.0,"Max":1080500.0,"Median":1069100.0,"Average":1071125.0,"StandardDeviation":5460.025183092107,"Sum":4284500.0}],"Name":"MeasureProfilerSamplesTests.MeasureProfilerSamples_ManyFrames_RecordsSamples","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+        <test-case id="1126" name="MeasureProfilerSamples_SingleFrame_RecordsSample" fullname="MeasureProfilerSamplesTests.MeasureProfilerSamples_SingleFrame_RecordsSample" methodname="MeasureProfilerSamples_SingleFrame_RecordsSample" classname="MeasureProfilerSamplesTests" runstate="Runnable" seed="434325358" result="Passed" start-time="2020-04-08 00:23:07Z" end-time="2020-04-08 00:23:07Z" duration="0.014414" asserts="0">
+          <properties>
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[TestMarker 1076.00 Microsecond
+
+##performancetestresult2:{"SampleGroups":[{"Name":"TestMarker","Unit":0,"IncreaseIsBetter":false,"Samples":[1076000.0],"Min":1076000.0,"Max":1076000.0,"Median":1076000.0,"Average":1076000.0,"StandardDeviation":0.0,"Sum":1076000.0}],"Name":"MeasureProfilerSamplesTests.MeasureProfilerSamples_SingleFrame_RecordsSample","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+        <test-case id="1129" name="MeasureProfilerSamples_string_ManyFrames_RecordsSamples" fullname="MeasureProfilerSamplesTests.MeasureProfilerSamples_string_ManyFrames_RecordsSamples" methodname="MeasureProfilerSamples_string_ManyFrames_RecordsSamples" classname="MeasureProfilerSamplesTests" runstate="Runnable" seed="486174056" result="Passed" start-time="2020-04-08 00:23:07Z" end-time="2020-04-08 00:23:07Z" duration="0.037479" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[TestMarker Microsecond Median:1070.00 Min:1068.70 Max:1070.50 Avg:1069.50 Std:0.77 SampleCount: 4 Sum: 4278.00
+
+##performancetestresult2:{"SampleGroups":[{"Name":"TestMarker","Unit":0,"IncreaseIsBetter":false,"Samples":[1068700.0,1070500.0,1070000.0,1068800.0],"Min":1068700.0,"Max":1070500.0,"Median":1070000.0,"Average":1069500.0,"StandardDeviation":771.36243102707567,"Sum":4278000.0}],"Name":"MeasureProfilerSamplesTests.MeasureProfilerSamples_string_ManyFrames_RecordsSamples","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+        <test-case id="1127" name="MeasureProfilerSamples_strings_SingleFrame_RecordsSample" fullname="MeasureProfilerSamplesTests.MeasureProfilerSamples_strings_SingleFrame_RecordsSample" methodname="MeasureProfilerSamples_strings_SingleFrame_RecordsSample" classname="MeasureProfilerSamplesTests" runstate="Runnable" seed="1232180205" result="Passed" start-time="2020-04-08 00:23:07Z" end-time="2020-04-08 00:23:07Z" duration="0.013842" asserts="0">
+          <properties>
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[TestMarker 1078.00 Microsecond
+
+##performancetestresult2:{"SampleGroups":[{"Name":"TestMarker","Unit":0,"IncreaseIsBetter":false,"Samples":[1078000.0],"Min":1078000.0,"Max":1078000.0,"Median":1078000.0,"Average":1078000.0,"StandardDeviation":0.0,"Sum":1078000.0}],"Name":"MeasureProfilerSamplesTests.MeasureProfilerSamples_strings_SingleFrame_RecordsSample","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+        <test-case id="1125" name="MeasureProfilerSamples_WithNoSamples_DoesNotRecordSampleGroups" fullname="MeasureProfilerSamplesTests.MeasureProfilerSamples_WithNoSamples_DoesNotRecordSampleGroups" methodname="MeasureProfilerSamples_WithNoSamples_DoesNotRecordSampleGroups" classname="MeasureProfilerSamplesTests" runstate="Runnable" seed="705125210" result="Passed" start-time="2020-04-08 00:23:07Z" end-time="2020-04-08 00:23:07Z" duration="0.013265" asserts="0">
+          <properties>
+            <property name="Category" value="Performance" />
+          </properties>
+          <output><![CDATA[
+##performancetestresult2:{"SampleGroups":[],"Name":"MeasureProfilerSamplesTests.MeasureProfilerSamples_WithNoSamples_DoesNotRecordSampleGroups","Version":"1","Categories":["Performance"]}
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
