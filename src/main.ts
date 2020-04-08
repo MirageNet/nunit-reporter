@@ -2,10 +2,6 @@ import {setFailed, getInput} from '@actions/core'
 import {GitHub, context} from '@actions/github'
 import {readResults, Annotation} from './nunit'
 
-function failDetails(annotations: Annotation[]): string {
-  return annotations.map(n => `${n.messageformatted}`).join('\n\n')
-}
-
 async function run(): Promise<void> {
   try {
     const path = getInput('path')
@@ -27,10 +23,9 @@ async function run(): Promise<void> {
         : `
 **${results.passed} tests passed**
 **${results.failed} tests failed**
-# Failed Tests
-${failDetails(results.annotations)}
-`
 
+${results.details}
+`
     await octokit.checks.create({
       head_sha: context.sha,
       name: 'Tests Results',

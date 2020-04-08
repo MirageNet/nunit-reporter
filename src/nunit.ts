@@ -1,6 +1,6 @@
-import {parseStringPromise} from 'xml2js'
-import {create} from '@actions/glob'
-import {promises as fs} from 'fs'
+import { parseStringPromise } from 'xml2js'
+import { create } from '@actions/glob'
+import { promises as fs } from 'fs'
 
 export class Annotation {
   public constructor(
@@ -11,8 +11,7 @@ export class Annotation {
     public readonly end_column: number,
     public readonly annotation_level: 'failure' | 'notice' | 'warning',
     public readonly message: string,
-    public readonly messageformatted: string
-  ) {}
+  ) { }
 }
 
 function getLocation(stacktrace: string): [string, number] {
@@ -35,75 +34,78 @@ function getLocation(stacktrace: string): [string, number] {
   return ['', 0]
 }
 
-export function testCaseAnnotation(testcase: any): Annotation | null {
-  if (testcase.result === 'Failed') {
+export function testCaseAnnotation(testcase: any): Annotation {
+  const [filename, lineno] =
+    'stack-trace' in testcase.failure
+      ? getLocation(testcase.failure['stack-trace'])
+      : ['', 0]
 
-    const [filename, lineno] = 
-      'stack-trace' in testcase.failure 
-        ? getLocation(testcase.failure['stack-trace'])
-        : ['', 0]
+  const sanitizedFilename = filename.replace(/^\/github\/workspace\//, '')
+  const message = testcase.failure.message
+  const classname = testcase.classname
+  const methodname = testcase.methodname
 
-    const sanitizedFilename = filename.replace(/^\/github\/workspace\//, '')
-    const message = testcase.failure.message
-    const classname = testcase.classname
-    const methodname = testcase.methodname
+  const stacktrace = 'stack-trace' in testcase.failure
+    ? testcase.failure['stack-trace'].substring(0, 65536)
+    : '';
 
-    return new Annotation(
-      sanitizedFilename,
-      lineno,
-      lineno,
-      0,
-      0,
-      'failure',
-      `Failed test ${methodname} in ${classname}\n${message}\n\n${testcase.failure['stack-trace']}`,
-      `* Failed test ${methodname} in ${classname}\n${message}\n\`\`\`${testcase.failure['stack-trace']}\`\`\``
-    )
-  }
-  return null
+  return new Annotation(
+    sanitizedFilename,
+    lineno,
+    lineno,
+    0,
+    0,
+    'failure',
+    `Failed test ${methodname} in ${classname}\n${message}\n\n${stacktrace}`,
+  )
+}
+
+export function testCaseDetails(testcase: any): string {
+
+  const message = testcase.failure.message
+  const classname = testcase.classname
+  const methodname = testcase.methodname
+
+  const stacktrace = 'stack-trace' in testcase.failure
+    ? testcase.failure['stack-trace'].substring(0, 65536)
+    : '';
+
+  return `* Failed test ${methodname} in ${classname}\n${message}\n\`\`\`${stacktrace}\`\`\``
 }
 
 export class TestResult {
   public constructor(
     public readonly passed: number,
     public readonly failed: number,
-    public readonly annotations: Annotation[]
-  ) {}
+    public readonly annotations: Annotation[],
+    public readonly details: string
+  ) { }
 }
 
-function getTestCasesAnnotations(testsuite: any): Annotation[] {
-  if ('test-case' in testsuite) {
-    const testCases = testsuite['test-case']
+function getTestCases(testsuite: any): any[] {
 
-    const annotations = Array.isArray(testCases)
-      ? testCases.map(testCaseAnnotation)
-      : [testCaseAnnotation(testCases)]
+  let testCases = [];
 
-    return annotations.filter((x): x is Annotation => x !== null)
-  }
-  return []
-}
-
-function getTestSuiteAnnotations(testsuite: any): Annotation[] {
   if ('test-suite' in testsuite) {
     const childsuits = testsuite['test-suite']
 
-    const annotations = Array.isArray(childsuits)
-      ? childsuits.map(getAnnotations)
-      : [getAnnotations(childsuits)]
+    const childsuitCases = Array.isArray(childsuits)
+      ? childsuits.map(getTestCases)
+      : [getTestCases(childsuits)]
 
-    return annotations.flat()
+    testCases = childsuitCases.flat();
   }
-  return []
-}
 
-function getAnnotations(testsuite: any): Annotation[] {
-  const testCasesAnnotations = getTestCasesAnnotations(testsuite)
+  if ('test-case' in testsuite) {
+    const childcases = testsuite['test-case']
 
-  const testSuiteAnnotations = getTestSuiteAnnotations(testsuite)
+    if (Array.isArray(childcases))
+      testCases = testCases.concat(childcases);
+    else
+      testCases.push(childcases)
+  }
 
-  const result = testCasesAnnotations.concat(testSuiteAnnotations)
-
-  return result
+  return testCases
 }
 
 export async function parseNunit(nunitReport: string): Promise<TestResult> {
@@ -115,12 +117,17 @@ export async function parseNunit(nunitReport: string): Promise<TestResult> {
 
   const testRun = nunitResults['test-run']
 
-  const annotations = getAnnotations(testRun)
+  const testCases = getTestCases(testRun);
+  const failedCases = testCases.filter(tc => tc.result == "Failed")
+
+  const annotations = failedCases.map(testCaseAnnotation);
+  const details = failedCases.map(testCaseDetails).join("\n");
 
   return new TestResult(
     parseInt(testRun.passed),
     parseInt(testRun.failed),
-    annotations
+    annotations,
+    details
   )
 }
 
@@ -129,11 +136,11 @@ function combine(result1: TestResult, result2: TestResult): TestResult {
   const failed = result1.failed + result2.failed
   const annotations = result1.annotations.concat(result2.annotations)
 
-  return new TestResult(passed, failed, annotations)
+  return new TestResult(passed, failed, annotations, result1.details + "\n" + result2.details)
 }
 
 async function* resultGenerator(path: string): AsyncGenerator<TestResult> {
-  const globber = await create(path, {followSymbolicLinks: false})
+  const globber = await create(path, { followSymbolicLinks: false })
 
   for await (const file of globber.globGenerator()) {
     const data = await fs.readFile(file, 'utf8')
@@ -142,7 +149,7 @@ async function* resultGenerator(path: string): AsyncGenerator<TestResult> {
 }
 
 export async function readResults(path: string): Promise<TestResult> {
-  let results = new TestResult(0, 0, [])
+  let results = new TestResult(0, 0, [], '')
 
   for await (const result of resultGenerator(path))
     results = combine(results, result)

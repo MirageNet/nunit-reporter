@@ -2223,7 +2223,7 @@ const xml2js_1 = __webpack_require__(992);
 const glob_1 = __webpack_require__(281);
 const fs_1 = __webpack_require__(747);
 class Annotation {
-    constructor(path, start_line, end_line, start_column, end_column, annotation_level, message, messageformatted) {
+    constructor(path, start_line, end_line, start_column, end_column, annotation_level, message) {
         this.path = path;
         this.start_line = start_line;
         this.end_line = end_line;
@@ -2231,7 +2231,6 @@ class Annotation {
         this.end_column = end_column;
         this.annotation_level = annotation_level;
         this.message = message;
-        this.messageformatted = messageformatted;
     }
 }
 exports.Annotation = Annotation;
@@ -2253,52 +2252,55 @@ function getLocation(stacktrace) {
     return ['', 0];
 }
 function testCaseAnnotation(testcase) {
-    if (testcase.result === 'Failed') {
-        const [filename, lineno] = 'stack-trace' in testcase.failure
-            ? getLocation(testcase.failure['stack-trace'])
-            : ['', 0];
-        const sanitizedFilename = filename.replace(/^\/github\/workspace\//, '');
-        const message = testcase.failure.message;
-        const classname = testcase.classname;
-        const methodname = testcase.methodname;
-        return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `Failed test ${methodname} in ${classname}\n${message}\n\n${testcase.failure['stack-trace']}`, `* Failed test ${methodname} in ${classname}\n${message}\n\`\`\`${testcase.failure['stack-trace']}\`\`\``);
-    }
-    return null;
+    const [filename, lineno] = 'stack-trace' in testcase.failure
+        ? getLocation(testcase.failure['stack-trace'])
+        : ['', 0];
+    const sanitizedFilename = filename.replace(/^\/github\/workspace\//, '');
+    const message = testcase.failure.message;
+    const classname = testcase.classname;
+    const methodname = testcase.methodname;
+    const stacktrace = 'stack-trace' in testcase.failure
+        ? testcase.failure['stack-trace'].substring(0, 65536)
+        : '';
+    return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `Failed test ${methodname} in ${classname}\n${message}\n\n${stacktrace}`);
 }
 exports.testCaseAnnotation = testCaseAnnotation;
+function testCaseDetails(testcase) {
+    const message = testcase.failure.message;
+    const classname = testcase.classname;
+    const methodname = testcase.methodname;
+    const stacktrace = 'stack-trace' in testcase.failure
+        ? testcase.failure['stack-trace'].substring(0, 65536)
+        : '';
+    return `* Failed test ${methodname} in ${classname}\n${message}\n\`\`\`${stacktrace}\`\`\``;
+}
+exports.testCaseDetails = testCaseDetails;
 class TestResult {
-    constructor(passed, failed, annotations) {
+    constructor(passed, failed, annotations, details) {
         this.passed = passed;
         this.failed = failed;
         this.annotations = annotations;
+        this.details = details;
     }
 }
 exports.TestResult = TestResult;
-function getTestCasesAnnotations(testsuite) {
-    if ('test-case' in testsuite) {
-        const testCases = testsuite['test-case'];
-        const annotations = Array.isArray(testCases)
-            ? testCases.map(testCaseAnnotation)
-            : [testCaseAnnotation(testCases)];
-        return annotations.filter((x) => x !== null);
-    }
-    return [];
-}
-function getTestSuiteAnnotations(testsuite) {
+function getTestCases(testsuite) {
+    let testCases = [];
     if ('test-suite' in testsuite) {
         const childsuits = testsuite['test-suite'];
-        const annotations = Array.isArray(childsuits)
-            ? childsuits.map(getAnnotations)
-            : [getAnnotations(childsuits)];
-        return annotations.flat();
+        const childsuitCases = Array.isArray(childsuits)
+            ? childsuits.map(getTestCases)
+            : [getTestCases(childsuits)];
+        testCases = childsuitCases.flat();
     }
-    return [];
-}
-function getAnnotations(testsuite) {
-    const testCasesAnnotations = getTestCasesAnnotations(testsuite);
-    const testSuiteAnnotations = getTestSuiteAnnotations(testsuite);
-    const result = testCasesAnnotations.concat(testSuiteAnnotations);
-    return result;
+    if ('test-case' in testsuite) {
+        const childcases = testsuite['test-case'];
+        if (Array.isArray(childcases))
+            testCases = testCases.concat(childcases);
+        else
+            testCases.push(childcases);
+    }
+    return testCases;
 }
 async function parseNunit(nunitReport) {
     const nunitResults = await xml2js_1.parseStringPromise(nunitReport, {
@@ -2307,15 +2309,18 @@ async function parseNunit(nunitReport) {
         explicitArray: false
     });
     const testRun = nunitResults['test-run'];
-    const annotations = getAnnotations(testRun);
-    return new TestResult(parseInt(testRun.passed), parseInt(testRun.failed), annotations);
+    const testCases = getTestCases(testRun);
+    const failedCases = testCases.filter(tc => tc.result == "Failed");
+    const annotations = failedCases.map(testCaseAnnotation);
+    const details = failedCases.map(testCaseDetails).join("\n");
+    return new TestResult(parseInt(testRun.passed), parseInt(testRun.failed), annotations, details);
 }
 exports.parseNunit = parseNunit;
 function combine(result1, result2) {
     const passed = result1.passed + result2.passed;
     const failed = result1.failed + result2.failed;
     const annotations = result1.annotations.concat(result2.annotations);
-    return new TestResult(passed, failed, annotations);
+    return new TestResult(passed, failed, annotations, result1.details + "\n" + result2.details);
 }
 async function* resultGenerator(path) {
     const globber = await glob_1.create(path, { followSymbolicLinks: false });
@@ -2325,7 +2330,7 @@ async function* resultGenerator(path) {
     }
 }
 async function readResults(path) {
-    let results = new TestResult(0, 0, []);
+    let results = new TestResult(0, 0, [], '');
     for await (const result of resultGenerator(path))
         results = combine(results, result);
     return results;
@@ -5045,9 +5050,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = __webpack_require__(470);
 const github_1 = __webpack_require__(469);
 const nunit_1 = __webpack_require__(81);
-function failDetails(annotations) {
-    return annotations.map(n => `${n.messageformatted}`).join('\n\n');
-}
 async function run() {
     try {
         const path = core_1.getInput('path');
@@ -5063,8 +5065,8 @@ async function run() {
             : `
 **${results.passed} tests passed**
 **${results.failed} tests failed**
-# Failed Tests
-${failDetails(results.annotations)}
+
+${results.details}
 `;
         await octokit.checks.create({
             head_sha: github_1.context.sha,
