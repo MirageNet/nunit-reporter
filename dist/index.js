@@ -2264,7 +2264,7 @@ function testCaseAnnotation(testcase) {
     const stacktrace = 'stack-trace' in testcase.failure
         ? testcase.failure['stack-trace'].substring(0, 65536)
         : '';
-    return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `Failed test ${methodname} in ${classname}`, message, stacktrace);
+    return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `Failed test ${methodname} in ${classname}`, 'message', stacktrace);
 }
 exports.testCaseAnnotation = testCaseAnnotation;
 function testCaseDetails(testcase) {

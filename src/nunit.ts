@@ -60,7 +60,7 @@ export function testCaseAnnotation(testcase: any): Annotation {
     0,
     'failure',
     `Failed test ${methodname} in ${classname}`,
-    message.substring(0,25),
+    'message',
     stacktrace
   )
 }
