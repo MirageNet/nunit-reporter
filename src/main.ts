@@ -1,6 +1,6 @@
 import {setFailed, getInput} from '@actions/core'
 import {GitHub, context} from '@actions/github'
-import {readResults, Annotation} from './nunit'
+import {readResults} from './nunit'
 
 async function run(): Promise<void> {
   try {
@@ -26,6 +26,24 @@ async function run(): Promise<void> {
 
 ${results.details}
 `
+
+    const request = {
+      head_sha: context.sha,
+      name: 'Tests Results',
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      status: 'completed',
+      conclusion: results.failed > 0 ? 'failure' : 'success',
+      output: {
+        title: 'Test Results',
+        summary,
+        annotations: results.annotations.slice(0, numFailures),
+        text: details
+      }
+    };
+
+    console.log("Reporting results " + JSON.stringify(request, null, ' '))
+
     await octokit.checks.create({
       head_sha: context.sha,
       name: 'Tests Results',
@@ -39,7 +57,8 @@ ${results.details}
         annotations: results.annotations.slice(0, numFailures),
         text: details
       }
-    })
+    });
+
   } catch (error) {
     setFailed(error.message)
   }

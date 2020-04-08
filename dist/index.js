@@ -2310,7 +2310,7 @@ async function parseNunit(nunitReport) {
     });
     const testRun = nunitResults['test-run'];
     const testCases = getTestCases(testRun);
-    const failedCases = testCases.filter(tc => tc.result == "Failed");
+    const failedCases = testCases.filter(tc => tc.result === "Failed");
     const annotations = failedCases.map(testCaseAnnotation);
     const details = failedCases.map(testCaseDetails).join("\n");
     return new TestResult(parseInt(testRun.passed), parseInt(testRun.failed), annotations, details);
@@ -2320,7 +2320,7 @@ function combine(result1, result2) {
     const passed = result1.passed + result2.passed;
     const failed = result1.failed + result2.failed;
     const annotations = result1.annotations.concat(result2.annotations);
-    return new TestResult(passed, failed, annotations, result1.details + "\n" + result2.details);
+    return new TestResult(passed, failed, annotations, `${result1.details}\n${result2.details}`);
 }
 async function* resultGenerator(path) {
     const globber = await glob_1.create(path, { followSymbolicLinks: false });
@@ -5068,6 +5068,21 @@ async function run() {
 
 ${results.details}
 `;
+        const request = {
+            head_sha: github_1.context.sha,
+            name: 'Tests Results',
+            owner: github_1.context.repo.owner,
+            repo: github_1.context.repo.repo,
+            status: 'completed',
+            conclusion: results.failed > 0 ? 'failure' : 'success',
+            output: {
+                title: 'Test Results',
+                summary,
+                annotations: results.annotations.slice(0, numFailures),
+                text: details
+            }
+        };
+        console.log("Reporting results " + JSON.stringify(request, null, ' '));
         await octokit.checks.create({
             head_sha: github_1.context.sha,
             name: 'Tests Results',

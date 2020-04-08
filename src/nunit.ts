@@ -118,7 +118,7 @@ export async function parseNunit(nunitReport: string): Promise<TestResult> {
   const testRun = nunitResults['test-run']
 
   const testCases = getTestCases(testRun);
-  const failedCases = testCases.filter(tc => tc.result == "Failed")
+  const failedCases = testCases.filter(tc => tc.result === "Failed")
 
   const annotations = failedCases.map(testCaseAnnotation);
   const details = failedCases.map(testCaseDetails).join("\n");
@@ -136,7 +136,7 @@ function combine(result1: TestResult, result2: TestResult): TestResult {
   const failed = result1.failed + result2.failed
   const annotations = result1.annotations.concat(result2.annotations)
 
-  return new TestResult(passed, failed, annotations, result1.details + "\n" + result2.details)
+  return new TestResult(passed, failed, annotations, `${result1.details}\n${result2.details}`)
 }
 
 async function* resultGenerator(path: string): AsyncGenerator<TestResult> {
