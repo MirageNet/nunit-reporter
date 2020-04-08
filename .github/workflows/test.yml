@@ -22,4 +22,3 @@ jobs:
       with: 
         path: '__tests__/*.xml'
         access-token: ${{secrets.GITHUB_TOKEN}}
-        numFailures: 5

@@ -41,7 +41,7 @@ export function testCaseAnnotation(testcase: any): Annotation {
   const [filename, lineno] =
     'stack-trace' in testcase.failure
       ? getLocation(testcase.failure['stack-trace'])
-      : ['', 0]
+      : ['unknown', 0]
 
   const sanitizedFilename = filename.replace(/^\/github\/workspace\//, '')
   const message = testcase.failure.message
@@ -60,30 +60,16 @@ export function testCaseAnnotation(testcase: any): Annotation {
     0,
     'failure',
     `Failed test ${methodname} in ${classname}`,
-    'message',
+    message,
     stacktrace
   )
-}
-
-export function testCaseDetails(testcase: any): string {
-
-  const message = testcase.failure.message
-  const classname = testcase.classname
-  const methodname = testcase.methodname
-
-  const stacktrace = 'stack-trace' in testcase.failure
-    ? testcase.failure['stack-trace'].substring(0, 65536)
-    : '';
-
-  return `* Failed test ${methodname} in ${classname}\n${message}\n\`\`\`${stacktrace}\`\`\``
 }
 
 export class TestResult {
   public constructor(
     public readonly passed: number,
     public readonly failed: number,
-    public readonly annotations: Annotation[],
-    public readonly details: string
+    public readonly annotations: Annotation[]
   ) { }
 }
 
@@ -125,14 +111,12 @@ export async function parseNunit(nunitReport: string): Promise<TestResult> {
   const testCases = getTestCases(testRun);
   const failedCases = testCases.filter(tc => tc.result === "Failed")
 
-  const annotations = failedCases.map(testCaseAnnotation);
-  const details = failedCases.map(testCaseDetails).join("\n");
+  const annotations = failedCases.map(testCaseAnnotation)
 
   return new TestResult(
     parseInt(testRun.passed),
     parseInt(testRun.failed),
-    annotations,
-    details
+    annotations
   )
 }
 
@@ -141,7 +125,7 @@ function combine(result1: TestResult, result2: TestResult): TestResult {
   const failed = result1.failed + result2.failed
   const annotations = result1.annotations.concat(result2.annotations)
 
-  return new TestResult(passed, failed, annotations, `${result1.details}\n${result2.details}`)
+  return new TestResult(passed, failed, annotations)
 }
 
 async function* resultGenerator(path: string): AsyncGenerator<TestResult> {
@@ -154,7 +138,7 @@ async function* resultGenerator(path: string): AsyncGenerator<TestResult> {
 }
 
 export async function readResults(path: string): Promise<TestResult> {
-  let results = new TestResult(0, 0, [], '')
+  let results = new TestResult(0, 0, [])
 
   for await (const result of resultGenerator(path))
     results = combine(results, result)

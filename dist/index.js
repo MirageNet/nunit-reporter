@@ -2256,7 +2256,7 @@ function getLocation(stacktrace) {
 function testCaseAnnotation(testcase) {
     const [filename, lineno] = 'stack-trace' in testcase.failure
         ? getLocation(testcase.failure['stack-trace'])
-        : ['', 0];
+        : ['unknown', 0];
     const sanitizedFilename = filename.replace(/^\/github\/workspace\//, '');
     const message = testcase.failure.message;
     const classname = testcase.classname;
@@ -2264,25 +2264,14 @@ function testCaseAnnotation(testcase) {
     const stacktrace = 'stack-trace' in testcase.failure
         ? testcase.failure['stack-trace'].substring(0, 65536)
         : '';
-    return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `Failed test ${methodname} in ${classname}`, 'message', stacktrace);
+    return new Annotation(sanitizedFilename, lineno, lineno, 0, 0, 'failure', `Failed test ${methodname} in ${classname}`, message, stacktrace);
 }
 exports.testCaseAnnotation = testCaseAnnotation;
-function testCaseDetails(testcase) {
-    const message = testcase.failure.message;
-    const classname = testcase.classname;
-    const methodname = testcase.methodname;
-    const stacktrace = 'stack-trace' in testcase.failure
-        ? testcase.failure['stack-trace'].substring(0, 65536)
-        : '';
-    return `* Failed test ${methodname} in ${classname}\n${message}\n\`\`\`${stacktrace}\`\`\``;
-}
-exports.testCaseDetails = testCaseDetails;
 class TestResult {
-    constructor(passed, failed, annotations, details) {
+    constructor(passed, failed, annotations) {
         this.passed = passed;
         this.failed = failed;
         this.annotations = annotations;
-        this.details = details;
     }
 }
 exports.TestResult = TestResult;
@@ -2314,15 +2303,14 @@ async function parseNunit(nunitReport) {
     const testCases = getTestCases(testRun);
     const failedCases = testCases.filter(tc => tc.result === "Failed");
     const annotations = failedCases.map(testCaseAnnotation);
-    const details = failedCases.map(testCaseDetails).join("\n");
-    return new TestResult(parseInt(testRun.passed), parseInt(testRun.failed), annotations, details);
+    return new TestResult(parseInt(testRun.passed), parseInt(testRun.failed), annotations);
 }
 exports.parseNunit = parseNunit;
 function combine(result1, result2) {
     const passed = result1.passed + result2.passed;
     const failed = result1.failed + result2.failed;
     const annotations = result1.annotations.concat(result2.annotations);
-    return new TestResult(passed, failed, annotations, `${result1.details}\n${result2.details}`);
+    return new TestResult(passed, failed, annotations);
 }
 async function* resultGenerator(path) {
     const globber = await glob_1.create(path, { followSymbolicLinks: false });
@@ -2332,7 +2320,7 @@ async function* resultGenerator(path) {
     }
 }
 async function readResults(path) {
-    let results = new TestResult(0, 0, [], '');
+    let results = new TestResult(0, 0, []);
     for await (const result of resultGenerator(path))
         results = combine(results, result);
     return results;
@@ -5052,6 +5040,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = __webpack_require__(470);
 const github_1 = __webpack_require__(469);
 const nunit_1 = __webpack_require__(81);
+function generateSummary(annotation) {
+    return `* ${annotation.title}\n   ${annotation.message}`;
+}
 async function run() {
     try {
         const path = core_1.getInput('path');
@@ -5059,6 +5050,7 @@ async function run() {
         const accessToken = core_1.getInput('access-token');
         const results = await nunit_1.readResults(path);
         const octokit = new github_1.GitHub(accessToken);
+        const testSummary = results.annotations.map(generateSummary).join("\n");
         const summary = results.failed > 0
             ? `${results.failed} tests failed`
             : `${results.passed} tests passed`;
@@ -5068,7 +5060,8 @@ async function run() {
 **${results.passed} tests passed**
 **${results.failed} tests failed**
 
-${results.details}
+${testSummary}
+}
 `;
         const request = {
             head_sha: github_1.context.sha,

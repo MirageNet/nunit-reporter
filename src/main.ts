@@ -1,6 +1,12 @@
 import {setFailed, getInput} from '@actions/core'
 import {GitHub, context} from '@actions/github'
-import {readResults} from './nunit'
+import {readResults, Annotation} from './nunit'
+
+
+function generateSummary(annotation: Annotation): string {
+  return `* ${annotation.title}\n   ${annotation.message}`
+}
+
 
 async function run(): Promise<void> {
   try {
@@ -11,6 +17,8 @@ async function run(): Promise<void> {
     const results = await readResults(path)
 
     const octokit = new GitHub(accessToken)
+
+    const testSummary = results.annotations.map(generateSummary).join("\n")
 
     const summary =
       results.failed > 0
@@ -24,7 +32,8 @@ async function run(): Promise<void> {
 **${results.passed} tests passed**
 **${results.failed} tests failed**
 
-${results.details}
+${testSummary}
+}
 `
 
     const request = {
