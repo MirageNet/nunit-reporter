@@ -1,7 +1,6 @@
-import { parseStringPromise } from 'xml2js'
-import { create } from '@actions/glob'
-import { promises as fs } from 'fs'
-import {context} from '@actions/github'
+import {parseStringPromise} from 'xml2js'
+import {create} from '@actions/glob'
+import {promises as fs} from 'fs'
 import {relative} from 'path'
 
 export class Annotation {
@@ -14,9 +13,8 @@ export class Annotation {
     public readonly annotation_level: 'failure' | 'notice' | 'warning',
     public readonly title: string,
     public readonly message: string,
-    public readonly raw_details : string
-    
-  ) { }
+    public readonly raw_details: string
+  ) {}
 }
 
 function getLocation(stacktrace: string): [string, number] {
@@ -44,14 +42,14 @@ function getLocation(stacktrace: string): [string, number] {
     if (lineNo !== 0) return [match[1], lineNo]
   }
 
-    // exceptions stack traces as reported by dotnet
+  // exceptions stack traces as reported by dotnet
   const matches4 = stacktrace.matchAll(/\(at (.*):line (\d+)\)/g)
 
   for (const match of matches4) {
     const lineNo = parseInt(match[2])
     if (lineNo !== 0) return [match[1], lineNo]
   }
-  
+
   return ['unknown', 0]
 }
 
@@ -59,16 +57,17 @@ export function testCaseAnnotation(testcase: any): Annotation {
   const [filename, lineno] =
     'stack-trace' in testcase.failure
       ? getLocation(testcase.failure['stack-trace'])
-      : ['unknown', 0];
+      : ['unknown', 0]
 
-  const sanitizedFilename = relative(process.cwd(), filename);
+  const sanitizedFilename = relative(process.cwd(), filename)
   const message = testcase.failure.message
   const classname = testcase.classname
   const methodname = testcase.methodname
 
-  const stacktrace = 'stack-trace' in testcase.failure
-    ? testcase.failure['stack-trace'].substring(0, 65536)
-    : '';
+  const stacktrace =
+    'stack-trace' in testcase.failure
+      ? testcase.failure['stack-trace'].substring(0, 65536)
+      : ''
 
   return new Annotation(
     sanitizedFilename,
@@ -88,12 +87,11 @@ export class TestResult {
     public readonly passed: number,
     public readonly failed: number,
     public readonly annotations: Annotation[]
-  ) { }
+  ) {}
 }
 
 function getTestCases(testsuite: any): any[] {
-
-  let testCases = [];
+  let testCases = []
 
   if ('test-suite' in testsuite) {
     const childsuits = testsuite['test-suite']
@@ -102,16 +100,14 @@ function getTestCases(testsuite: any): any[] {
       ? childsuits.map(getTestCases)
       : [getTestCases(childsuits)]
 
-    testCases = childsuitCases.flat();
+    testCases = childsuitCases.flat()
   }
 
   if ('test-case' in testsuite) {
     const childcases = testsuite['test-case']
 
-    if (Array.isArray(childcases))
-      testCases = testCases.concat(childcases);
-    else
-      testCases.push(childcases)
+    if (Array.isArray(childcases)) testCases = testCases.concat(childcases)
+    else testCases.push(childcases)
   }
 
   return testCases
@@ -126,8 +122,8 @@ export async function parseNunit(nunitReport: string): Promise<TestResult> {
 
   const testRun = nunitResults['test-run']
 
-  const testCases = getTestCases(testRun);
-  const failedCases = testCases.filter(tc => tc.result === "Failed")
+  const testCases = getTestCases(testRun)
+  const failedCases = testCases.filter(tc => tc.result === 'Failed')
 
   const annotations = failedCases.map(testCaseAnnotation)
 
@@ -147,7 +143,7 @@ function combine(result1: TestResult, result2: TestResult): TestResult {
 }
 
 async function* resultGenerator(path: string): AsyncGenerator<TestResult> {
-  const globber = await create(path, { followSymbolicLinks: false })
+  const globber = await create(path, {followSymbolicLinks: false})
 
   for await (const file of globber.globGenerator()) {
     const data = await fs.readFile(file, 'utf8')
