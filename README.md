@@ -9,3 +9,5 @@ Example
         path: Tests/*.xml
         access-token: ${{ secrets.GITHUB_TOKEN }}
 ```
+
+See https://github.com/MirrorNG/nunit-reporter/pull/2/files for an example.
