@@ -19,3 +19,8 @@ jobs:
       with: 
         path: '*.xml'
         access-token: ${{secrets.GITHUB_TOKEN}}
+    - name: Publish
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+      run: npx semantic-release
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
