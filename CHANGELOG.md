@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/MirrorNG/nunit-reporter/compare/v1.0.5...v1.0.6) (2020-04-11)
+
+
+### Bug Fixes
+
+* update version in package.json ([e3c8e65](https://github.com/MirrorNG/nunit-reporter/commit/e3c8e654133c9997967b4e118d8243b3b6ba513c))
+
 # 1.0.0 (2020-04-11)
 
 
