@@ -16,23 +16,30 @@ async function run(): Promise<void> {
 
     const octokit = new GitHub(accessToken)
 
-    const testSummary = results.annotations.map(generateSummary).join('\n')
-
     const summary =
       results.failed > 0
         ? `${results.failed} tests failed`
         : `${results.passed} tests passed`
 
-    const details =
+    let details =
       results.failed === 0
         ? `** ${results.passed} tests passed**`
         : `
 **${results.passed} tests passed**
 **${results.failed} tests failed**
-
-${testSummary}
-}
 `
+
+    for (const ann of results.annotations) {
+      const annStr = generateSummary(ann)
+      const newDetails = `${details}\n${annStr}`
+      if (newDetails.length > 65000) {
+        details = `${details}\n\n ... and more.`
+        break
+      } else {
+        details = newDetails
+      }
+    }
+
     await octokit.checks.create({
       head_sha: context.sha,
       name: 'Tests Results',
