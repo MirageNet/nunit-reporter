@@ -3,7 +3,7 @@ Create an annotation of the build information and also list first n failed nunit
 
 Example
 ```yaml
-  - uses: MirrorNG/nunit-reporter
+  - uses: MirrorNG/nunit-reporter@1.0.4
       if: always()
       with:
         path: Tests/*.xml
