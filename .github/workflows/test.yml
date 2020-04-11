@@ -19,8 +19,14 @@ jobs:
       with: 
         path: '*.xml'
         access-token: ${{secrets.GITHUB_TOKEN}}
-    - name: Publish
-      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-      run: npx semantic-release
+    - name: Release
+      uses: cycjimmy/semantic-release-action@v2
+      with:
+        extra_plugins: |
+          @semantic-release/exec
+          @semantic-release/changelog
+          @semantic-release/git
+        branch: master
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
