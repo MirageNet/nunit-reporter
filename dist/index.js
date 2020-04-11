@@ -5085,8 +5085,9 @@ async function run() {
                 details = newDetails;
             }
         }
+        const pr = github_1.context.payload.pull_request;
         await octokit.checks.create({
-            head_sha: github_1.context.sha,
+            head_sha: (pr && pr['head'] && pr['head'].sha) || github_1.context.sha,
             name: 'Tests Results',
             owner: github_1.context.repo.owner,
             repo: github_1.context.repo.repo,
