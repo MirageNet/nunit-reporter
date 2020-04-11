@@ -2272,7 +2272,7 @@ function testCaseAnnotation(testcase) {
     const [filename, lineno] = 'stack-trace' in testcase.failure
         ? getLocation(testcase.failure['stack-trace'])
         : ['unknown', 0];
-    const sanitizedFilename = path_1.relative(process.cwd(), filename);
+    const sanitizedFilename = path_1.relative(process.cwd(), filename).replace(/\\/g, '/');
     const message = testcase.failure.message;
     const classname = testcase.classname;
     const methodname = testcase.methodname;
