@@ -47,7 +47,7 @@ async function run(): Promise<void> {
       owner: context.repo.owner,
       repo: context.repo.repo,
       status: 'completed',
-      conclusion: results.failed > 0 || results.passed == 0 ? 'failure' : 'success',
+      conclusion: results.failed > 0 || results.passed === 0 ? 'failure' : 'success',
       output: {
         title: 'Test Report',
         summary,
