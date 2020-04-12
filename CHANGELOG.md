@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/MirrorNG/nunit-reporter/compare/v1.0.6...v1.0.7) (2020-04-14)
+
+
+### Bug Fixes
+
+* relative paths when in docker step ([fb20fd3](https://github.com/MirrorNG/nunit-reporter/commit/fb20fd337de447eeabbc0acb59fb7c7752430809))
+
 ## [1.0.6](https://github.com/MirrorNG/nunit-reporter/compare/v1.0.5...v1.0.6) (2020-04-11)
 
 

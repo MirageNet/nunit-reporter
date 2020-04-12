@@ -1,6 +1,6 @@
 {
   "name": "nunit-result",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": true,
   "description": "Action to add nunit tests results ",
   "main": "lib/main.js",
