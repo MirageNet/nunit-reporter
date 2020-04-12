@@ -90,7 +90,7 @@ export class TestResult {
   ) {}
 }
 
-function sanitizePath(filename: string) {
+function sanitizePath(filename: string): string {
   if (filename.startsWith("/github/workspace"))
     return relative("/github/workspace", filename);
   else
