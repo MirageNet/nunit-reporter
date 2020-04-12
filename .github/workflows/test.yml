@@ -22,6 +22,10 @@ jobs:
       with: 
         path: '*.xml'
         access-token: ${{secrets.GITHUB_TOKEN}}
+    
+  release:
+    needs: [build, test]
+    steps:
     - name: Release
       uses: cycjimmy/semantic-release-action@v2
       with:
