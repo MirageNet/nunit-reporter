@@ -59,10 +59,7 @@ export function testCaseAnnotation(testcase: any): Annotation {
       ? getLocation(testcase.failure['stack-trace'])
       : ['unknown', 0]
 
-  const sanitizedFilename = relative(process.cwd(), filename).replace(
-    /\\/g,
-    '/'
-  )
+  const sanitizedFilename = sanitizePath(filename)
   const message = testcase.failure.message
   const classname = testcase.classname
   const methodname = testcase.methodname
@@ -91,6 +88,13 @@ export class TestResult {
     public readonly failed: number,
     public readonly annotations: Annotation[]
   ) {}
+}
+
+function sanitizePath(filename: string) {
+  if (filename.startsWith("/github/workspace"))
+    return relative("/github/workspace", filename);
+  else
+    return relative(process.cwd(), filename).replace(/\\/g, '/')
 }
 
 function getTestCases(testsuite: any): any[] {
