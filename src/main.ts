@@ -43,13 +43,13 @@ async function run(): Promise<void> {
     const pr = context.payload.pull_request
     await octokit.checks.create({
       head_sha: (pr && pr['head'] && pr['head'].sha) || context.sha,
-      name: 'Tests Results',
+      name: 'Tests Report',
       owner: context.repo.owner,
       repo: context.repo.repo,
       status: 'completed',
       conclusion: results.failed > 0 ? 'failure' : 'success',
       output: {
-        title: 'Test Results',
+        title: 'Test Report',
         summary,
         annotations: results.annotations.slice(0, numFailures),
         text: details
