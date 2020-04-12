@@ -15,8 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
         
     - uses: ./
       with: 
@@ -27,6 +25,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: [build, test]
     steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
     - name: Release
       uses: cycjimmy/semantic-release-action@v2
       with:
