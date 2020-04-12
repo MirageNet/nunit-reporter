@@ -1,6 +1,6 @@
 {
   "name": "nunit-result",
-  "version": "0.0.0",
+  "version": "1.0.6",
   "private": true,
   "description": "Action to add nunit tests results ",
   "main": "lib/main.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/MirrorNG/nunit-reporter.git"
   },
   "keywords": [
     "actions",
