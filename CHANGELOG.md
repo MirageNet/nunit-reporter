@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/MirrorNG/nunit-reporter/compare/v1.0.7...v1.0.8) (2020-04-14)
+
+
+### Bug Fixes
+
+* improve name of check report ([cff6a99](https://github.com/MirrorNG/nunit-reporter/commit/cff6a99edf41949b951e0a494b6fce46b1b92380))
+
 ## [1.0.7](https://github.com/MirrorNG/nunit-reporter/compare/v1.0.6...v1.0.7) (2020-04-14)
 
 
