@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/MirrorNG/nunit-reporter/compare/v1.0.8...v1.0.9) (2020-04-14)
+
+
+### Bug Fixes
+
+* fail the check if there are no tests found ([65a6d07](https://github.com/MirrorNG/nunit-reporter/commit/65a6d07f08aad29389775ad11f4ebf68764b778b))
+
 ## [1.0.8](https://github.com/MirrorNG/nunit-reporter/compare/v1.0.7...v1.0.8) (2020-04-14)
 
 
