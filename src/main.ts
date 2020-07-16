@@ -11,6 +11,7 @@ async function run(): Promise<void> {
     const path = getInput('path')
     const numFailures = parseInt(getInput('numFailures'))
     const accessToken = getInput('access-token')
+    const title = getInput('reportTitle')
 
     const results = await readResults(path)
 
@@ -49,7 +50,7 @@ async function run(): Promise<void> {
       status: 'completed',
       conclusion: results.failed > 0 || results.passed === 0 ? 'failure' : 'success',
       output: {
-        title: 'Test Report',
+        title,
         summary,
         annotations: results.annotations.slice(0, numFailures),
         text: details
