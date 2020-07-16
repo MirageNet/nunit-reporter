@@ -1,5 +1,5 @@
 import {setFailed, getInput} from '@actions/core'
-import {GitHub, context} from '@actions/github'
+import {getOctokit, context} from '@actions/github'
 import {readResults, Annotation} from './nunit'
 
 function generateSummary(annotation: Annotation): string {
@@ -11,10 +11,11 @@ async function run(): Promise<void> {
     const path = getInput('path')
     const numFailures = parseInt(getInput('numFailures'))
     const accessToken = getInput('access-token')
+    const title = getInput('reportTitle')
 
     const results = await readResults(path)
 
-    const octokit = new GitHub(accessToken)
+    const octokit = getOctokit(accessToken)
 
     const summary =
       results.failed > 0
@@ -40,16 +41,17 @@ async function run(): Promise<void> {
       }
     }
 
-    const pr = context.payload.pull_request
-    await octokit.checks.create({
-      head_sha: (pr && pr['head'] && pr['head'].sha) || context.sha,
+    const runId = context.runId
+    await octokit.checks.update({
+      check_run_id: runId,
       name: 'Tests Report',
       owner: context.repo.owner,
       repo: context.repo.repo,
       status: 'completed',
-      conclusion: results.failed > 0 || results.passed === 0 ? 'failure' : 'success',
+      conclusion:
+        results.failed > 0 || results.passed === 0 ? 'failure' : 'success',
       output: {
-        title: 'Test Report',
+        title,
         summary,
         annotations: results.annotations.slice(0, numFailures),
         text: details
