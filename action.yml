@@ -10,8 +10,12 @@ inputs:
     required: true
   numFailures:
     description: 'max number of failed tests to include'
-    require: true
-    default: 30
+    required: false
+    default: "30"
+  reportTitle:
+    description: "Report title"
+    required: false
+    default: "Test Report"
 runs:
   using: 'node12'
   main: 'dist/index.js'
