@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/MirrorNG/nunit-reporter/compare/v1.0.9...v1.0.10) (2020-07-19)
+
+
+### Bug Fixes
+
+*  numFailures is not required. Add reportTitle param ([82ab498](https://github.com/MirrorNG/nunit-reporter/commit/82ab4987b9bcdd363ec32c36259913852470f0d4))
+
 ## [1.0.9](https://github.com/MirrorNG/nunit-reporter/compare/v1.0.8...v1.0.9) (2020-04-14)
 
 
