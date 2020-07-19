@@ -153,6 +153,7 @@ async function* resultGenerator(path: string): AsyncGenerator<TestResult> {
   const globber = await create(path, {followSymbolicLinks: false})
 
   for await (const file of globber.globGenerator()) {
+    console.log(`parsing results in '${file}'`)
     const data = await fs.readFile(file, 'utf8')
     yield parseNunit(data)
   }
