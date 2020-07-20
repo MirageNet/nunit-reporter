@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/MirrorNG/nunit-reporter/compare/v1.0.10...v1.0.11) (2020-07-20)
+
+
+### Bug Fixes
+
+* Bump lodash from 4.17.15 to 4.17.19 ([#11](https://github.com/MirrorNG/nunit-reporter/issues/11)) ([389c8c8](https://github.com/MirrorNG/nunit-reporter/commit/389c8c8e4d93abae962af7a593b782cab87f0b64))
+
 ## [1.0.10](https://github.com/MirrorNG/nunit-reporter/compare/v1.0.9...v1.0.10) (2020-07-19)
 
 
