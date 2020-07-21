@@ -1,10 +1,9 @@
-import { create } from '@actions/glob'
-import { promises as fs } from 'fs'
-import { parseNunit as parseV1, isV1 } from './v1'
-import { parseNunit as parseV2, isV2 } from './v2'
-import { TestResult } from './data'
-import { parseStringPromise } from 'xml2js'
-
+import {create} from '@actions/glob'
+import {promises as fs} from 'fs'
+import {parseNunit as parseV1, isV1} from './v1'
+import {parseNunit as parseV2, isV2} from './v2'
+import {TestResult} from './data'
+import {parseStringPromise} from 'xml2js'
 
 function combine(result1: TestResult, result2: TestResult): TestResult {
   const passed = result1.passed + result2.passed
@@ -14,7 +13,7 @@ function combine(result1: TestResult, result2: TestResult): TestResult {
   return new TestResult(passed, failed, annotations)
 }
 
-export async function parseNunit(data: string) {
+export async function parseNunit(data: string): Promise<TestResult> {
   const report: any = await parseStringPromise(data, {
     trim: true,
     mergeAttrs: true,
@@ -23,25 +22,24 @@ export async function parseNunit(data: string) {
 
   if (isV1(report)) {
     return await parseV1(report)
-  }
-  else if (isV2(report)) {
+  } else if (isV2(report)) {
     return await parseV2(report)
-  }
-  else {
-    throw new Error("unsupported xml format");
+  } else {
+    throw new Error('unsupported xml format')
   }
 }
 
 async function* resultGenerator(path: string): AsyncGenerator<TestResult> {
-  const globber = await create(path, { followSymbolicLinks: false })
+  const globber = await create(path, {followSymbolicLinks: false})
 
   for await (const file of globber.globGenerator()) {
     const data = await fs.readFile(file, 'utf8')
     try {
-      const result = parseNunit(data);
-      yield result;
+      const result = parseNunit(data)
+      yield result
     } catch (err) {
-      console.warn(`failed to process report '${file}': ${err.message}`);
+      // eslint-disable-next-line no-console
+      console.warn(`failed to process report '${file}': ${err.message}`)
     }
   }
 }

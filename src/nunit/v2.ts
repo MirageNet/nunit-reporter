@@ -1,5 +1,4 @@
-import { parseStringPromise } from "xml2js"
-import { TestResult, Annotation, sanitizePath, getLocation } from "./data"
+import {TestResult, Annotation, sanitizePath, getLocation} from './data'
 
 export function getTestCases(testsuite: any): any[] {
   let testCases = []
@@ -24,8 +23,8 @@ export function getTestCases(testsuite: any): any[] {
   return testCases
 }
 
-export function isV2(nunitResults: any) {
-  return !!nunitResults['test-results'];
+export function isV2(nunitResults: any): boolean {
+  return !!nunitResults['test-results']
 }
 
 export async function parseNunit(nunitResults: any): Promise<TestResult> {
@@ -36,11 +35,7 @@ export async function parseNunit(nunitResults: any): Promise<TestResult> {
 
   const annotations = failedCases.map(testCaseAnnotation)
 
-  return new TestResult(
-    passedCases.length,
-    failedCases.length,
-    annotations
-  )
+  return new TestResult(passedCases.length, failedCases.length, annotations)
 }
 
 function testCaseAnnotation(testcase: any): Annotation {
@@ -54,7 +49,7 @@ function testCaseAnnotation(testcase: any): Annotation {
 
   const classname = testcase.classname || testcase.name
   const methodname = testcase.methodname || testcase.description
-  const title = `Failed test '${methodname}' in '${classname}'`;
+  const title = `Failed test '${methodname}' in '${classname}'`
 
   return new Annotation(
     sanitizedFilename,

@@ -1,5 +1,4 @@
-import { parseStringPromise } from "xml2js"
-import { TestResult, Annotation, sanitizePath, getLocation } from "./data"
+import {TestResult, Annotation, sanitizePath, getLocation} from './data'
 
 export function getTestCases(testsuite: any): any[] {
   let testCases = []
@@ -24,8 +23,8 @@ export function getTestCases(testsuite: any): any[] {
   return testCases
 }
 
-export function isV1(nunitResults: any) {
-  return !!nunitResults['test-run'];
+export function isV1(nunitResults: any): boolean {
+  return !!nunitResults['test-run']
 }
 
 export async function parseNunit(nunitResults: any): Promise<TestResult> {
