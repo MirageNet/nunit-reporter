@@ -44,7 +44,7 @@ async function run(): Promise<void> {
     const pr = context.payload.pull_request
     await octokit.checks.create({
       head_sha: (pr && pr['head'] && pr['head'].sha) || context.sha,
-      name: 'Tests Report',
+      name: `Tests Report: ${title}`,
       owner: context.repo.owner,
       repo: context.repo.repo,
       status: 'completed',
