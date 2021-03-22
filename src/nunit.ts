@@ -91,10 +91,9 @@ export class TestResult {
 }
 
 function sanitizePath(filename: string): string {
-  if (filename.startsWith("/github/workspace"))
-    return relative("/github/workspace", filename);
-  else
-    return relative(process.cwd(), filename).replace(/\\/g, '/')
+  if (filename.startsWith('/github/workspace'))
+    return relative('/github/workspace', filename)
+  else return relative(process.cwd(), filename).replace(/\\/g, '/')
 }
 
 function getTestCases(testsuite: any): any[] {

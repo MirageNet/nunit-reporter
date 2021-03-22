@@ -24,7 +24,7 @@ async function run(): Promise<void> {
 
     let details =
       results.failed === 0
-        ? `** ${results.passed} tests passed**`
+        ? `**${results.passed} tests passed**`
         : `
 **${results.passed} tests passed**
 **${results.failed} tests failed**
@@ -44,16 +44,17 @@ async function run(): Promise<void> {
     const pr = context.payload.pull_request
     await octokit.checks.create({
       head_sha: (pr && pr['head'] && pr['head'].sha) || context.sha,
-      name: `Tests Report: ${title}`,
+      name: `${title}`,
       owner: context.repo.owner,
       repo: context.repo.repo,
       status: 'completed',
-      conclusion: results.failed > 0 || results.passed === 0 ? 'failure' : 'success',
+      conclusion:
+        results.failed > 0 || results.passed === 0 ? 'failure' : 'success',
       output: {
         title,
         summary,
         annotations: results.annotations.slice(0, numFailures),
-        text: details
+        "text": details
       }
     })
   } catch (error) {
