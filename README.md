@@ -3,11 +3,11 @@ Create an annotation of the build information and also list first n failed nunit
 
 Example
 ```yaml
-  - uses: MirrorNG/nunit-reporter@v1.0.9
+  - uses: MirageNet/nunit-reporter@v1.0.9
       if: always()
       with:
         path: Tests/*.xml
         access-token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-See https://github.com/MirrorNG/nunit-reporter/pull/2/files for an example.
+See https://github.com/MirageNet/nunit-reporter/pull/2/files for an example.

@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MirrorNG/nunit-reporter.git"
+    "url": "git+https://github.com/MirageNet/nunit-reporter.git"
   },
   "keywords": [
     "actions",
@@ -23,7 +23,7 @@
     "test",
     "report"
   ],
-  "author": "MirrorNG",
+  "author": "MirageNet",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
