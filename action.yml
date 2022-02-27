@@ -1,6 +1,6 @@
 name: 'NUnit Reporter'
 description: 'Github action for publishing nunit results as github checks'
-author: 'MirrorNG'
+author: 'MirageNet'
 inputs:
   access-token:
     description: 'github token'
