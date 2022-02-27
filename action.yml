@@ -1,15 +1,15 @@
-name: 'NUnit Reporter'
-description: 'Github action for publishing nunit results as github checks'
-author: 'MirageNet'
+name: "NUnit Reporter"
+description: "Github action for publishing nunit results as github checks"
+author: "MirageNet"
 inputs:
   access-token:
-    description: 'github token'
+    description: "github token"
     required: true
   path:
-    description: 'glob to junit xml files'
+    description: "glob to junit xml files"
     required: true
   numFailures:
-    description: 'max number of failed tests to include'
+    description: "max number of failed tests to include"
     required: false
     default: "30"
   reportTitle:
@@ -17,8 +17,8 @@ inputs:
     required: false
     default: "Test Report"
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: "node12"
+  main: "dist/index.js"
 branding:
-  icon: 'check'  
-  color: 'green'
+  icon: "check"
+  color: "green"

@@ -1,7 +1,9 @@
 # nunit reporter
+
 Create an annotation of the build information and also list first n failed nunit tests
 
 Example
+
 ```yaml
   - uses: MirageNet/nunit-reporter@v1.0.9
       if: always()
