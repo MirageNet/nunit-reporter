@@ -1,6 +1,7 @@
 import {setFailed, getInput} from '@actions/core'
 import {GitHub, context} from '@actions/github'
-import {readResults, Annotation} from './nunit'
+import {readResults} from './nunit'
+import {Annotation} from './nunit/data'
 
 function generateSummary(annotation: Annotation): string {
   return `* ${annotation.title}\n   ${annotation.message}`
@@ -48,7 +49,8 @@ async function run(): Promise<void> {
       owner: context.repo.owner,
       repo: context.repo.repo,
       status: 'completed',
-      conclusion: results.failed > 0 || results.passed === 0 ? 'failure' : 'success',
+      conclusion:
+        results.failed > 0 || results.passed === 0 ? 'failure' : 'success',
       output: {
         title,
         summary,

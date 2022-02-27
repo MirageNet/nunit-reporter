@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="148" errors="0" failures="10" not-run="0" inconclusive="0" ignored="0" skipped="1" invalid="0" date="2020-07-19" time="14:03:51">
+  <environment os-version="10.0.17763" user="runneradmin" platform="Microsoft Windows Server 2019 Datacenter|C:\windows|\Device\Harddisk0\Partition2" nunit-version="2.5.8.0" machine-name="fv-az28" user-domain="fv-az28" clr-version="Unknown" cwd="D:\a\ps-csproj\ps-csproj" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Failure" success="False" time="132.828" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="D:\a\ps-csproj\ps-csproj\test\csproj-manipulations.tests.ps1" executed="True" result="Success" success="True" time="1.7995" asserts="0" description="D:\a\ps-csproj\ps-csproj\test\csproj-manipulations.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="project file manipulation" executed="True" result="Success" success="True" time="0.8887" asserts="0" description="project file manipulation">
+            <results>
+              <test-suite type="TestFixture" name="project file manipulation.When project reference version differs from packages.config" executed="True" result="Success" success="True" time="0.6965" asserts="0" description="project file manipulation.When project reference version differs from packages.config">
+                <results>
+                  <test-case description="Should detect the difference" name="project file manipulation.When project reference version differs from packages.config.Should detect the difference" time="0.1626" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should fix the difference" name="project file manipulation.When project reference version differs from packages.config.Should fix the difference" time="0.214" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="difference Should -Be fixed" name="project file manipulation.When project reference version differs from packages.config.difference Should -Be fixed" time="0.0101" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="D:\a\ps-csproj\ps-csproj\test\csproj-parsing.tests.ps1" executed="True" result="Success" success="True" time="0.6867" asserts="0" description="D:\a\ps-csproj\ps-csproj\test\csproj-parsing.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Basic reference parsing" executed="True" result="Success" success="True" time="0.169" asserts="0" description="Basic reference parsing">
+            <results>
+              <test-suite type="TestFixture" name="Basic reference parsing.when parsing csproj string" executed="True" result="Success" success="True" time="0.139" asserts="0" description="Basic reference parsing.when parsing csproj string">
+                <results>
+                  <test-case description="should return a valid object" name="Basic reference parsing.when parsing csproj string.should return a valid object" time="0.0138" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="should have 2 package references" name="Basic reference parsing.when parsing csproj string.should have 2 package references" time="0.0205" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="should have 2 project references" name="Basic reference parsing.when parsing csproj string.should have 2 project references" time="0.0189" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="reference should contain generated meta Name &lt;Name&gt;" name="Basic reference parsing.when parsing csproj string.reference should contain generated meta Name &lt;Name&gt;" time="0.0294" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="references Should -Be distinct" name="Basic reference parsing.when parsing csproj string.references Should -Be distinct" time="0.0114" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Reference node manipulation" executed="True" result="Success" success="True" time="0.5163" asserts="0" description="Reference node manipulation">
+            <results>
+              <test-suite type="TestFixture" name="Reference node manipulation.When converting project reference to nuget" executed="True" result="Success" success="True" time="0.3163" asserts="0" description="Reference node manipulation.When converting project reference to nuget">
+                <results>
+                  <test-suite type="TestFixture" name="Reference node manipulation.When converting project reference to nuget.When nuget package is missing" executed="True" result="Success" success="True" time="0.1836" asserts="0" description="Reference node manipulation.When converting project reference to nuget.When nuget package is missing">
+                    <results>
+                      <test-case description="Cannot convert when nuget is missing" name="Reference node manipulation.When converting project reference to nuget.When nuget package is missing.Cannot convert when nuget is missing" time="0.051" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                  <test-case description="Project reference should convert to nuget reference" name="Reference node manipulation.When converting project reference to nuget.Project reference should convert to nuget reference" time="0.0705" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Nuget reference shuld point to a valid file" name="Reference node manipulation.When converting project reference to nuget.Nuget reference shuld point to a valid file" time="0.0099" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="D:\a\ps-csproj\ps-csproj\test\nuget.tests.ps1" executed="True" result="Success" success="True" time="90.708" asserts="0" description="D:\a\ps-csproj\ps-csproj\test\nuget.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="find Nuget packages dir" executed="True" result="Success" success="True" time="0.2117" asserts="0" description="find Nuget packages dir">
+            <results>
+              <test-case description="should find packages dir" name="find Nuget packages dir.should find packages dir" time="0.0284" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Nuget Version manipulation" executed="True" result="Success" success="True" time="0.5566" asserts="0" description="Nuget Version manipulation">
+            <results>
+              <test-case description="update build version with custom suffix" name="Nuget Version manipulation.update build version with custom suffix" time="0.0187" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="update build version with custom suffix 2" name="Nuget Version manipulation.update build version with custom suffix 2" time="0.0387" asserts="0" success="True" result="Success" executed="True" />
+              <test-suite type="ParameterizedTest" name="Nuget Version manipulation.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" executed="True" result="Success" success="True" time="0.2545" asserts="0" description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'">
+                <results>
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="Nuget Version manipulation.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;33&quot;,&quot;1.2.33&quot;,&quot;Patch&quot;,&quot;1.2.*&quot;)" time="0.0646" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="Nuget Version manipulation.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.3.0-build001&quot;,&quot;1.2.*&quot;)" time="0.0344" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="Nuget Version manipulation.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.2.4-build001&quot;,&quot;1.2.3.*&quot;)" time="0.0343" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="Nuget Version manipulation.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.0.1-build001&quot;,&quot;1.0.1&quot;)" time="0.0251" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="Nuget Version manipulation.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.0.1-build001&quot;,&quot;1.0.0.0&quot;)" time="0.0248" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="Nuget Version manipulation.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.0.1-build001&quot;,&quot;1.0.0.*&quot;)" time="0.0462" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="Nuget Version manipulation.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;2.0.0-build001&quot;,&quot;1.*&quot;)" time="0.0251" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Generate nuget for csproj" executed="True" result="Success" success="True" time="51.935" asserts="0" description="Generate nuget for csproj">
+            <results>
+              <test-suite type="TestFixture" name="Generate nuget for csproj.when nuspec exists" executed="True" result="Success" success="True" time="37.3215" asserts="0" description="Generate nuget for csproj.when nuspec exists">
+                <results>
+                  <test-case description="Should pack" name="Generate nuget for csproj.when nuspec exists.Should pack" time="28.4052" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should build" name="Generate nuget for csproj.when nuspec exists.Should build" time="2.1723" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should pack with suffix" name="Generate nuget for csproj.when nuspec exists.Should pack with suffix" time="6.6714" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Generate nuget for csproj.when nuspec does not exist" executed="True" result="Success" success="True" time="51.2402" asserts="0" description="Generate nuget for csproj.when nuspec does not exist">
+                <results>
+                  <test-case description="Should build" name="Generate nuget for csproj.when nuspec does not exist.Should build" time="2.3141" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should pack without metadata update" name="Generate nuget for csproj.when nuspec does not exist.Should pack without metadata update" time="4.5519" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should pack with metadata update" name="Generate nuget for csproj.when nuspec does not exist.Should pack with metadata update" time="6.9861" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Handle .Net Core 2.0 csproj format" executed="True" result="Success" success="True" time="52.1965" asserts="0" description="Handle .Net Core 2.0 csproj format">
+            <results>
+              <test-case description="assembly version Should -Be resolved" name="Handle .Net Core 2.0 csproj format.assembly version Should -Be resolved" time="0.0088" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="assembly informational version Should -Be resolved" name="Handle .Net Core 2.0 csproj format.assembly informational version Should -Be resolved" time="0.0323" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="assembly version Should -Be retrieved from specific file" name="Handle .Net Core 2.0 csproj format.assembly version Should -Be retrieved from specific file" time="0.0044" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="assembly version Should -Be updated" name="Handle .Net Core 2.0 csproj format.assembly version Should -Be updated" time="0.0894" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="D:\a\ps-csproj\ps-csproj\test\pacakgesconfig.tests.ps1" executed="True" result="Success" success="True" time="0.5567" asserts="0" description="D:\a\ps-csproj\ps-csproj\test\pacakgesconfig.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="packages config manipulation" executed="True" result="Success" success="True" time="0.3788" asserts="0" description="packages config manipulation">
+            <results>
+              <test-suite type="TestFixture" name="packages config manipulation.When loaded from string" executed="True" result="Success" success="True" time="0.0744" asserts="0" description="packages config manipulation.When loaded from string">
+                <results>
+                  <test-case description="Should load properly" name="packages config manipulation.When loaded from string.Should load properly" time="0.0112" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should List all packages" name="packages config manipulation.When loaded from string.Should List all packages" time="0.0042" asserts="0" success="True" result="Success" executed="True" />
+                  <test-suite type="ParameterizedTest" name="packages config manipulation.When loaded from string.Should Contain &lt;id&gt;" executed="True" result="Success" success="True" time="0.0102" asserts="0" description="Should Contain &lt;id&gt;">
+                    <results>
+                      <test-case description="Should Contain &lt;id&gt;" name="packages config manipulation.When loaded from string.Should Contain &lt;id&gt;(&quot;Microsoft.Bcl&quot;)" time="0.0057" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description="Should Contain &lt;id&gt;" name="packages config manipulation.When loaded from string.Should Contain &lt;id&gt;(&quot;Microsoft.Bcl.Build&quot;)" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description="Should Contain &lt;id&gt;" name="packages config manipulation.When loaded from string.Should Contain &lt;id&gt;(&quot;Newtonsoft.Json&quot;)" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="packages config manipulation.When adding new dependency" executed="True" result="Success" success="True" time="0.1191" asserts="0" description="packages config manipulation.When adding new dependency">
+                <results>
+                  <test-case description="should contain added id" name="packages config manipulation.When adding new dependency.should contain added id" time="0.014" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="packages config manipulation.When adding existing dependency" executed="True" result="Success" success="True" time="0.2319" asserts="0" description="packages config manipulation.When adding existing dependency">
+                <results>
+                  <test-case description="Should already contain added dependency" name="packages config manipulation.When adding existing dependency.Should already contain added dependency" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should -Throw by default" name="packages config manipulation.When adding existing dependency.Should -Throw by default" time="0.0129" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should pass when using -ifnotexists" name="packages config manipulation.When adding existing dependency.Should pass when using -ifnotexists" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="should contain added existing id" name="packages config manipulation.When adding existing dependency.should contain added existing id" time="0.0028" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="packages config manipulation.When removing dependency" executed="True" result="Success" success="True" time="0.2912" asserts="0" description="packages config manipulation.When removing dependency">
+                <results>
+                  <test-case description="should not contain removed id" name="packages config manipulation.When removing dependency.should not contain removed id" time="0.008" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="packages config manipulation.When removing non-existing dependency" executed="True" result="Success" success="True" time="0.333" asserts="0" description="packages config manipulation.When removing non-existing dependency">
+                <results>
+                  <test-case description="Should -Throw by default" name="packages config manipulation.When removing non-existing dependency.Should -Throw by default" time="0.0044" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="packages config file" executed="True" result="Success" success="True" time="0.4618" asserts="0" description="packages config file">
+            <results>
+              <test-suite type="TestFixture" name="packages config file.When referencing non-existing file" executed="True" result="Success" success="True" time="0.0566" asserts="0" description="packages config file.When referencing non-existing file">
+                <results>
+                  <test-case description="should create if -createifnotexists is specified" name="packages config file.When referencing non-existing file.should create if -createifnotexists is specified" time="0.0154" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="should not overwrite if -createifnotexists is specified" name="packages config file.When referencing non-existing file.should not overwrite if -createifnotexists is specified" time="0.0064" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="D:\a\ps-csproj\ps-csproj\test\process.tests.ps1" executed="True" result="Failure" success="False" time="1.0548" asserts="0" description="D:\a\ps-csproj\ps-csproj\test\process.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Processing output from invoke" executed="True" result="Failure" success="False" time="0.5103" asserts="0" description="Processing output from invoke">
+            <results>
+              <test-case description="long messages does not break output" name="Processing output from invoke.long messages does not break output" time="0.1018" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>RemoteException: verbose: using stderr for log output</message>
+                  <stack-trace>at Invoke, D:\a\ps-csproj\ps-csproj\src\process\process.psm1:238
+at &lt;ScriptBlock&gt;, D:\a\ps-csproj\ps-csproj\test\process.tests.ps1:17</stack-trace>
+                </failure>
+              </test-case>
+              <test-case description="newline should cause result split" name="Processing output from invoke.newline should cause result split" time="0.0528" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>RemoteException: verbose: using stderr for log output</message>
+                  <stack-trace>at Invoke, D:\a\ps-csproj\ps-csproj\src\process\process.psm1:238
+at &lt;ScriptBlock&gt;, D:\a\ps-csproj\ps-csproj\test\process.tests.ps1:23</stack-trace>
+                </failure>
+              </test-case>
+              <test-case description="Should ignore command output when passthru=false" name="Processing output from invoke.Should ignore command output when passthru=false" time="0.0552" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should return only stdout when logging to null" name="Processing output from invoke.Should return only stdout when logging to null" time="0.0551" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should return only stdout when logging to stderr" name="Processing output from invoke.Should return only stdout when logging to stderr" time="0.0512" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>RemoteException: verbose: using stderr for log output</message>
+                  <stack-trace>at Invoke, D:\a\ps-csproj\ps-csproj\src\process\process.psm1:238
+at &lt;ScriptBlock&gt;, D:\a\ps-csproj\ps-csproj\test\process.tests.ps1:40</stack-trace>
+                </failure>
+              </test-case>
+              <test-case description="Should fill error stream when showoutput=false" name="Processing output from invoke.Should fill error stream when showoutput=false" time="0.0561" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>RemoteException: verbose: using stderr for log output</message>
+                  <stack-trace>at Invoke, D:\a\ps-csproj\ps-csproj\src\process\process.psm1:265
+at &lt;ScriptBlock&gt;, D:\a\ps-csproj\ps-csproj\test\process.tests.ps1:46</stack-trace>
+                </failure>
+              </test-case>
+              <test-case description="Should not duplicate output when showoutput=true" name="Processing output from invoke.Should not duplicate output when showoutput=true" time="0.0627" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>RemoteException: verbose: using stderr for log output</message>
+                  <stack-trace>at Invoke, D:\a\ps-csproj\ps-csproj\src\process\process.psm1:238
+at &lt;ScriptBlock&gt;, D:\a\ps-csproj\ps-csproj\test\process.tests.ps1:60</stack-trace>
+                </failure>
+              </test-case>
+              <test-case description="Should not write errors to console when showoutput=false" name="Processing output from invoke.Should not write errors to console when showoutput=false" time="0.0519" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>RemoteException: verbose: using stderr for log output</message>
+                  <stack-trace>at Invoke, D:\a\ps-csproj\ps-csproj\src\process\process.psm1:265
+at &lt;ScriptBlock&gt;, D:\a\ps-csproj\ps-csproj\test\process.tests.ps1:67</stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Passing arguments from invoke" executed="True" result="Success" success="True" time="0.9422" asserts="0" description="Passing arguments from invoke">
+            <results>
+              <test-case description="Should pass all direct arguments quoted 1" name="Passing arguments from invoke.Should pass all direct arguments quoted 1" time="0.0593" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should pass all direct arguments quoted 2" name="Passing arguments from invoke.Should pass all direct arguments quoted 2" time="0.0593" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should pass all direct arguments quoted 3" name="Passing arguments from invoke.Should pass all direct arguments quoted 3" time="0.0623" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should pass all direct arguments" name="Passing arguments from invoke.Should pass all direct arguments" time="0.0563" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should pass array arguments" name="Passing arguments from invoke.Should pass array arguments" time="0.0598" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should pass array args whith double quotes" name="Passing arguments from invoke.Should pass array args whith double quotes" time="0.0547" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should pass array args by position" name="Passing arguments from invoke.Should pass array args by position" time="0.0561" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="check echoargs" executed="True" result="Success" success="True" time="1.0165" asserts="0" description="check echoargs">
+            <results>
+              <test-case description="Should invoke echoargs" name="check echoargs.Should invoke echoargs" time="0.0514" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="D:\a\ps-csproj\ps-csproj\test\references.tests.ps1" executed="True" result="Success" success="True" time="0.3968" asserts="0" description="D:\a\ps-csproj\ps-csproj\test\references.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Reference conversion" executed="True" result="Success" success="True" time="0.0891" asserts="0" description="Reference conversion">
+            <results>
+              <test-suite type="TestFixture" name="Reference conversion.converting reference to nuget and no packages dir specified" executed="True" result="Success" success="True" time="0.0574" asserts="0" description="Reference conversion.converting reference to nuget and no packages dir specified">
+                <results>
+                  <test-case description="project references to  Should -Be valid" name="Reference conversion.converting reference to nuget and no packages dir specified.project references to  Should -Be valid" time="0.0086" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should Convert properly" name="Reference conversion.converting reference to nuget and no packages dir specified.Should Convert properly" time="0.0135" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should not modify csproj" name="Reference conversion.converting reference to nuget and no packages dir specified.Should not modify csproj" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Nuget path resolution" executed="True" result="Success" success="True" time="0.2773" asserts="0" description="Nuget path resolution">
+            <results>
+              <test-suite type="TestFixture" name="Nuget path resolution.When resolving nuget paths" executed="True" result="Success" success="True" time="0.1653" asserts="0" description="Nuget path resolution.When resolving nuget paths">
+                <results>
+                  <test-suite type="ParameterizedTest" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' without version" executed="True" result="Success" success="True" time="0.0599" asserts="0" description="Should resolve proper path for package '&lt;pkgdir&gt;' without version">
+                    <results>
+                      <test-case description="Should resolve proper path for package '&lt;pkgdir&gt;' without version" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' without version(&quot;Castle.Core&quot;)" time="0.0178" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description="Should resolve proper path for package '&lt;pkgdir&gt;' without version" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' without version(&quot;Common.Configuration.log4net&quot;)" time="0.0154" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description="Should resolve proper path for package '&lt;pkgdir&gt;' without version" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' without version(&quot;Core.Boundaries&quot;)" time="0.005" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description="Should resolve proper path for package '&lt;pkgdir&gt;' without version" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' without version(&quot;Core.Client&quot;)" time="0.0052" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description="Should resolve proper path for package '&lt;pkgdir&gt;' without version" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' without version(&quot;Core.Library1&quot;)" time="0.0081" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description="Should resolve proper path for package '&lt;pkgdir&gt;' without version" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' without version(&quot;Core.Library2&quot;)" time="0.0085" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' with version" executed="True" result="Success" success="True" time="0.0625" asserts="0" description="Should resolve proper path for package '&lt;pkgdir&gt;' with version">
+                    <results>
+                      <test-case description="Should resolve proper path for package '&lt;pkgdir&gt;' with version" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' with version(&quot;Castle.Core.3.3.3&quot;)" time="0.0085" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description="Should resolve proper path for package '&lt;pkgdir&gt;' with version" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' with version(&quot;Common.Configuration.log4net.2.0.0-beta1&quot;)" time="0.008" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description="Should resolve proper path for package '&lt;pkgdir&gt;' with version" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' with version(&quot;Core.Boundaries.1.0.1&quot;)" time="0.0251" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description="Should resolve proper path for package '&lt;pkgdir&gt;' with version" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' with version(&quot;Core.Client.1.0.1&quot;)" time="0.0051" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description="Should resolve proper path for package '&lt;pkgdir&gt;' with version" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' with version(&quot;Core.Library1.1.0.0.0&quot;)" time="0.0079" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description="Should resolve proper path for package '&lt;pkgdir&gt;' with version" name="Nuget path resolution.When resolving nuget paths.Should resolve proper path for package '&lt;pkgdir&gt;' with version(&quot;Core.Library2.1.0.0.0&quot;)" time="0.0078" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="D:\a\ps-csproj\ps-csproj\test\semver.tests.ps1" executed="True" result="Success" success="True" time="0.947" asserts="0" description="D:\a\ps-csproj\ps-csproj\test\semver.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="parse version" executed="True" result="Success" success="True" time="0.082" asserts="0" description="parse version">
+            <results>
+              <test-suite type="ParameterizedTest" name="parse version.parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;" executed="True" result="Success" success="True" time="0.0568" asserts="0" description="parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;">
+                <results>
+                  <test-case description="parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;" name="parse version.parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;(123,&quot;build&quot;,1,&quot;1.0.1-build123&quot;,0,1)" time="0.0114" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;" name="parse version.parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;(123,&quot;build&quot;,1,&quot;1.0.1-build.123&quot;,0,1)" time="0.0054" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;" name="parse version.parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;(123,&quot;build&quot;,1,&quot;1.0.1-build123&quot;,0,1)" time="0.0053" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;" name="parse version.parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;(123,&quot;featureabc&quot;,1,&quot;1.0.1-featureabc.123&quot;,0,1)" time="0.0053" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;" name="parse version.parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;(123,&quot;feature-abc&quot;,1,&quot;1.0.1-feature-abc.123&quot;,0,1)" time="0.0055" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;" name="parse version.parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;(123,&quot;feature-abc&quot;,1,&quot;1.0.1-feature-abc123&quot;,0,1)" time="0.0053" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;" name="parse version.parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;(123,&quot;featureabc&quot;,1,&quot;1.0.1-featureabc.123+4af3d&quot;,0,&quot;4af3d&quot;,1)" time="0.0106" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;" name="parse version.parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;(123,&quot;rc1_2016_01_01&quot;,&quot;1.0.1-rc1_2016_01_01.123&quot;)" time="0.0032" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;" name="parse version.parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;(&quot;release_2016_04_01_audio&quot;,&quot;1.6.0-release_2016_04_01_audio&quot;)" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;" name="parse version.parsing '&lt;version&gt;' should yield major=&lt;major&gt; minor=&lt;minor&gt; patch=&lt;patch&gt; branch=&lt;branch&gt; buildno=&lt;build&gt; rev=&lt;rev&gt;(&quot;release-2016_04_01-audio&quot;,&quot;1.6.0-release-2016_04_01-audio&quot;)" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="update version" executed="True" result="Success" success="True" time="0.1599" asserts="0" description="update version">
+            <results>
+              <test-suite type="ParameterizedTest" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" executed="True" result="Success" success="True" time="0.0544" asserts="0" description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'">
+                <results>
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.0.1-build.124&quot;,SuffixBuild,&quot;1.0.1-build123&quot;)" time="0.0059" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.0.2&quot;,Patch,&quot;1.0.1&quot;)" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.1.0&quot;,Minor,&quot;1.0.1&quot;)" time="0.0036" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;2.0.0&quot;,Major,&quot;1.0.1&quot;)" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.0.1-build.124&quot;,SuffixBuild,&quot;1.0.1-build.123&quot;)" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.0.1-alpha-build.124&quot;,SuffixBuild,&quot;1.0.1-alpha-build.123&quot;)" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.0.1-alpha-build.124+12abc&quot;,SuffixBuild,&quot;1.0.1-alpha-build.123+12abc&quot;)" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;abc12ff&quot;,&quot;1.0.1-alpha-build.123+abc12ff&quot;,SuffixRevision,&quot;1.0.1-alpha-build.123+12abc&quot;)" time="0.005" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;abc12ff&quot;,&quot;1.0.1-alpha-build.123+abc12ff&quot;,SuffixRevision,&quot;1.0.1-alpha-build.123&quot;)" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.0.2-build.001&quot;,Patch,&quot;1.0.1-build.123&quot;)" time="0.003" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(&quot;1.0.2-alpha-build.001&quot;,Patch,&quot;1.0.1-alpha-build.123&quot;)" time="0.003" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(True,&quot;1.0.1-alpha-buil124&quot;,SuffixBuild,&quot;1.0.1-alpha-build.123&quot;)" time="0.0049" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(True,&quot;1.0.1-alpha2016-124&quot;,SuffixBuild,&quot;1.0.1-alpha_2016_01_01.123&quot;)" time="0.0058" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(True,&quot;1.6.0-release20-001&quot;,SuffixBuild,&quot;1.6.0-release_2016_04_01_audio&quot;)" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(True,&quot;1.2.0-build001&quot;,SuffixBuild,&quot;1.2.0&quot;)" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'" name="update version.incrementing part &lt;component&gt; of '&lt;version&gt;' should yield '&lt;expected&gt;'(True,&quot;1.2.0-build001&quot;,SuffixBuild,&quot;1.2.0&quot;)" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="compare versions" executed="True" result="Success" success="True" time="0.1906" asserts="0" description="compare versions">
+            <results>
+              <test-suite type="ParameterizedTest" name="compare versions.version &lt;left&gt; comare to &lt;right&gt; returns &lt;expected&gt;" executed="True" result="Success" success="True" time="0.0084" asserts="0" description="version &lt;left&gt; comare to &lt;right&gt; returns &lt;expected&gt;">
+                <results>
+                  <test-case description="version &lt;left&gt; comare to &lt;right&gt; returns &lt;expected&gt;" name="compare versions.version &lt;left&gt; comare to &lt;right&gt; returns &lt;expected&gt;(&quot;1.0.1&quot;,&quot;1.0.1&quot;,0)" time="0.0032" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="version &lt;left&gt; comare to &lt;right&gt; returns &lt;expected&gt;" name="compare versions.version &lt;left&gt; comare to &lt;right&gt; returns &lt;expected&gt;(&quot;1.0.2&quot;,&quot;1.0.1&quot;,1)" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="version &lt;left&gt; comare to &lt;right&gt; returns &lt;expected&gt;" name="compare versions.version &lt;left&gt; comare to &lt;right&gt; returns &lt;expected&gt;(&quot;1.0.0&quot;,&quot;1.0.1&quot;,-1)" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="D:\a\ps-csproj\ps-csproj\test\sln-parsing.tests.ps1" executed="True" result="Success" success="True" time="12.5109" asserts="0" description="D:\a\ps-csproj\ps-csproj\test\sln-parsing.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="parsing sln" executed="True" result="Success" success="True" time="12.4852" asserts="0" description="parsing sln">
+            <results>
+              <test-suite type="TestFixture" name="parsing sln.when parsing sln projects" executed="True" result="Success" success="True" time="0.0724" asserts="0" description="parsing sln.when parsing sln projects">
+                <results>
+                  <test-case description="Should return all projects" name="parsing sln.when parsing sln projects.Should return all projects" time="0.0056" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should contain Legimi.Core.Utils" name="parsing sln.when parsing sln projects.Should contain Legimi.Core.Utils" time="0.0067" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="parsing sln.when removing project from sln" executed="True" result="Success" success="True" time="12.3447" asserts="0" description="parsing sln.when removing project from sln">
+                <results>
+                  <test-case description="Should build before" name="parsing sln.when removing project from sln.Should build before" time="9.7631" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="sln Should not contain removed projects" name="parsing sln.when removing project from sln.sln Should not contain removed projects" time="0.0398" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should build after removal" name="parsing sln.when removing project from sln.Should build after removal" time="2.3971" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="parsing sln.When updating project in sln" executed="True" result="Success" success="True" time="12.4067" asserts="0" description="parsing sln.When updating project in sln">
+                <results>
+                  <test-case description="sln Should contain updated projects" name="parsing sln.When updating project in sln.sln Should contain updated projects" time="0.0143" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="D:\a\ps-csproj\ps-csproj\test\features\projectfix.feature.tests.ps1" executed="True" result="Failure" success="False" time="3.2942" asserts="0" description="D:\a\ps-csproj\ps-csproj\test\features\projectfix.feature.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="fix api" executed="True" result="Success" success="True" time="0.0254" asserts="0" description="fix api">
+            <results>
+              <test-case description="should deprecate test-slndependencies" name="fix api.should deprecate test-slndependencies" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should fix sln and csproj with one command" name="fix api.should fix sln and csproj with one command" time="0.0014" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="fix csproj" executed="True" result="Success" success="True" time="0.0608" asserts="0" description="fix csproj">
+            <results>
+              <test-case description="should list csproj references" name="fix csproj.should list csproj references" time="0.0014" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should fix nuget paths" name="fix csproj.should fix nuget paths" time="0.0014" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should fix csproj paths" name="fix csproj.should fix csproj paths" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should list nuget references that are not in packages.config" name="fix csproj.should list nuget references that are not in packages.config" time="0.0064" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should list nuget versions mismatch between csproj and packages.config" name="fix csproj.should list nuget versions mismatch between csproj and packages.config" time="0.0014" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should list nuget version mismatch between reference Include and HintPath" name="fix csproj.should list nuget version mismatch between reference Include and HintPath" time="0.0013" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="fix solution" executed="True" result="Success" success="True" time="0.092" asserts="0" description="fix solution">
+            <results>
+              <test-case description="should fix missing csprojs in sln" name="fix solution.should fix missing csprojs in sln" time="0.0014" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should fix missing csproj refrences in csprojs" name="fix solution.should fix missing csproj refrences in csprojs" time="0.0013" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should fix missing nuget references in csprojs" name="fix solution.should fix missing nuget references in csprojs" time="0.0013" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should remove unreferenced csprojs from sln" name="fix solution.Should remove unreferenced csprojs from sln" time="0.0013" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should list missing csproj references in sln" name="fix solution.Should list missing csproj references in sln" time="0.0013" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should list missing csprojs in sln" name="fix solution.should list missing csprojs in sln" time="0.0013" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should list missing nuget references in sln" name="fix solution.should list missing nuget references in sln" time="0.0013" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="verify solution project set" executed="True" result="Success" success="True" time="0.2376" asserts="0" description="verify solution project set">
+            <results>
+              <test-case description="Should return a tree of all projects and their dependencies" name="verify solution project set.Should return a tree of all projects and their dependencies" time="0.058" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Should report missing projects" name="verify solution project set.Should report missing projects" time="0.0216" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="fix a project with missing references" executed="True" result="Failure" success="False" time="0.4302" asserts="0" description="fix a project with missing references">
+            <results>
+              <test-case description="should detect missing references" name="fix a project with missing references.should detect missing references" time="0.0102" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="should fix references paths" name="fix a project with missing references.should fix references paths" time="0.089" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>Expected strings to be the same, but they were different.
+Expected length: 46
+Actual length:   43
+Strings differ at index 3.
+Expected: '..\..\Core...'
+But was:  '..\Core2\C...'
+at $fixed.Path | Should -Be "..\..\Core2\Core.Library1\Core.Library1.csproj", D:\a\ps-csproj\ps-csproj\test\features\projectfix.feature.tests.ps1:119</message>
+                  <stack-trace>at &lt;ScriptBlock&gt;, D:\a\ps-csproj\ps-csproj\test\features\projectfix.feature.tests.ps1:119</stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="fix a solution with missing references" executed="True" result="Failure" success="False" time="3.2469" asserts="0" description="fix a solution with missing references">
+            <results>
+              <test-suite type="TestFixture" name="fix a solution with missing references.when initializing" executed="True" result="Success" success="True" time="2.5272" asserts="0" description="fix a solution with missing references.when initializing">
+                <results>
+                  <test-case description="Should scan repo root for csproj files" name="fix a solution with missing references.when initializing.Should scan repo root for csproj files" time="0.007" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should scan packages dir for nuget packages" name="fix a solution with missing references.when initializing.Should scan packages dir for nuget packages" time="0.0089" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should scan chosen packages source for nuget packages" name="fix a solution with missing references.when initializing.Should scan chosen packages source for nuget packages" time="2.462" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="fix a solution with missing references.When a matching csproj can be found in repo directory" executed="True" result="Failure" success="False" time="2.6654" asserts="0" description="fix a solution with missing references.When a matching csproj can be found in repo directory">
+                <results>
+                  <test-case description="Should replace reference path with a valid csproj" name="fix a solution with missing references.When a matching csproj can be found in repo directory.Should replace reference path with a valid csproj" time="0.0989" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected $true, but got $false.
+at $valid | Should -Be $true, D:\a\ps-csproj\ps-csproj\test\features\projectfix.feature.tests.ps1:170</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, D:\a\ps-csproj\ps-csproj\test\features\projectfix.feature.tests.ps1:170</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="fix a solution with missing references.When a matching nuget can be found in one of the sources" executed="True" result="Ignored" success="True" time="2.7237" asserts="0" description="fix a solution with missing references.When a matching nuget can be found in one of the sources">
+                <results>
+                  <test-case description="Should repace reference with a valid nuget" name="fix a solution with missing references.When a matching nuget can be found in one of the sources.Should repace reference with a valid nuget" time="0.0143" asserts="0" success="False" result="Ignored" executed="False" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="D:\a\ps-csproj\ps-csproj\test\features\referenceconvertion.feature.tests.ps1" executed="True" result="Failure" success="False" time="20.8734" asserts="0" description="D:\a\ps-csproj\ps-csproj\test\features\referenceconvertion.feature.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Converting dll reference to project" executed="True" result="Success" success="True" time="0.1618" asserts="0" description="Converting dll reference to project">
+            <results>
+              <test-case description="does something" name="Converting dll reference to project.does something" time="0.0092" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Converting Project reference to nuget" executed="True" result="Failure" success="False" time="20.8387" asserts="0" description="Converting Project reference to nuget">
+            <results>
+              <test-suite type="TestFixture" name="Converting Project reference to nuget.before convertion" executed="True" result="Success" success="True" time="8.912" asserts="0" description="Converting Project reference to nuget.before convertion">
+                <results>
+                  <test-case description="Should restore" name="Converting Project reference to nuget.before convertion.Should restore" time="5.4353" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should build" name="Converting Project reference to nuget.before convertion.Should build" time="3.3997" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Converting Project reference to nuget.When loading sln file" executed="True" result="Success" success="True" time="9.0212" asserts="0" description="Converting Project reference to nuget.When loading sln file">
+                <results>
+                  <test-case description="Should resolve all sln projects" name="Converting Project reference to nuget.When loading sln file.Should resolve all sln projects" time="0.0241" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="sln should contain project " name="Converting Project reference to nuget.When loading sln file.sln should contain project " time="0.0055" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should list all references to " name="Converting Project reference to nuget.When loading sln file.Should list all references to " time="0.0269" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Converting Project reference to nuget.When converting project with matching nuget" executed="True" result="Failure" success="False" time="20.5741" asserts="0" description="Converting Project reference to nuget.When converting project with matching nuget">
+                <results>
+                  <test-case description="should convert without errors" name="Converting Project reference to nuget.When converting project with matching nuget.should convert without errors" time="2.9106" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected no exception to be thrown, but an exception "package 'Core.Library1' not found in packages dir 'TestDrive:\test\packages'" was thrown from D:\a\ps-csproj\ps-csproj\src\csproj\functions\csproj-utils.ps1:333 char:9
+    +         throw "package '$projectName' not found in packages dir '$pac …
+    +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+at { $sln | convert-referencesToNuget -project "$projectname"  -packagesdir $packagesdir } | Should -Not -Throw, D:\a\ps-csproj\ps-csproj\test\features\referenceconvertion.feature.tests.ps1:134</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, D:\a\ps-csproj\ps-csproj\test\features\referenceconvertion.feature.tests.ps1:134</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="should not leave any project reference" name="Converting Project reference to nuget.When converting project with matching nuget.should not leave any project reference" time="0.0297" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected $null or empty, but got @(System.Collections.Hashtable).
+at $projrefs | Should -BeNullOrEmpty, D:\a\ps-csproj\ps-csproj\test\features\referenceconvertion.feature.tests.ps1:143</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, D:\a\ps-csproj\ps-csproj\test\features\referenceconvertion.feature.tests.ps1:143</stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case description="converted references should exist in packages.config" name="Converting Project reference to nuget.When converting project with matching nuget.converted references should exist in packages.config" time="0.0166" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="should not remove previous packages from packages.config in project" name="Converting Project reference to nuget.When converting project with matching nuget.should not remove previous packages from packages.config in project" time="0.0139" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="converted references should have relative paths" name="Converting Project reference to nuget.When converting project with matching nuget.converted references should have relative paths" time="0.0242" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should restore after conversion" name="Converting Project reference to nuget.When converting project with matching nuget.Should restore after conversion" time="5.3351" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should build after conversion" name="Converting Project reference to nuget.When converting project with matching nuget.Should build after conversion" time="3.125" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
