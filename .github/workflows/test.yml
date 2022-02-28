@@ -1,36 +1,36 @@
 name: "build-test"
-on: # rebuild any PRs and main branch changes
+on:
   push:
 
 jobs:
   build: # make sure build/ci work properly
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - run: |
-        npm install
-        npm run all
-        
+      - uses: actions/checkout@v2
+      - run: |
+          npm install
+          npm run all
+
   test: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Setup dotnet
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '3.1.100'
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "3.1.100"
 
-    - name: Run Tests
-      run: dotnet test --logger:nunit
+      - name: Run Tests
+        run: dotnet test --logger:nunit
 
-    - uses: ./
-      if: always()
-      with: 
-        path: 'TestResults/*.xml'
-        access-token: ${{secrets.GITHUB_TOKEN}}
-    - name: Publish
-      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-      run: npx semantic-release
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - uses: ./
+        if: always()
+        with:
+          path: "TestResults/*.xml"
+          access-token: ${{secrets.GITHUB_TOKEN}}
+      - name: Publish
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: npx semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
