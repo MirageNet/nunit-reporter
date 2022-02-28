@@ -27,7 +27,7 @@ async function run(): Promise<void> {
 **${results.passed} tests passed**
 **${results.failed} tests failed**
 `;
-    core.startGroup("Test Report for ${title}");
+    core.startGroup(`Test Report for ${title}`);
 
     core.info(summary);
 
@@ -66,7 +66,7 @@ async function run(): Promise<void> {
     */
 
     core.endGroup();
-  } catch (error: any) {
+  } catch (error) {
     core.setFailed(error.message);
   }
 }
