@@ -1,6 +1,7 @@
-import { setFailed, getInput } from "@actions/core";
-import { GitHub, context } from "@actions/github";
+import * as core from "@actions/core";
 import { readResults, Annotation } from "./nunit";
+import { countReset } from "console";
+import * as annotations from "./annotations";
 
 function generateSummary(annotation: Annotation): string {
   return `* ${annotation.title}\n   ${annotation.message}`;
@@ -8,14 +9,11 @@ function generateSummary(annotation: Annotation): string {
 
 async function run(): Promise<void> {
   try {
-    const path = getInput("path");
-    const numFailures = parseInt(getInput("numFailures"));
-    const accessToken = getInput("access-token");
-    const title = getInput("reportTitle");
+    const path = core.getInput("path");
+    const numFailures = parseInt(core.getInput("numFailures"));
+    const title = core.getInput("reportTitle");
 
     const results = await readResults(path);
-
-    const octokit = new GitHub(accessToken);
 
     const summary =
       results.failed > 0
@@ -29,6 +27,9 @@ async function run(): Promise<void> {
 **${results.passed} tests passed**
 **${results.failed} tests failed**
 `;
+    core.startGroup("Test Report for ${title}");
+
+    core.info(summary);
 
     for (const ann of results.annotations) {
       const annStr = generateSummary(ann);
@@ -40,8 +41,13 @@ async function run(): Promise<void> {
         details = newDetails;
       }
     }
+    core.info(details);
 
-    const pr = context.payload.pull_request;
+    for (let testResult of results.annotations.slice(0, numFailures)) {
+      annotations.annotate(testResult);
+    }
+
+    /*
     await octokit.checks.create({
       head_sha: (pr && pr["head"] && pr["head"].sha) || context.sha,
       name: `Tests Report: ${title}`,
@@ -57,8 +63,11 @@ async function run(): Promise<void> {
         text: details,
       },
     });
-  } catch (error) {
-    setFailed(error.message);
+    */
+
+    core.endGroup();
+  } catch (error: any) {
+    core.setFailed(error.message);
   }
 }
 
