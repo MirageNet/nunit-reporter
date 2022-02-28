@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/MirageNet/nunit-reporter/compare/v1.0.11...v1.1.0) (2022-02-28)
+
+
+### Features
+
+* support matrix builds ([070f9db](https://github.com/MirageNet/nunit-reporter/commit/070f9db8e343e6d2ae955f1e6348a7d60e515c0e)), closes [#15](https://github.com/MirageNet/nunit-reporter/issues/15) [#16](https://github.com/MirageNet/nunit-reporter/issues/16)
+
 ## [1.0.11](https://github.com/MirageNet/nunit-reporter/compare/v1.0.10...v1.0.11) (2020-07-20)
 
 ### Bug Fixes

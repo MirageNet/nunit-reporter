@@ -2,9 +2,6 @@ name: "NUnit Reporter"
 description: "Github action for publishing nunit results as github checks"
 author: "MirageNet"
 inputs:
-  access-token:
-    description: "github token"
-    required: true
   path:
     description: "glob to junit xml files"
     required: true

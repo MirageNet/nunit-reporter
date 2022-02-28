@@ -5,7 +5,7 @@ Create an annotation of the build information and also list first n failed nunit
 Example
 
 ```yaml
-  - uses: MirageNet/nunit-reporter@v1.0.9
+  - uses: MirageNet/nunit-reporter@v1.1.0
       if: always()
       with:
         path: Tests/*.xml
