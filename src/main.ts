@@ -47,24 +47,6 @@ async function run(): Promise<void> {
       annotations.annotate(testResult);
     }
 
-    /*
-    await octokit.checks.create({
-      head_sha: (pr && pr["head"] && pr["head"].sha) || context.sha,
-      name: `Tests Report: ${title}`,
-      owner: context.repo.owner,
-      repo: context.repo.repo,
-      status: "completed",
-      conclusion:
-        results.failed > 0 || results.passed === 0 ? "failure" : "success",
-      output: {
-        title,
-        summary,
-        annotations: results.annotations.slice(0, numFailures),
-        text: details,
-      },
-    });
-    */
-
     core.endGroup();
   } catch (error) {
     core.setFailed(error.message);
