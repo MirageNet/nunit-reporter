@@ -16,26 +16,21 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "3.1.100"
+
+      - name: Run Tests
+        run: dotnet test --logger:nunit
+
       - uses: ./
+        if: always()
         with:
-          path: "*.xml"
+          path: "TestResults/*.xml"
           access-token: ${{secrets.GITHUB_TOKEN}}
-
-  release:
-    runs-on: ubuntu-latest
-    needs: [build, test]
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Release
-        uses: cycjimmy/semantic-release-action@v2
-        with:
-          extra_plugins: |
-            @semantic-release/exec
-            @semantic-release/changelog
-            @semantic-release/git
-          branch: master
+      - name: Publish
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: npx semantic-release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
