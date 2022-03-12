@@ -28,7 +28,7 @@ jobs:
         if: always()
         with:
           name: Test results
-          path: "TestResults"
+          path: "TestResults/*.xml"
 
       - name: Publish
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
