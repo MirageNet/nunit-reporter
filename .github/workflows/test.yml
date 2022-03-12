@@ -24,13 +24,14 @@ jobs:
       - name: Run Tests
         run: dotnet test --logger:nunit
 
-      - uses: ./
+      - uses: actions/upload-artifact@v2
         if: always()
         with:
-          path: "TestResults/*.xml"
-          access-token: ${{secrets.GITHUB_TOKEN}}
+          name: Test results
+          path: "TestResults"
+
       - name: Publish
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: npx semantic-release
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_`TOKEN: ${{ secrets.GH_TOKEN }}
