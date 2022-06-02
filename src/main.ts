@@ -24,7 +24,7 @@ async function run(): Promise<void> {
 
     let details =
       results.failed === 0
-        ? `** ${results.passed} tests passed**`
+        ? `**${results.passed} tests passed**`
         : `
 **${results.passed} tests passed**
 **${results.failed} tests failed**
