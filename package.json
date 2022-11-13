@@ -27,7 +27,7 @@
   "author": "MirageNet",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.9.1",
     "@actions/github": "^2.1.1",
     "@actions/glob": "^0.1.0",
     "@octokit/rest": "^17.1.4",
