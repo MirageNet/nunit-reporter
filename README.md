@@ -1,3 +1,5 @@
+> :warning: **This package is deprecated**.  use [Test Reporter](https://github.com/marketplace/actions/test-reporter) instead
+
 # nunit reporter
 
 Create an annotation of the build information and also list first n failed nunit tests
